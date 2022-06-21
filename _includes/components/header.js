@@ -19,14 +19,14 @@ module.exports = async function (data) {
                   <a href="/#chi-siamo" class="nav-link">Chi siamo</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle">Cosa proponiamo</a>
+                  <a href="/#cosa-proponiamo" class="nav-link dropdown-toggle">Cosa proponiamo</a>
                   <div class= "dropdown-menu">
                     <ul class="list-unstyled">
                       <li>
-                        <a href="#" class="dropdown-item">Marketing e Comunicazione</a>                  
+                        <a href="/marketing-e-comunicazione" class="dropdown-item">Marketing e Comunicazione</a>                  
                       </li>
                       <li>
-                      <a href="#" class="dropdown-item">Tecnologie Informatiche</a>                  
+                      <a href="/tecnologie-informatiche" class="dropdown-item">Tecnologie Informatiche</a>                  
                       </li>
                     </ul>
                   </div>
@@ -50,7 +50,7 @@ module.exports = async function (data) {
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a href="#" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+          <a href="/contattaci" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
             <i class="bx bx-phone fs-5 lh-1 me-1"></i>
             &nbsp;Contattaci
           </a>

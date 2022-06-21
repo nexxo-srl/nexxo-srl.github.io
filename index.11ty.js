@@ -58,7 +58,7 @@ module.exports = class {
                             <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Qualunque siano le tue esigenze, qualunque sia il tuo business, qualunque siano i tuoi obiettivi; intraprendi con noi il tuo percorso di trasformazione digitale.</p>
                           </div>
                           <div class="scale-up delay-1">
-                            <a href="#" class="btn btn-primary shadow-primary btn-lg">Cosa proponiamo</a>
+                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">Cosa proponiamo</a>
                           </div>
 
                         </div>
@@ -70,7 +70,7 @@ module.exports = class {
                             <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Uniamo servizi di comunicazione digitale, Internet-of-Things (IoT) & Blockchain per un'esperienza più completa ed innovativa che mai!</p>
                           </div>
                           <div class="scale-up delay-1">
-                            <a href="#" class="btn btn-primary shadow-primary btn-lg">Cosa proponiamo</a>
+                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">Cosa proponiamo</a>
                           </div>
                         </div>
 
@@ -81,7 +81,7 @@ module.exports = class {
                             <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Affrontiamo insieme ogni problema di business creando e sviluppando soluzioni applicative specifiche. Condividi con noi il tuo caso d’uso!</p>
                           </div>
                           <div class="scale-up delay-1">
-                            <a href="#" class="btn btn-primary shadow-primary btn-lg">Cosa proponiamo</a>
+                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">Cosa proponiamo</a>
                           </div>
                         </div>
                       </div>
