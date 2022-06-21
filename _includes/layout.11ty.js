@@ -139,17 +139,40 @@ module.exports = async function(data) {
                 <script defer src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
                 <script defer src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
                 <script defer src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    
-    
-                <!--Template Functions-->
-                <script defer src="/assets/js/functions.js"></script>
+
+                <!-- Theme mode -->
+                <script>
+                  let mode = window.localStorage.getItem('mode'),
+                      root = document.getElementsByTagName('html')[0];
+                  if (mode !== undefined && mode === 'dark') {
+                    root.classList.add('dark-mode');
+                  } else {
+                    root.classList.remove('dark-mode');
+                  }
+                </script>
                 
-               
             </head>
             <body>
                 ${await header.call(this, data)}
                 ${data.content}
                 ${await footer.call(this, data)}
             </body>
+
+            <!-- Back to top button -->
+            <a href="#top" class="btn-scroll-top" data-scroll>
+              <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+              <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+            </a>
+
+
+          <!-- Vendor Scripts -->
+          <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+          <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+          <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+          <!-- Main Theme Script -->
+          <script src="assets/js/theme.min.js"></script>
+
         </html>`
 }
