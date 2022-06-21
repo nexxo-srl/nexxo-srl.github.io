@@ -150,9 +150,29 @@ module.exports = async function(data) {
                     root.classList.remove('dark-mode');
                   }
                 </script>
-                
+
+                <!-- Page loading scripts -->
+                <script>
+                  (function () {
+                    window.onload = function () {
+                      const preloader = document.querySelector('.page-loading');
+                      preloader.classList.remove('active');
+                      setTimeout(function () {
+                        preloader.remove();
+                      }, 1000);
+                    };
+                  })();
+                </script>
+
             </head>
             <body>
+                <!-- Page loading spinner -->
+                <div class="page-loading active">
+                  <div class="page-loading-inner">
+                    <div class="page-spinner"></div><span>Loading...</span>
+                  </div>
+                </div>
+
                 ${await header.call(this, data)}
                 ${data.content}
                 ${await footer.call(this, data)}
