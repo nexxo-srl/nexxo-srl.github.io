@@ -119,7 +119,7 @@ module.exports = class {
           <section class="container pt-5 mt-2 mt-md-4 mt-lg-5 pb-md-2 pb-lg-5">
             <div class="row pt-xl-3">
               <div class="col-md-5 text-center text-md-start pb-5">
-                <h1 class="mb-4">Chi siamo</h1>
+                <h1 class="mb-4"><a name="chi-siamo">Chi siamo</a></h1>
                 <p class="fs-lg pb-lg-3 mb-1">Siamo un' <strong>agenzia digitale start-up</strong> che aiuta a sviluppare le attività commerciali dei nostri clienti.</p>
                 <p class="fs-lg pb-lg-3 mb-1">Ci proponiamo come <strong>partner tecnologico</strong> alle aziende che hanno bisogno di sviluppare la propria competitività attraverso la <strong>trasformazione digitale</strong>.</p>
                 <p class="fs-lg pb-lg-3 mb-1">Lavoriamo in un ambiente giovanile dove si respira aria di creatività, energia e passione.</p>
@@ -135,7 +135,7 @@ module.exports = class {
           <section class="bg-secondary pb-md-2 pb-lg-5">
             <div class="d-none d-lg-block"></div>
             <div class="container pb-4 pt-5">
-              <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">Cosa proponiamo</h2>
+              <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4"><a name="cosa-proponiamo">Cosa proponiamo</a></h2>
               <div class="row align-items-center pb-5 mb-lg-2">
                 <div class="text-center text-md-start">
                   <p class="fs-lg text-muted mb-md-0">Accompagniamo i nostri clienti verso la trasformazione e il rinnovamento strategico del proprio business, al fine di sfruttare al meglio le potenzialità offerte dalla transizione digitale verso l’Industria 4.0</p>
@@ -182,7 +182,7 @@ module.exports = class {
 
           <!-- How it works (Steps) -->
           <section class="container py-5 my-2 my-md-4 my-lg-5">
-            <h2 class="h1 text-center pb-3 pb-md-0 mb-md-5">Come lavoriamo</h2>
+            <h2 class="h1 text-center pb-3 pb-md-0 mb-md-5"><a name="come-lavoriamo">Come lavoriamo</a></h2>
             <div class="steps">
               <div class="step pt-0 pt-md-3 pb-5">
                 <div class="step-number">
