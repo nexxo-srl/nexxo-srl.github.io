@@ -11,7 +11,7 @@ module.exports = (eleventyConfig) => {
         .addPassthroughCopy('assets')
         .addPassthroughCopy('favicon.ico')
         .addPassthroughCopy('robots.txt')
-        .addPassthroughCopy({'node_modules/@fortawesome/fontawesome-free/css/all.css': 'assets/vendor/font-awesome/css/all.min.css'})
+        .addPassthroughCopy({'node_modules/@fortawesome/fontawesome-free/css/all.min.css': 'assets/vendor/font-awesome/css/all.min.css'})
         .addPassthroughCopy({'node_modules/@fortawesome/fontawesome-free/webfonts': 'assets/vendor/font-awesome/webfonts'})
         .addPassthroughCopy({'node_modules/@icon/themify-icons/themify-icons.css': 'assets/vendor/themify-icons/css/themify-icons.css'})
         .addPassthroughCopy({'node_modules/@srexi/purecounterjs/dist': 'assets/vendor/purecounter'})
@@ -37,13 +37,13 @@ module.exports = (eleventyConfig) => {
         if (!url) {
             return ''
         }
-        url = url.startsWith('http') ? url : `assets/images/${url}`
+        url = url.startsWith('http') ? url : `assets/img/${url}`
 
         const metadata = await Image(url, {
             formats: ['webp', null],
             widths: widths,
-            urlPath: '/assets/images',
-            outputDir: './_site/assets/images',
+            urlPath: '/assets/img',
+            outputDir: './_site/assets/img',
             filenameFormat: (id, src, width, format, options) => {
                 const extension = path.extname(src)
                 const name = path.basename(src, extension)

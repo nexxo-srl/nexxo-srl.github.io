@@ -5,7 +5,7 @@ module.exports = async function (data) {
       <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
         <div class="container px-3">
           <a href="/" class="navbar-brand pe-3">
-            <img src="assets/img/logo.svg" width="120" alt="Nexxo">
+            <img src="/assets/img/logo.svg" width="120" alt="Nexxo">
           </a>
           <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">

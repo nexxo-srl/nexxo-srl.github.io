@@ -126,7 +126,7 @@ module.exports = class {
                 <p class="fs-lg pb-lg-3 mb-1">La nostra combo è quando un cliente ed un’azienda lavorano come un’unica entità nel raggiungimento degli stessi obiettivi.</p>
               </div>
               <div class="col-xl-6 col-md-7 offset-xl-1 pb-4 pb-sm-3 pb-lg-0 mb-4 mb-sm-5 mb-lg-0">
-                <img src="assets/img/landing/software-company/about-us.jpg" class="rounded-3 shadow-sm" alt="Image">
+                ${await this.image('landing/software-company/about-us.jpg', 'Image', 'rounded-3 shadow-sm')}                
               </div>
             </div>
           </section>
@@ -148,7 +148,7 @@ module.exports = class {
                   <a href="#" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                     <div class="card-body pt-3">
                       <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                        <img src="assets/img/services/icons/cms.svg" class="d-block m-1" width="40" alt="Icon">
+                        ${await this.image('services/icons/cms.svg', 'Icon', 'd-block m-1', [40], '40w')}
                       </div>
                       <h2 class="h4 d-inline-flex align-items-center">
                         Marketing e comunicazione
@@ -164,7 +164,7 @@ module.exports = class {
                   <a href="#" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                     <div class="card-body pt-3">
                       <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                        <img src="assets/img/services/icons/rocket.svg" class="d-block m-1" width="40" alt="Icon">
+                        ${await this.image('services/icons/rocket.svg', 'Icon', 'd-block m-1', [40], '40w')}                      
                       </div>
                       <h2 class="h4 d-inline-flex align-items-center">
                         Tecnologie informatiche
@@ -190,7 +190,7 @@ module.exports = class {
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.3" data-disable-parallax-down="lg">
-                    <img src="assets/img/home/how-it-works/accordo-di-riservatezza.png" class="d-dark-mode-none" width="306" alt="Accordo di riservatezza">
+                    ${await this.image('home/how-it-works/accordo-di-riservatezza.png', 'Accordo di riservatezza', 'd-dark-mode-none', [306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.4" data-disable-parallax-down="lg">
                     <h3 class="h4">Accordo di riservatezza</h3>
@@ -204,7 +204,7 @@ module.exports = class {
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="lg">
-                    <img src="assets/img/home/how-it-works/fase-conoscitiva.png" class="d-dark-mode-none" width="306" alt="Illustration">
+                    ${await this.image('home/how-it-works/fase-conoscitiva.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.5" data-disable-parallax-down="lg">
                     <h3 class="h4">Fase conoscitiva</h3>
@@ -222,7 +222,7 @@ module.exports = class {
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.3" data-disable-parallax-down="lg">
-                    <img src="assets/img/home/how-it-works/fase-ux-ui-design.png" class="d-dark-mode-none" width="306" alt="Illustration">
+                    ${await this.image('home/how-it-works/fase-ux-ui-design.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.4" data-disable-parallax-down="lg">
                     <h3 class="h4">Fase UX/UI Design</h3>
@@ -240,7 +240,7 @@ module.exports = class {
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="lg">
-                    <img src="assets/img/home/how-it-works/fase-conclusiva.png" class="d-dark-mode-none" width="306" alt="Illustration">
+                    ${await this.image('home/how-it-works/fase-conclusiva.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.6" data-disable-parallax-down="lg">
                     <h3 class="h4">Fase conclusiva</h3>
@@ -258,25 +258,25 @@ module.exports = class {
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-xl-3">
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  <img src="assets/img/home/why-choose-us/icona-01.png" width="42" alt="Icon">
+                  ${await this.image('home/why-choose-us/icona-01.png', 'Icon', '', [42], '42w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">Creiamo la tua crescita digitale</h3>
               </div>
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  <img src="assets/img/home/why-choose-us/icona-02.png" width="42" alt="Icon">
+                  ${await this.image('home/why-choose-us/icona-02.png', 'Icon', '', [42], '42w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">Uniamo marketing e tecnologia</h3>
               </div>
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  <img src="assets/img/home/why-choose-us/icona-03.png" width="42" alt="Icon">
+                  ${await this.image('home/why-choose-us/icona-03.png', 'Icon', '', [42], '42w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">Sviluppiamo soluzioni multisettoriali</h3>
               </div>
               <div class="col text-center">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  <img src="assets/img/home/why-choose-us/icona-04.png" width="42" alt="Icon">
+                  ${await this.image('home/why-choose-us/icona-04.png', 'Icon', '', [42], '42w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">Il metodo è al centro del nostro lavoro</h3>
               </div>
@@ -298,7 +298,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        <img src="assets/img/landing/medical/services/cardiology.svg" width="28" alt="Icon">
+                        ${await this.image('landing/medical/services/cardiology.svg', 'Icon', '', [28], '28w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Industriale</h3>
@@ -313,7 +313,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        <img src="assets/img/landing/medical/services/scalpel.svg" width="28" alt="Icon">
+                        ${await this.image('landing/medical/services/scalpel.svg', 'Icon', '', [28], '28w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Connettività e cybersecurity</h3>
@@ -328,7 +328,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        <img src="assets/img/landing/medical/services/x-ray.svg" width="28" alt="Icon">
+                        ${await this.image('landing/medical/services/x-ray.svg', 'Icon', '', [28], '28w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Sicurezza</h3>
@@ -345,7 +345,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        <img src="assets/img/landing/medical/services/stethoscope.svg" width="28" alt="Icon">
+                        ${await this.image('landing/medical/services/stethoscope.svg', 'Icon', '', [28], '28w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Manutenzioni, tracciabilità ed ispezione</h3>
@@ -360,7 +360,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        <img src="assets/img/landing/medical/services/lungs.svg" width="28" alt="Icon">
+                        ${await this.image('landing/medical/services/lungs.svg', 'Icon', '', [28], '28w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Assicurativo e finanziario</h3>
@@ -375,7 +375,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        <img src="assets/img/landing/medical/services/tooth.svg" width="28" alt="Icon">
+                        ${await this.image('landing/medical/services/tooth.svg', 'Icon', '', [28], '28w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Beni di valore</h3>
