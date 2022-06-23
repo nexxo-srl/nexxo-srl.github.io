@@ -3,8 +3,10 @@ const path = require('path')
 const Image = require('@11ty/eleventy-img')
 const navigationPlugin = require('@11ty/eleventy-navigation')
 const sitemap = require('@quasibit/eleventy-plugin-sitemap')
+const i18n = require('eleventy-plugin-i18n')
 const htmlmin = require('html-minifier')
 const Nexxo = require('./_data/nexxo')
+const translations = require('./_data/i18n/translations')
 
 module.exports = (eleventyConfig) => {
     eleventyConfig
@@ -31,6 +33,13 @@ module.exports = (eleventyConfig) => {
         sitemap: {
             hostname: Nexxo.domain,
         },
+    })
+    
+    eleventyConfig.addPlugin(i18n, {
+        translations,
+        fallbackLocales: {
+            '*': 'en-GB'
+        }
     })
 
     eleventyConfig.addFilter('image', async (url, altText, cssClasses, widths = [null], sizes = '') => {

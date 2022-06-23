@@ -12,11 +12,11 @@ module.exports = async function(data) {
     const tagManagerId = ''
 
     return `<!doctype html>
-        <html lang="it-IT">
+        <html lang="${data.locale}" dir="${data.dir}">
             <head>
                 <meta charset="utf-8">
                 <title>${data.pageTitle}</title>
-
+                
                 <!-- SEO Meta Tags -->
                 <meta name="description" content="${data.pageDescription}">
                 <meta name="author" content="${data.author}">
