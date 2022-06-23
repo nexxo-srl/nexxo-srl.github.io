@@ -38,7 +38,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPlugin(i18n, {
         translations,
         fallbackLocales: {
-            '*': 'en-GB'
+            '*': 'it'
         }
     })
 
@@ -93,8 +93,18 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.setBrowserSyncConfig({
         callbacks: {
             ready: function (err, bs) {
-                // Handle 404 page when running in serve/dev mode
                 bs.addMiddleware('*', (req, res) => {
+
+                    // Handle redirect to default language from root
+                    if(req.url === '/'){
+                        res.writeHead(302, {
+                            location: 'it'
+                        })
+                        res.end()
+                        return
+                    }
+
+                    // Handle 404 page when running in serve/dev mode
                     const page404content = fs.readFileSync('_site/404.html')
                     res.writeHead(404, {'Content-Type': 'text/html; charset=UTF-8'})
                     res.write(page404content)

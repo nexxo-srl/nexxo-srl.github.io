@@ -1,1 +1,2 @@
-Sitemap: https://www.nexxoxp.com/sitemap.xml
+User-agent: *
+Disallow: /
