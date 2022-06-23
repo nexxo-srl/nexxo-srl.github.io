@@ -94,16 +94,6 @@ module.exports = (eleventyConfig) => {
         callbacks: {
             ready: function (err, bs) {
                 bs.addMiddleware('*', (req, res) => {
-
-                    // Handle redirect to default language from root
-                    if(req.url === '/'){
-                        res.writeHead(302, {
-                            location: 'it'
-                        })
-                        res.end()
-                        return
-                    }
-
                     // Handle 404 page when running in serve/dev mode
                     const page404content = fs.readFileSync('_site/404.html')
                     res.writeHead(404, {'Content-Type': 'text/html; charset=UTF-8'})

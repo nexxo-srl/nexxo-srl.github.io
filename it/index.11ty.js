@@ -2,7 +2,7 @@ module.exports = class {
     data() {
         return {
             layout: 'layout.11ty.js',
-            pageTitle: 'Nexxo Cross Platform S.r.l.',
+            pageTitle: 'Nexxo Cross Platform | Digital Agency',
             author: 'Nexxo Cross Platform S.r.l.',
             pageDescription: 'Forniamo servizi di certificazione dei dati basati su tecnologia IoT e Blockchain che rendono le prestazioni misurabili e praticabili come modello di business.',
             eleventyNavigation: {
@@ -108,7 +108,7 @@ module.exports = class {
                   <i class="bx bxl-tiktok"></i>
                 </a>
               </div>
-              <a href="#" class="nav-link px-0">
+              <a href="${this.i18n('pagesUrl.sectors')}" class="nav-link px-0">
                 Scopri i settori
                 <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
               </a>
@@ -116,10 +116,10 @@ module.exports = class {
           </section>
 
           <!-- About -->
-          <section class="container pt-5 mt-2 mt-md-4 mt-lg-5 pb-md-2 pb-lg-5">
+          <section id="chi-siamo" class="container pt-5 mt-2 mt-md-4 mt-lg-5 pb-md-2 pb-lg-5">
             <div class="row pt-xl-3">
               <div class="col-md-5 text-center text-md-start pb-5">
-                <h1 class="mb-4"><a name="chi-siamo">Chi siamo</a></h1>
+                <h1 class="mb-4"><a>Chi siamo</a></h1>
                 <p class="fs-lg pb-lg-3 mb-1">Siamo un' <strong>agenzia digitale start-up</strong> che aiuta a sviluppare le attività commerciali dei nostri clienti.</p>
                 <p class="fs-lg pb-lg-3 mb-1">Ci proponiamo come <strong>partner tecnologico</strong> alle aziende che hanno bisogno di sviluppare la propria competitività attraverso la <strong>trasformazione digitale</strong>.</p>
                 <p class="fs-lg pb-lg-3 mb-1">Lavoriamo in un ambiente giovanile dove si respira aria di creatività, energia e passione.</p>
@@ -132,10 +132,10 @@ module.exports = class {
           </section>
 
           <!-- Services -->
-          <section class="bg-secondary pb-md-2 pb-lg-5">
+          <section id="cosa-proponiamo" class="bg-secondary pb-md-2 pb-lg-5">
             <div class="d-none d-lg-block"></div>
             <div class="container pb-4 pt-5">
-              <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4"><a name="cosa-proponiamo">Cosa proponiamo</a></h2>
+              <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4"><a>Cosa proponiamo</a></h2>
               <div class="row align-items-center pb-5 mb-lg-2">
                 <div class="text-center text-md-start">
                   <p class="fs-lg text-muted mb-md-0">Accompagniamo i nostri clienti verso la trasformazione e il rinnovamento strategico del proprio business, al fine di sfruttare al meglio le potenzialità offerte dalla transizione digitale verso l’Industria 4.0.</p>
@@ -145,7 +145,7 @@ module.exports = class {
 
                 <!-- Item -->
                 <div class="col py-4 my-2 my-sm-3">
-                  <a href="#" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                  <a href="${this.i18n('pagesUrl.marketingAndCommunication')}" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                     <div class="card-body pt-3">
                       <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
                         ${await this.image('services/icons/cms.svg', 'Icon', 'd-block m-1', [40], '40w')}
@@ -161,7 +161,7 @@ module.exports = class {
 
                 <!-- Item -->
                 <div class="col py-4 my-2 my-sm-3">
-                  <a href="#" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                  <a href="${this.i18n('pagesUrl.informationTechnology')}" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                     <div class="card-body pt-3">
                       <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
                         ${await this.image('services/icons/rocket.svg', 'Icon', 'd-block m-1', [40], '40w')}                      
@@ -181,8 +181,8 @@ module.exports = class {
 
 
           <!-- How it works (Steps) -->
-          <section class="container py-5 my-2 my-md-4 my-lg-5">
-            <h2 class="h1 text-center pb-3 pb-md-0 mb-md-5"><a name="come-lavoriamo">Come lavoriamo</a></h2>
+          <section id="come-lavoriamo" class="container py-5 my-2 my-md-4 my-lg-5">
+            <h2 class="h1 text-center pb-3 pb-md-0 mb-md-5"><a>Come lavoriamo</a></h2>
             <div class="steps">
               <div class="step pt-0 pt-md-3 pb-5">
                 <div class="step-number">
@@ -304,7 +304,7 @@ module.exports = class {
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Industriale</h3>
                         <p class="pb-2 mb-1">Farmaceutica, Chimica, Alimentare, Energia, Oil & Gas, Navale, Automobilistico, Aerospaziale, ecc.</p>
-                        <a href="#l" class="btn btn-link stretched-link px-0">
+                        <a href="${this.i18n('pagesUrl.sectors.industrialSection')}" class="btn btn-link stretched-link px-0">
                           Scopri di più
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
@@ -319,7 +319,7 @@ module.exports = class {
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Connettività e cybersecurity</h3>
                         <p class="pb-2 mb-1">Satelliti, telecomunicazioni, <i>software, server, cloud, cyber security</i>, ecc.</p>
-                        <a href="#" class="btn btn-link stretched-link px-0">
+                        <a href="${this.i18n('pagesUrl.sectors.connectivitySection')}" class="btn btn-link stretched-link px-0">
                           Scopri di più
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
@@ -334,7 +334,7 @@ module.exports = class {
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Sicurezza</h3>
                         <p class="pb-2 mb-1">Siti (industriali, commerciali, condomini, pubblici, militari, ecc), flotte aziendali, trasporti merce, sorveglianza, ecc.</p>
-                        <a href="#" class="btn btn-link stretched-link px-0">
+                        <a href="${this.i18n('pagesUrl.sectors.safetySection')}" class="btn btn-link stretched-link px-0">
                           Scopri di più
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
@@ -351,7 +351,7 @@ module.exports = class {
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Manutenzioni, tracciabilità ed ispezione</h3>
                         <p class="pb-2 mb-1">Industriale, Infrastrutture (industriali, commerciali, condominiali, municipali, militari), logistica, costruzioni, edilizia, gestione condominiale. Catene di approvvigionamenti alimentari e industriali.</p>
-                        <a href="#" class="btn btn-link stretched-link px-0">
+                        <a href="${this.i18n('pagesUrl.sectors.maintenanceSection')}" class="btn btn-link stretched-link px-0">
                           Scopri di più
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
@@ -366,7 +366,7 @@ module.exports = class {
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Assicurativo e finanziario</h3>
                         <p class="pb-2 mb-1">Consulenza, proprietà intellettuale, affari legali, sinistri, ecc.</p>
-                        <a href="#" class="btn btn-link stretched-link px-0">
+                        <a href="${this.i18n('pagesUrl.sectors.insuranceSection')}" class="btn btn-link stretched-link px-0">
                           Scopri di più
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
@@ -381,7 +381,7 @@ module.exports = class {
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Beni di valore</h3>
                         <p class="pb-2 mb-1">Moda, gioielli, arte, cosmetica, vini pregiati, cura della persona, medicale, ecc.</p>
-                        <a href="#" class="btn btn-link stretched-link px-0">
+                        <a href="${this.i18n('pagesUrl.sectors.luxurySection')}" class="btn btn-link stretched-link px-0">
                           Scopri di più
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>

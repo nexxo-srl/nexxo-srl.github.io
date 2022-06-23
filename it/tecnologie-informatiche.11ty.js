@@ -2,12 +2,12 @@ module.exports = class {
     data() {
         return {
             layout: 'layout.11ty.js',
-            pageTitle: 'Contact Us',
+            pageTitle: 'Tecnologie Informatiche',
             author: 'Nexxo Cross Platform S.r.l.',
             pageDescription: 'Forniamo servizi di certificazione dei dati basati su tecnologia IoT e Blockchain che rendono le prestazioni misurabili e praticabili come modello di business.',
             eleventyNavigation: {
-                key: 'contact-us',
-                title: 'Contact Us',
+                key: 'tecnologie-informatiche',
+                title: 'Tecnologie Informatiche',
             },
         }
     }

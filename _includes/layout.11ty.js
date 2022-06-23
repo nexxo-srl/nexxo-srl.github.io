@@ -23,6 +23,7 @@ module.exports = async function(data) {
                 
                 <!-- Viewport -->
                 <meta name="viewport" content="width=device-width, initial-scale=1">
+                ${data.additionalMeta ? data.additionalMeta : '' }
 
                 <!-- Favicon and Touch Icons -->
                 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -173,9 +174,10 @@ module.exports = async function(data) {
                   </div>
                 </div>
 
-                ${await header.call(this, data)}
+                ${data.hideHeader ? '' : await header.call(this, data)}
                 ${data.content}
-                ${await footer.call(this, data)}
+                ${data.hideFooter ? '' : await footer.call(this, data)}
+                
             </body>
 
             <!-- Back to top button -->
