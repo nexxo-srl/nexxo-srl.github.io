@@ -138,7 +138,7 @@ module.exports = class {
               <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4"><a name="cosa-proponiamo">Cosa proponiamo</a></h2>
               <div class="row align-items-center pb-5 mb-lg-2">
                 <div class="text-center text-md-start">
-                  <p class="fs-lg text-muted mb-md-0">Accompagniamo i nostri clienti verso la trasformazione e il rinnovamento strategico del proprio business, al fine di sfruttare al meglio le potenzialità offerte dalla transizione digitale verso l’Industria 4.0</p>
+                  <p class="fs-lg text-muted mb-md-0">Accompagniamo i nostri clienti verso la trasformazione e il rinnovamento strategico del proprio business, al fine di sfruttare al meglio le potenzialità offerte dalla transizione digitale verso l’Industria 4.0.</p>
                 </div>
               </div>
               <div class="row row-cols-1 row-cols-md-2">
@@ -151,10 +151,10 @@ module.exports = class {
                         ${await this.image('services/icons/cms.svg', 'Icon', 'd-block m-1', [40], '40w')}
                       </div>
                       <h2 class="h4 d-inline-flex align-items-center">
-                        Marketing e comunicazione
+                        Marketing e Comunicazione
                         <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
                       </h2>
-                      <p class="fs-sm text-body mb-0">Forniamo servizi e consulenza in marketing e comunicazione aziendale</p>
+                      <p class="fs-sm text-body mb-0">Assistiamo le aziende nella progettazione, elaborazione o revisione del modello di business, integrando le opportune strategie, i processi di marketing e la comunicazione aziendale.</p>
                     </div>
                   </a>
                 </div>
@@ -167,11 +167,11 @@ module.exports = class {
                         ${await this.image('services/icons/rocket.svg', 'Icon', 'd-block m-1', [40], '40w')}                      
                       </div>
                       <h2 class="h4 d-inline-flex align-items-center">
-                        Tecnologie informatiche
+                        Tecnologie Informatiche
                         <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
                       </h2>
-                      <p class="fs-sm text-body mb-0">Forniamo servizi e soluzioni informatiche che si basano sulle tecnologie: </p>
-                        <p class="fs-sm text-body mb-0">Internet-of-Things (IoT) e Blockchain.</p>
+                      <p class="fs-sm text-body mb-0">Supportiamo le aziende che necessitano dell’autenticità e l’integrità dei dati fornendo servizi e soluzioni informatiche che si basano sulle tecnologie:</p>
+                      <p class="fs-sm text-body mb-0">Internet-of-Things (IoT) e Blockchain.</p>
                     </div>
                   </a>
                 </div>
@@ -244,7 +244,8 @@ module.exports = class {
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.6" data-disable-parallax-down="lg">
                     <h3 class="h4">Fase conclusiva</h3>
-                    <p class="mb-0">A seguito dell’approvazione del mock-up viene realizzato, completato e consegnato il tuo progetto.</p>
+                    <p class="mb-0">A seguito dell’approvazione del mock-up viene realizzato e completato il tuo progetto.</p>
+                    <p class="mb-0">La consegna sarà effettuata dopo un accurato collaudo e formazione sul suo corretto utilizzo.</p>
                   </div>
                 </div>
               </div>
@@ -258,25 +259,25 @@ module.exports = class {
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-xl-3">
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  ${await this.image('home/why-choose-us/icona-01.png', 'Icon', '', [42], '42w')}
+                  ${await this.image('home/why-choose-us/icona-01.png', 'Icon', '', [52], '52w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">Creiamo la tua crescita digitale</h3>
               </div>
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  ${await this.image('home/why-choose-us/icona-02.png', 'Icon', '', [42], '42w')}
+                  ${await this.image('home/why-choose-us/icona-02.png', 'Icon', '', [52], '52w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">Uniamo marketing e tecnologia</h3>
               </div>
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  ${await this.image('home/why-choose-us/icona-03.png', 'Icon', '', [42], '42w')}
+                  ${await this.image('home/why-choose-us/icona-03.png', 'Icon', '', [52], '52w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">Sviluppiamo soluzioni multisettoriali</h3>
               </div>
               <div class="col text-center">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  ${await this.image('home/why-choose-us/icona-04.png', 'Icon', '', [42], '42w')}
+                  ${await this.image('home/why-choose-us/icona-04.png', 'Icon', '', [48], '48w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">Il metodo è al centro del nostro lavoro</h3>
               </div>
@@ -290,7 +291,7 @@ module.exports = class {
             <div class="col-lg-4 text-center text-lg-start pb-3 pb-lg-0 mb-4 mb-lg-0">
               <h2 class="h1 mb-lg-4">Al vostro fianco in ogni settore</h2>
               <p class="pb-4 mb-0 mb-lg-3">Affrontiamo insieme ogni problema di business creando e sviluppando soluzioni applicative specifiche. Cerca il tuo settore!</p>
-              <a href="#" class="btn btn-primary shadow-primary btn-lg">Scopri i servizi</a>
+              <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary shadow-primary btn-lg">Contattaci</a>
             </div>
             <div class="col-xl-7 col-lg-8 offset-xl-1">
               <div class="row row-cols-1 row-cols-md-2">
@@ -298,7 +299,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('landing/medical/services/cardiology.svg', 'Icon', '', [28], '28w')}
+                        ${await this.image('sectors/industrial.png', 'Icon', '', [32], '32w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Industriale</h3>
@@ -313,7 +314,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('landing/medical/services/scalpel.svg', 'Icon', '', [28], '28w')}
+                        ${await this.image('sectors/connectivity.png', 'Icon', '', [36], '36w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Connettività e cybersecurity</h3>
@@ -328,7 +329,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('landing/medical/services/x-ray.svg', 'Icon', '', [28], '28w')}
+                        ${await this.image('sectors/safety.png', 'Icon', '', [32], '32w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Sicurezza</h3>
@@ -345,7 +346,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('landing/medical/services/stethoscope.svg', 'Icon', '', [28], '28w')}
+                        ${await this.image('sectors/maintenance.png', 'Icon', '', [32], '32w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Manutenzioni, tracciabilità ed ispezione</h3>
@@ -360,7 +361,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('landing/medical/services/lungs.svg', 'Icon', '', [28], '28w')}
+                        ${await this.image('sectors/insurance.png', 'Icon', '', [32], '32w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Assicurativo e finanziario</h3>
@@ -375,7 +376,7 @@ module.exports = class {
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('landing/medical/services/tooth.svg', 'Icon', '', [28], '28w')}
+                        ${await this.image('sectors/luxury.png', 'Icon', '', [32], '32w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">Beni di valore</h3>
@@ -393,39 +394,15 @@ module.exports = class {
           </div>
         </section>
 
-        <!-- Contacts -->
-        <section class="container py-5 my-2 my-md-4 my-lg-5">
-          <div class="row pb-xl-3">
-            <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
-              <div class="gallery rounded-3 shadow-sm">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.472831886673!2d8.831724515419276!3d45.821815179106835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786808306f1ab89%3A0x6993b5c858a69070!2sVia%20Ernesto%20Cairoli%2C%205%2C%2021100%20Varese%20VA!5e0!3m2!1sen!2sit!4v1654763094121!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-            <div class="col-xl-5 col-md-6 offset-xl-1">
-              <h2 class="h1 pb-4 mb-1 mb-lg-3">Contatti</h2>
-              <ul class="list-unstyled pb-3 mb-0 mb-lg-3">
-                <li class="d-flex mb-3">
-                  <i class="bx bx-map text-muted fs-xl mt-1 me-2"></i>
-                  Via Ernesto Cairoli 5, 21100 Varese - Italia
-                </li>
-                <li class="d-flex mb-3">
-                  <i class="bx bx-phone-call text-muted fs-xl mt-1 me-2"></i>
-                  (+39) 0332 158 0443
-                </li>
-                <li class="d-flex mb-3">
-                  <i class="bx bx-time text-muted fs-xl mt-1 me-2"></i>
-                  <div>
-                    <div><span class="text-dark fw-semibold me-1">Lun – Ven:</span>9:00 am – 18:00 pm</div>
-                  </div>
-                </li>
-                <li class="d-flex mb-3">
-                  <i class="bx bx-envelope text-muted fs-xl mt-1 me-2"></i>
-                  info@nexxoxp.com
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        <section class="position-relative bg-dark py-5">
+        <span class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255, 255, 255, .05)"></span>
+        <div class="container position-relative zindex-5 text-center my-xl-3 py-1 py-md-4 py-lg-5">
+          <p class="lead text-light opacity-70 mb-3">Sei pronto per partire?</p>
+          <h2 class="h1 text-light pb-3 pb-lg-0 mb-lg-5">Avvia un progetto con noi!</h2>
+          <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary shadow-primary btn-lg">Contattaci</a>
+        </div>
+      </section>
+        
     </main>`
     }
 }
