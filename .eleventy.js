@@ -11,13 +11,20 @@ module.exports = (eleventyConfig) => {
         .addPassthroughCopy('assets')
         .addPassthroughCopy('favicon.ico')
         .addPassthroughCopy('robots.txt')
-        .addPassthroughCopy({'node_modules/bootstrap/dist': 'assets/vendor/bootstrap'})
-        .addPassthroughCopy({'node_modules/@fortawesome/fontawesome-free/css/all.css': 'assets/vendor/font-awesome/css/all.min.css'})
+        .addPassthroughCopy({'node_modules/@fortawesome/fontawesome-free/css/all.min.css': 'assets/vendor/font-awesome/css/all.min.css'})
         .addPassthroughCopy({'node_modules/@fortawesome/fontawesome-free/webfonts': 'assets/vendor/font-awesome/webfonts'})
-        .addPassthroughCopy({'node_modules/glightbox/dist': 'assets/vendor/glightbox'})
-        .addPassthroughCopy({'node_modules/aos/dist': 'assets/vendor/aos'})
-        .addPassthroughCopy({'node_modules/ityped/dist': 'assets/vendor/ityped'})
+        .addPassthroughCopy({'node_modules/@icon/themify-icons/themify-icons.css': 'assets/vendor/themify-icons/css/themify-icons.css'})
         .addPassthroughCopy({'node_modules/@srexi/purecounterjs/dist': 'assets/vendor/purecounter'})
+        .addPassthroughCopy({'node_modules/animate.css/animate.min.css': 'assets/vendor/animate/animate.min.css'})
+        .addPassthroughCopy({'node_modules/aos/dist': 'assets/vendor/aos'})
+        .addPassthroughCopy({'node_modules/bootstrap/dist': 'assets/vendor/bootstrap/dist'})
+        .addPassthroughCopy({'node_modules/boxicons/css/boxicons.min.css': 'assets/vendor/boxicons/css/boxicons.min.css'})
+        .addPassthroughCopy({'node_modules/boxicons/fonts': 'assets/vendor/boxicons/fonts'})
+        .addPassthroughCopy({'node_modules/glightbox/dist': 'assets/vendor/glightbox'})
+        .addPassthroughCopy({'node_modules/ityped/dist': 'assets/vendor/ityped'})
+        .addPassthroughCopy({'node_modules/jarallax/dist': 'assets/vendor/jarallax/dist'})
+        .addPassthroughCopy({'node_modules/smooth-scroll/dist': 'assets/vendor/smooth-scroll/dist'})
+        .addPassthroughCopy({'node_modules/swiper': 'assets/vendor/swiper'})
 
     eleventyConfig.addPlugin(navigationPlugin)
     eleventyConfig.addPlugin(sitemap, {
@@ -30,13 +37,13 @@ module.exports = (eleventyConfig) => {
         if (!url) {
             return ''
         }
-        url = url.startsWith('http') ? url : `assets/images/${url}`
+        url = url.startsWith('http') ? url : `assets/img/${url}`
 
         const metadata = await Image(url, {
             formats: ['webp', null],
             widths: widths,
-            urlPath: '/assets/images',
-            outputDir: './_site/assets/images',
+            urlPath: '/assets/img',
+            outputDir: './_site/assets/img',
             filenameFormat: (id, src, width, format, options) => {
                 const extension = path.extname(src)
                 const name = path.basename(src, extension)
