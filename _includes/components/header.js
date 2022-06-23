@@ -4,7 +4,7 @@ module.exports = async function (data) {
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
       <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
         <div class="container px-3">
-          <a href="/" class="navbar-brand pe-3">
+          <a href="${this.i18n('pagesUrl.homepage')}" class="navbar-brand pe-3">
             <img src="/assets/img/logo.svg" width="120" alt="Nexxo">
           </a>
           <div id="navbarNav" class="offcanvas offcanvas-end">
@@ -16,10 +16,10 @@ module.exports = async function (data) {
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                  <a href="/#chi-siamo" class="nav-link">Chi siamo</a>
+                  <a href="${this.i18n('pagesUrl.homepage.sectionWhoWeAre')}" class="nav-link">Chi siamo</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="/#cosa-proponiamo" class="nav-link dropdown-toggle">Cosa proponiamo</a>
+                  <a href="${this.i18n('pagesUrl.homepage.sectionWhatWeDo')}" class="nav-link dropdown-toggle">Cosa proponiamo</a>
                   <div class= "dropdown-menu">
                     <ul class="list-unstyled">
                       <li>
@@ -32,10 +32,10 @@ module.exports = async function (data) {
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Settori</a>
+                  <a href="${this.i18n('pagesUrl.sectors')}" class="nav-link">Settori</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/#come-lavoriamo" class="nav-link">Come lavoriamo</a>
+                  <a href="${this.i18n('pagesUrl.homepage.sectionHowWeWork')}" class="nav-link">Come lavoriamo</a>
                 </li>
               </ul>
             </div>

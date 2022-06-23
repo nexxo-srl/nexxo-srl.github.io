@@ -1,4 +1,16 @@
 module.exports = {
+    homepage: {
+        'it': '/it/',
+        sectionWhoWeAre: {
+            'it': '/it/#chi-siamo'
+        },
+        sectionWhatWeDo: {
+            'it': '/it/#cosa-proponiamo'
+        },
+        sectionHowWeWork: {
+            'it': '/it/#come-lavoriamo'
+        }
+    },
     marketingAndCommunication: {
         'it': '/it/marketing-e-comunicazione',
         'en': '/en/marketing-and-communication'
