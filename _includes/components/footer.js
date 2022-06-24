@@ -1,13 +1,17 @@
 module.exports = async function (data) {
-    return ` <footer class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
+    const footerAdditionalClasses = data.isWhiteFooter ? '' : 'dark-mode bg-dark'
+    const titleAdditionalClasses = data.isWhiteFooter ? '' : 'text-dark'
+    const textAdditionalClasses = data.isWhiteFooter ? '' : 'text-light'
+
+    return ` <footer class="footer ${footerAdditionalClasses} pt-5 pb-4 pb-lg-5">
       <div class="container pt-lg-4">
         <div class="row pb-5">
           <div class="col-lg-4 col-md-6">
-            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+            <div class="navbar-brand ${titleAdditionalClasses} p-0 me-0 mb-3 mb-lg-4">
               Nexxo Cross Platform S.r.l.
             </div>
-            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Siamo un'agenza digitale Start-Up che aiuta a sviuluppare le attività commerciali dei propri clienti. Ci proponiamo come partner tecnologico principale alle aziende industriali che hanno bisogno di sviluppare la propria competitività attraverso la trasfromazione digitale.</p>
-            <p class="fs-sm text-light opacity-70">Via E. Cairoli 5, 21100 Varese (VA) - ITALY<br/>(VAT Code) P.IVA 03799860121</p>
+            <p class="fs-sm ${textAdditionalClasses} opacity-70 pb-lg-3 mb-4">Siamo un'agenza digitale Start-Up che aiuta a sviuluppare le attività commerciali dei propri clienti. Ci proponiamo come partner tecnologico principale alle aziende industriali che hanno bisogno di sviluppare la propria competitività attraverso la trasfromazione digitale.</p>
+            <p class="fs-sm ${textAdditionalClasses} opacity-70">Via E. Cairoli 5, 21100 Varese (VA) - ITALY<br/>(VAT Code) P.IVA 03799860121</p>
             <form class="needs-validation" novalidate>
               <label for="subscr-email" class="form-label">Iscriviti per ricevere ulteriori informazioni</label>
               <div class="input-group">
@@ -22,7 +26,7 @@ module.exports = async function (data) {
             <div id="footer-links" class="row">
               <div class="col-lg-4">
                 <h6 class="mb-2">
-                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                  <a href="#useful-links" class="d-block ${titleAdditionalClasses} dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
                 </h6>
                 <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column pb-lg-1 mb-lg-3">
@@ -39,7 +43,7 @@ module.exports = async function (data) {
               </div>
               <div class="col-xl-4 col-lg-3">
                 <h6 class="mb-2">
-                  <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+                  <a href="#social-links" class="d-block ${titleAdditionalClasses} dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
                 </h6>
                 <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column mb-2 mb-lg-0">
@@ -59,7 +63,7 @@ module.exports = async function (data) {
           </div>
         </div>
         <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
-          <span class="text-light opacity-50">&copy; 2022 Nexxo Cross Platform S.r.l. | P.IVA 03799860121 | Tutti i diritti sono riservati.</span>
+          <span class="${textAdditionalClasses} opacity-50">&copy; 2022 Nexxo Cross Platform S.r.l. | P.IVA 03799860121 | Tutti i diritti sono riservati.</span>
         </p>
       </div>
     </footer>

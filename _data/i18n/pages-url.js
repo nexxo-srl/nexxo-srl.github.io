@@ -28,20 +28,38 @@ module.exports = {
         industrialSection:{
             'it': '/it/settori#industriale'
         },
-        connectivitySection:{
-            'it': '/it/settori#industriale'
-        },
-        safetySection:{
-            'it': '/it/settori#industriale'
+        industrialSectionId:{
+            'it': 'industriale'
         },
         maintenanceSection:{
-            'it': '/it/settori#industriale'
+            'it': '/it/settori#manutenzione'
+        },
+        maintenanceSectionId:{
+            'it': 'manutenzione'
+        },
+        connectivitySection:{
+            'it': '/it/settori#connettivita'
+        },
+        connectivitySectionId:{
+            'it': 'connettivita'
+        },
+        safetySection:{
+            'it': '/it/settori#sicurezza'
+        },
+        safetySectionId:{
+            'it': 'sicurezza'
         },
         insuranceSection:{
-            'it': '/it/settori#industriale'
+            'it': '/it/settori#assicurativo-e-finanziario'
+        },
+        insuranceSectionId:{
+            'it': 'assicurativo-e-finanziario'
         },
         luxurySection:{
-            'it': '/it/settori#industriale'
+            'it': '/it/settori#beni-di-valore'
+        },
+        luxurySectionId:{
+            'it': 'beni-di-valore'
         }
     }
 }
