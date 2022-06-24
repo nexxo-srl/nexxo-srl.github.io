@@ -136,9 +136,10 @@ module.exports = async function(data) {
                 <script defer src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
                
                 <!-- Vendor Scripts -->
-                <script defer src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-                <script defer src="/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+                <script defer src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script defer src="/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.js"></script>
                 <script defer src="/assets/vendor/jarallax/dist/jarallax.min.js"></script>
+                <script defer src="/assets/vendor/parallax-js/dist/parallax.min.js"></script>
                 <script defer src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
                 <!-- Theme mode -->
@@ -186,15 +187,8 @@ module.exports = async function(data) {
               <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
             </a>
 
-
-          <!-- Vendor Scripts -->
-          <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-          <script src="/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-          <script src="/assets/vendor/jarallax/dist/jarallax.min.js"></script>
-          <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
           <!-- Main Theme Script -->
-          <script src="/assets/js/theme.min.js"></script>
+          <script defer src="/assets/js/theme.min.js"></script>
 
         </html>`
 }

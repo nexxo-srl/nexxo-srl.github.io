@@ -53,35 +53,35 @@ module.exports = class {
 
                         <!-- Item -->
                         <div class="swiper-slide">
-                          <h2 class="display-2 from-start mb-lg-4">${this.i18n('home.title')}</h2>
+                          <h2 class="display-2 from-start mb-lg-4">${this.i18n('home.slideTitle01')}</h2>
                           <div class="from-end">
-                            <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Qualunque siano le tue esigenze, qualunque sia il tuo business, qualunque siano i tuoi obiettivi; intraprendi con noi il tuo percorso di trasformazione digitale.</p>
+                            <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">${this.i18n('home.slideDescription01')}</p>
                           </div>
                           <div class="scale-up delay-1">
-                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">Cosa proponiamo</a>
+                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.slideCTA')}</a>
                           </div>
 
                         </div>
 
                         <!-- Item -->
                         <div class="swiper-slide">
-                          <h2 class="display-2 from-start mb-lg-4">Il binomio perfetto tra Marketing e Tecnologia</h2>
+                          <h2 class="display-2 from-start mb-lg-4">${this.i18n('home.slideTitle02')}</h2>
                           <div class="from-end">
-                            <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Uniamo servizi di comunicazione digitale, Internet-of-Things (IoT) & Blockchain per un'esperienza più completa ed innovativa che mai!</p>
+                            <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">${this.i18n('home.slideDescription02')}</p>
                           </div>
                           <div class="scale-up delay-1">
-                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">Cosa proponiamo</a>
+                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.slideCTA')}</a>
                           </div>
                         </div>
 
                         <!-- Item -->
                         <div class="swiper-slide">
-                          <h2 class="display-2 from-start mb-lg-4">Al vostro fianco in ogni settore</h2>
+                          <h2 class="display-2 from-start mb-lg-4">${this.i18n('home.slideTitle03')}</h2>
                           <div class="from-end">
-                            <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Affrontiamo insieme ogni problema di business creando e sviluppando soluzioni applicative specifiche. Condividi con noi il tuo caso d’uso!</p>
+                            <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">${this.i18n('home.slideDescription03')}</p>
                           </div>
                           <div class="scale-up delay-1">
-                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">Cosa proponiamo</a>
+                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.slideCTA')}</a>
                           </div>
                         </div>
                       </div>
@@ -117,6 +117,8 @@ module.exports = class {
 
           <!-- About -->
           <section id="chi-siamo" class="container pt-5 mt-2 mt-md-4 mt-lg-5 pb-md-2 pb-lg-5">
+            ${await this.image('home/how-it-works/fase-conoscitiva.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
+            ${await this.image('home/fase-conoscitiva.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
             <div class="row pt-xl-3">
               <div class="col-md-5 text-center text-md-start pb-5">
                 <h1 class="mb-4"><a>Chi siamo</a></h1>

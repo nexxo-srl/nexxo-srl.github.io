@@ -23,7 +23,7 @@ module.exports = async function (data) {
               <div class="input-group">
                 <input type="email" name="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Email" required>
                 <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
-                <div class="invalid-tooltip position-absolute top-100 start-0">La tua email.</div>
+                <div class="invalid-tooltip position-absolute top-100 start-0">Inserisci una email valida!</div>
                 <button type="submit" class="btn btn-primary">
                     <span class="spinner-border spinner-border-sm" style="display: none;" role="status" aria-hidden="true"></span>
                     <span>Iscriviti</span>
@@ -97,15 +97,15 @@ module.exports = async function (data) {
             <div id="footer-links" class="row">
               <div class="col-lg-4">
                 <h6 class="mb-2">
-                  <a href="#useful-links" class="d-block ${titleAdditionalClasses} dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                  <a href="#useful-links" class="d-block ${titleAdditionalClasses} dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Link utili</a>
                 </h6>
                 <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column pb-lg-1 mb-lg-3">
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Chi Siamo</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Cosa Proponiamo</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Settori</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Come Lavoriamo</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.sectionWhoWeAre')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Chi Siamo</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.sectionWhatWeDo')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Cosa Proponiamo</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.sectors')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Settori</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.sectionHowWeWork')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Come Lavoriamo</a></li>
                   </ul>
                   <ul class="nav flex-column mb-2 mb-lg-0">
                     <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Informativa Privacy</a></li>
@@ -114,7 +114,7 @@ module.exports = async function (data) {
               </div>
               <div class="col-xl-4 col-lg-3">
                 <h6 class="mb-2">
-                  <a href="#social-links" class="d-block ${titleAdditionalClasses} dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+                  <a href="#social-links" class="d-block ${titleAdditionalClasses} dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Social</a>
                 </h6>
                 <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column mb-2 mb-lg-0">
