@@ -14,6 +14,9 @@ module.exports = class {
     }
 
     async render(data) {
+        const recaptchaClientKey = '6Ldlg5kgAAAAACt717ealB2V2KO-T6XuuTwzfOTB'
+        const contactFormUrl = 'https://us-central1-nexxoxp-website.cloudfunctions.net/contactUs'
+
         return `<main class="page-wrapper">
 
       <!-- Page content -->
@@ -81,34 +84,96 @@ module.exports = class {
 
         <!-- Contact form -->
         <div class="bg-secondary rounded-3 py-5 px-3 px-sm-0 mb-xl-4">
-          <form class="needs-validation row justify-content-center py-lg-3 py-xl-4" novalidate>
+          <form id="contact-form" class="needs-validation row justify-content-center py-lg-3 py-xl-4" novalidate method="POST" action="${contactFormUrl}">
+            <input type="hidden" name="subject" value="Nexxoxp.com - Richiesta info contattaci"/>
             <div class="col-xl-8 col-lg-9 col-md-10 col-sm-11">
               <h2 class="h1 pb-lg-1 mb-4">Lasciaci un messaggio</h2>
               <p class="fs-lg text-muted pb-lg-1 mb-4">Hai un progetto in mente? Contattaci oppure compila il form qui sotto.</p>
               <div class="row">
                 <div class="col-sm-6 mb-4">
                   <label for="name" class="form-label fs-base">Nome completo</label>
-                  <input type="text" id="name" class="form-control form-control-lg" required>
+                  <input type="text" name="name" id="name" class="form-control form-control-lg" required>
                   <div class="invalid-feedback">Per favore inserisci il tuo nome!</div>
                 </div>
                 <div class="col-sm-6 mb-4">
                   <label for="email" class="form-label fs-base">Indirizzo email</label>
-                  <input type="email" id="email" class="form-control form-control-lg" required>
+                  <input type="email" name="email" id="email" class="form-control form-control-lg" required>
                   <div class="invalid-feedback">Per favore inserisci un indirizzo email valido!</div>
                 </div>
                 <div class="col-12 mb-4">
                   <label for="message" class="form-label fs-base">Messaggio</label>
-                  <textarea id="message" class="form-control form-control-lg" rows="4" required></textarea>
+                  <textarea id="message" name="message" class="form-control form-control-lg" rows="4" required></textarea>
                   <div class="invalid-feedback">Per favore inserisci il tuo messaggio!</div>
                 </div>
               </div>
-              <div class="form-check mb-4">
-                <input type="checkbox" id="terms" class="form-check-input" required>
-                <label for="terms" class="form-check-label fs-base">Acconsento ai <a href="#">Termini &amp; Condizioni</a></label>
-              </div>
-              <button type="submit" class="btn btn-primary btn-lg shadow-primary">Invia messaggio</button>  
+              <button type="submit" class="btn btn-primary shadow-primary btn-lg">
+                <span class="spinner-border spinner-border-sm" style="display: none;" role="status" aria-hidden="true"></span>
+                <span>Invia messaggio</span>
+              </button>              
             </div>
           </form>
+          <div id="contact-form-done" class="col-lg-6 col-md-7 offset-xl-1" style="display: none;">
+              <h4 class="text-center">Grazie per averci contattato! Un membro del nostro team si metterà in contatto con te il prima possibile.</h4>
+          </div>
+          <script src="https://www.google.com/recaptcha/api.js?render=${recaptchaClientKey}"></script>
+            <script>
+                const form = document.getElementById('contact-form')
+                const formReplacement = document.getElementById('contact-form-done')
+                const submitButton = form.getElementsByTagName('button')[0]
+                const checkRecaptcha = callback => {
+                    grecaptcha.ready(function() {
+                        grecaptcha.execute('${recaptchaClientKey}', {action: 'submit'})
+                            .then(token => callback(null, token))
+                            .catch(error => callback(error))
+                    })
+                }
+                const lockForm = () => {
+                    submitButton.classList.add('disabled')
+                    submitButton.children[0].style.cssText = ''
+                }
+                const unlockForm = () => {
+                    submitButton.children[0].style.cssText = 'display: none;'
+                    submitButton.classList.remove('disabled')
+                }
+                form.addEventListener('submit', (event) => {
+                    event.preventDefault()
+                    
+                    checkRecaptcha((error, token) => {
+                        if (error) {
+                            console.log(error)
+                            return
+                        }
+                        
+                        const request = new XMLHttpRequest()
+                        const formData = new FormData(form)
+                        formData.set('recaptcha', token)
+                        const fail = () => {
+                            unlockForm()
+                            alert('L\\'invio della email è fallito')
+                        }
+                        const success = () => {
+                            form.reset()
+                            unlockForm()
+                            form.style.cssText = 'display: none;'
+                            formReplacement.style.cssText = ''
+                        }
+                    
+                        request.open('POST', form.action, true)
+                        request.onload = function() {
+                            if (this.status >= 200 && this.status < 400) {
+                                success()
+                            } else {
+                                fail()
+                            }
+                        }
+                        request.onerror = function() { fail() }
+                        
+                        lockForm()
+                        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
+                        request.send(new URLSearchParams(formData))
+                    })
+                })
+            </script>
         </div>
       </section>
     </main>`

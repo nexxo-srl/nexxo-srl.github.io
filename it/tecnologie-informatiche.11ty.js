@@ -218,7 +218,7 @@ module.exports = class {
                 <span>Invia richiesta</span>
               </button>
             </form>
-            <div id="contact-form-done" style="display: none;">
+            <div id="contact-form-done" class="col-lg-6 col-md-7 offset-xl-1" style="display: none;">
               <h4 class="text-center">Grazie per averci contattato! Un membro del nostro team si metterà in contatto con te il prima possibile.</h4>
             </div>
             <script src="https://www.google.com/recaptcha/api.js?render=${recaptchaClientKey}"></script>
