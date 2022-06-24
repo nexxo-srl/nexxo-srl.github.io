@@ -116,9 +116,8 @@ module.exports = class {
           </section>
 
           <!-- About -->
-          <section id="chi-siamo" class="container pt-5 mt-2 mt-md-4 mt-lg-5 pb-md-2 pb-lg-5">
-            ${await this.image('home/how-it-works/fase-conoscitiva.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
-            ${await this.image('home/fase-conoscitiva.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
+          <section id="chi-siamo" class="container pt-5 mt-2 mt-md-4 mt-lg-5 pb-md-2 pb-lg-5">            
+            
             <div class="row pt-xl-3">
               <div class="col-md-5 text-center text-md-start pb-5">
                 <h1 class="mb-4"><a>Chi siamo</a></h1>
@@ -184,7 +183,7 @@ module.exports = class {
 
           <!-- How it works (Steps) -->
           <section id="come-lavoriamo" class="container py-5 my-2 my-md-4 my-lg-5">
-            <h2 class="h1 text-center pb-3 pb-md-0 mb-md-5"><a>Come lavoriamo</a></h2>
+            <h2 class="h1 pb-3 pb-md-0 mb-md-5"><a>Come lavoriamo</a></h2>
             <div class="steps">
               <div class="step pt-0 pt-md-3 pb-5">
                 <div class="step-number">
