@@ -8,7 +8,7 @@ const whitelist = [
     'https://www.nexxoxp.com',
     'https://nexxoxp.github.io'
 ]
-const nexxoxpInfoEmail = 'info@forge.srl'
+const nexxoxpInfoEmail = 'info@nexxoxp.com'
 const corsSettings = {
     origin: (origin, callback) => {
         if (!origin || whitelist.includes(origin)) {
