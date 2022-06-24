@@ -4,12 +4,10 @@ const nodemailer = require('nodemailer')
 const fetch = require('node-fetch')
 
 const whitelist = [
-    'https://forge-srl.it',
-    'https://www.forge-srl.it',
-    'https://forge.srl',
-    'https://www.forge.srl',
+    'https://nexxoxp.com',
+    'https://www.nexxoxp.com'
 ]
-const forgeInfoEmail = 'info@forge.srl'
+const nexxoxpInfoEmail = 'info@nexxoxp.com'
 const corsSettings = {
     origin: (origin, callback) => {
         if (!origin || whitelist.includes(origin)) {
@@ -108,7 +106,7 @@ exports.contactUs = functions.https.onRequest((request, response) => {
 
                 transporter.sendMail({
                     from: registerConfig.username,
-                    to: forgeInfoEmail,
+                    to: nexxoxpInfoEmail,
                     replyTo: sender,
                     subject: subject,
                     text: message,

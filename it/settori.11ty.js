@@ -31,11 +31,11 @@ module.exports = class {
       <section class="container d-sm-flex align-items-center justify-content-between pb-4 mb-2 mb-lg-3">
         <h1 class="mb-sm-0 me-sm-3">Settori</h1>
         <select class="form-select" style="width: 240px;">
-          <option value="All categories">All categories</option>
-          <option value="Web Design">Value Services</option>
+          <option value="All categories">Categorie</option>
           <option value="Graphic Design">Manufacturing</option>
           <option value="UI / UX">Maintenance</option>
           <option value="Motion Design">Safety & Security</option>
+          <option value="Web Design">Value Services</option>
         </select>
       </section>
 
