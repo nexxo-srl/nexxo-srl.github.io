@@ -57,7 +57,7 @@ module.exports = async function (data) {
               <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
                 <h6 class="mb-2">Contattaci</h6>
                 <a href="mailto:email@example.com" class="fw-medium">info@nexxoxp.com</a>
-                <p class="fs-sm text-light opacity-70">Tel: +39 0332 158 0443</p>
+                <p class="fs-sm ${textAdditionalClasses} opacity-70">Tel: +39 0332 158 0443</p>
               </div>
             </div>
           </div>
