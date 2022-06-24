@@ -14,6 +14,9 @@ module.exports = class {
     }
 
     async render(data) {
+        const recaptchaClientKey = '6Ldlg5kgAAAAACt717ealB2V2KO-T6XuuTwzfOTB'
+        const contactFormUrl = 'https://us-central1-nexxoxxp-website.cloudfunctions.net/contactUs'
+
         return `<main class="page-wrapper">
 
       <!-- Breadcrumb -->
@@ -191,26 +194,88 @@ module.exports = class {
               <p class="lead mb-2 mb-md-3">Hai un progetto in mente?</p>
               <h2 class="h1 pb-3">Non esitare a contattarci</h2>
             </div>
-            <form class="col-lg-6 col-md-7 offset-xl-1 needs-validation" novalidate>
+            <form id="contact-form" class="col-lg-6 col-md-7 offset-xl-1 needs-validation" novalidate  method="POST" action="${contactFormUrl}">
+              <input type="hidden" name="subject" value="Nexxoxp.com - Richiesta info tecnologie informatiche"/>
               <div class="row">
                 <div class="col-sm-6 mb-4">
                   <label for="name" class="form-label fs-base">Nome e Cognome</label>
-                  <input type="text" id="name" class="form-control form-control-lg" required>
+                  <input type="text" name="name" id="name" class="form-control form-control-lg" required>
                   <div class="invalid-feedback">Inserisci il tuo Nome e Cognome!</div>
                 </div>
                 <div class="col-sm-6 mb-4">
                   <label for="email" class="form-label fs-base">Email</label>
-                  <input type="email" id="email" class="form-control form-control-lg" required>
+                  <input type="email" name="email" id="email" class="form-control form-control-lg" required>
                   <div class="invalid-feedback">Inserisci la tua email!</div>
                 </div>
                 <div class="col-12 pb-2 mb-4">
                   <label for="message" class="form-label fs-base">Messaggio</label>
-                  <textarea id="message" class="form-control form-control-lg" rows="4" required></textarea>
+                  <textarea id="message" name="message" class="form-control form-control-lg" rows="4" required></textarea>
                   <div class="invalid-feedback">inserisci il tuo messaggio!</div>
                 </div>
               </div>
               <button type="submit" class="btn btn-primary shadow-primary btn-lg">Invia richiesta</button>
             </form>
+            <div id="contact-form-done" style="display: none;">
+              <h4 class="text-center">Grazie per averci contattato! Un membro del nostro team si metterà in contatto con te il prima possibile.</h4>
+            </div>
+            <script src="https://www.google.com/recaptcha/api.js?render=${recaptchaClientKey}"></script>
+            <script>
+                                    const form = document.getElementById('contact-form')
+                                    const formReplacement = document.getElementById('contact-form-done')
+                                    const submitButton = form.getElementsByTagName('button')[0]
+                                    const checkRecaptcha = callback => {
+                                        grecaptcha.ready(function() {
+                                            grecaptcha.execute('${recaptchaClientKey}', {action: 'submit'})
+                                                .then(token => callback(null, token))
+                                                .catch(error => callback(error))
+                                        })
+                                    }
+                                    const lockForm = () => {
+                                        submitButton.classList.add('disabled')
+                                        submitButton.children[0].style.cssText = ''
+                                    }
+                                    const unlockForm = () => {
+                                        submitButton.children[0].style.cssText = 'display: none;'
+                                        submitButton.classList.remove('disabled')
+                                    }
+                                    form.addEventListener('submit', (event) => {
+                                        event.preventDefault()
+                                        
+                                        checkRecaptcha((error, token) => {
+                                            if (error) {
+                                                return
+                                            }
+                                            
+                                            const request = new XMLHttpRequest()
+                                            const formData = new FormData(form)
+                                            formData.set('recaptcha', token)
+                                            const fail = () => {
+                                                unlockForm()
+                                                alert('L\\'invio della email è fallito')
+                                            }
+                                            const success = () => {
+                                                form.reset()
+                                                unlockForm()
+                                                form.style.cssText = 'display: none;'
+                                                formReplacement.style.cssText = ''
+                                            }
+                                        
+                                            request.open('POST', form.action, true)
+                                            request.onload = function() {
+                                                if (this.status >= 200 && this.status < 400) {
+                                                    success()
+                                                } else {
+                                                    fail()
+                                                }
+                                            }
+                                            request.onerror = function() { fail() }
+                                            
+                                            lockForm()
+                                            request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
+                                            request.send(new URLSearchParams(formData))
+                                        })
+                                    })
+                                </script>
           </div>
 
           <!-- Pattern -->

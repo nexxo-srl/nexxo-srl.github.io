@@ -5,9 +5,10 @@ const fetch = require('node-fetch')
 
 const whitelist = [
     'https://nexxoxp.com',
-    'https://www.nexxoxp.com'
+    'https://www.nexxoxp.com',
+    'https://nexxoxp.github.io'
 ]
-const nexxoxpInfoEmail = 'info@nexxoxp.com'
+const nexxoxpInfoEmail = 'info@forge.srl'
 const corsSettings = {
     origin: (origin, callback) => {
         if (!origin || whitelist.includes(origin)) {
@@ -80,7 +81,7 @@ exports.contactUs = functions.https.onRequest((request, response) => {
             }
 
             if (!verification.success || verification.score < 0.5) {
-                const errorMessage = `Recaptcha detected "${request.body.name}" <${request.body.from}> is a bot (success: ${verification.success}, score: ${verification.score})`
+                const errorMessage = `Recaptcha detected "${request.body.name}" <${request.body.email}> is a bot (success: ${verification.success}, score: ${verification.score})`
                 const verificationElement = verification['error-codes']
                     ? `\nError codes: ${verification['error-codes'].join(', ')}`
                     : ''
@@ -89,7 +90,7 @@ exports.contactUs = functions.https.onRequest((request, response) => {
 
             try {
                 const name = request.body.name ? request.body.name.replace(/[^\p{L}\p{N}\s]/gu, '') : ''
-                const sender = name ? `"${name}" <${request.body.from}>` : request.body.from
+                const sender = name ? `"${name}" <${request.body.email}>` : request.body.email
                 if (!sender) {
                     return fail('Missing sender')
                 }
