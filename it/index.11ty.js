@@ -93,38 +93,40 @@ module.exports = class {
                 </div>
               </div>
             </div>
+            
+            <!-- Social icons -->
             <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between position-relative zindex-5 pb-5">
               <div class="d-flex mb-4 mb-sm-0">
-                <a href="https://www.linkedin.com/company/nexxo-cross-platform-s-r-l/?viewAsMember=true" target="_blank" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
+                <a href="${data.nexxo.linkedin}" target="_blank" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
                   <i class="bx bxl-linkedin"></i>
                 </a>
-                <a href="https://www.instagram.com/nexxocrossplatform/" target="_blank" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-2">
+                <a href="${data.nexxo.instagram}" target="_blank" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-2">
                   <i class="bx bxl-instagram"></i>
                 </a>
-                <a href="https://www.facebook.com/nexxocrossplatform" target="_blank" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2">
+                <a href="${data.nexxo.facebook}" target="_blank" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2">
                   <i class="bx bxl-facebook"></i>
                 </a>
-                <a href="https://www.tiktok.com/@nexxocrossplatform" target="_blank" class="btn btn-icon btn-secondary btn-tiktok rounded-circle me-2">
+                <a href="${data.nexxo.tiktok}" target="_blank" class="btn btn-icon btn-secondary btn-tiktok rounded-circle me-2">
                   <i class="bx bxl-tiktok"></i>
                 </a>
               </div>
               <a href="${this.i18n('pagesUrl.sectors')}" class="nav-link px-0">
-                Scopri i settori
+                ${this.i18n('home.slideDiscoverSectorsCTA')}
                 <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
               </a>
             </div>
           </section>
 
-          <!-- About -->
-          <section id="chi-siamo" class="container pt-5 mt-2 mt-md-4 mt-lg-5 pb-md-2 pb-lg-5">            
+          <!-- Who We Are Section -->
+          <section id="${this.i18n('pagesUrl.homepage.whoWeAreSectionId')}" class="container pt-5 mt-2 mt-md-4 mt-lg-5 pb-md-2 pb-lg-5">            
             
             <div class="row pt-xl-3">
               <div class="col-md-5 text-center text-md-start pb-5">
-                <h1 class="mb-4"><a>Chi siamo</a></h1>
-                <p class="fs-lg pb-lg-3 mb-1">Siamo un' <strong>agenzia digitale start-up</strong> che aiuta a sviluppare le attività commerciali dei nostri clienti.</p>
-                <p class="fs-lg pb-lg-3 mb-1">Ci proponiamo come <strong>partner tecnologico</strong> alle aziende che hanno bisogno di sviluppare la propria competitività attraverso la <strong>trasformazione digitale</strong>.</p>
-                <p class="fs-lg pb-lg-3 mb-1">Lavoriamo in un ambiente giovanile dove si respira aria di creatività, energia e passione.</p>
-                <p class="fs-lg pb-lg-3 mb-1">La nostra combo è quando un cliente ed un’azienda lavorano come un’unica entità nel raggiungimento degli stessi obiettivi.</p>
+                <h1 class="mb-4"><a>${this.i18n('home.whoWeAre.title')}</a></h1>
+                <p class="fs-lg pb-lg-3 mb-1">${this.i18n('home.whoWeAre.paragraph01')}</p>
+                <p class="fs-lg pb-lg-3 mb-1">${this.i18n('home.whoWeAre.paragraph02')}</p>
+                <p class="fs-lg pb-lg-3 mb-1">${this.i18n('home.whoWeAre.paragraph03')}</p>
+                <p class="fs-lg pb-lg-3 mb-1">${this.i18n('home.whoWeAre.paragraph04')}</p>
               </div>
               <div class="col-xl-6 col-md-7 offset-xl-1 pb-4 pb-sm-3 pb-lg-0 mb-4 mb-sm-5 mb-lg-0">
                 ${await this.image('landing/software-company/about-us.jpg', 'Image', 'rounded-3 shadow-sm')}                
@@ -132,14 +134,14 @@ module.exports = class {
             </div>
           </section>
 
-          <!-- Services -->
-          <section id="cosa-proponiamo" class="bg-secondary pb-md-2 pb-lg-5">
+          <!-- What We Do Section -->
+          <section id="${this.i18n('pagesUrl.homepage.whatWeDoSectionId')}" class="bg-secondary pb-md-2 pb-lg-5">
             <div class="d-none d-lg-block"></div>
             <div class="container pb-4 pt-5">
-              <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4"><a>Cosa proponiamo</a></h2>
+              <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4"><a>${this.i18n('home.whatWeDo.title')}</a></h2>
               <div class="row align-items-center pb-5 mb-lg-2">
                 <div class="text-center text-md-start">
-                  <p class="fs-lg text-muted mb-md-0">Accompagniamo i nostri clienti verso la trasformazione e il rinnovamento strategico del proprio business, al fine di sfruttare al meglio le potenzialità offerte dalla transizione digitale verso l’Industria 4.0.</p>
+                  <p class="fs-lg text-muted mb-md-0">${this.i18n('home.whatWeDo.paragraph01')}</p>
                 </div>
               </div>
               <div class="row row-cols-1 row-cols-md-2">
@@ -152,10 +154,10 @@ module.exports = class {
                         ${await this.image('services/icons/cms.svg', 'Icon', 'd-block m-1', [40], '40w')}
                       </div>
                       <h2 class="h4 d-inline-flex align-items-center">
-                        Marketing e Comunicazione
+                        ${this.i18n('home.whatWeDo.marketing.title')}
                         <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
                       </h2>
-                      <p class="fs-sm text-body mb-0">Assistiamo le aziende nella progettazione, elaborazione o revisione del modello di business, integrando le opportune strategie, i processi di marketing e la comunicazione aziendale.</p>
+                      <p class="fs-sm text-body mb-0">${this.i18n('home.whatWeDo.marketing.paragraph01')}</p>
                     </div>
                   </a>
                 </div>
@@ -168,11 +170,11 @@ module.exports = class {
                         ${await this.image('services/icons/rocket.svg', 'Icon', 'd-block m-1', [40], '40w')}                      
                       </div>
                       <h2 class="h4 d-inline-flex align-items-center">
-                        Tecnologie Informatiche
+                        ${this.i18n('home.whatWeDo.technology.title')}
                         <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
                       </h2>
-                      <p class="fs-sm text-body mb-0">Supportiamo le aziende che necessitano dell’autenticità e l’integrità dei dati fornendo servizi e soluzioni informatiche che si basano sulle tecnologie:</p>
-                      <p class="fs-sm text-body mb-0">Internet-of-Things (IoT) e Blockchain.</p>
+                      <p class="fs-sm text-body mb-0">${this.i18n('home.whatWeDo.technology.paragraph01')}</p>
+                      <p class="fs-sm text-body mb-0">${this.i18n('home.whatWeDo.technology.paragraph02')}</p>
                     </div>
                   </a>
                 </div>
@@ -181,9 +183,9 @@ module.exports = class {
           </section>
 
 
-          <!-- How it works (Steps) -->
-          <section id="come-lavoriamo" class="container py-5 my-2 my-md-4 my-lg-5">
-            <h2 class="h1 pb-3 pb-md-0 mb-md-5"><a>Come lavoriamo</a></h2>
+          <!-- How We Work -->
+          <section id="${this.i18n('pagesUrl.homepage.howWeWorkSectionId')}" class="container py-5 my-2 my-md-4 my-lg-5">
+            <h2 class="h1 pb-3 pb-md-0 mb-md-5"><a>${this.i18n('home.howWeWork.title')}</a></h2>
             <div class="steps">
               <div class="step pt-0 pt-md-3 pb-5">
                 <div class="step-number">
@@ -194,8 +196,8 @@ module.exports = class {
                     ${await this.image('home/how-it-works/accordo-di-riservatezza.png', 'Accordo di riservatezza', 'd-dark-mode-none', [306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.4" data-disable-parallax-down="lg">
-                    <h3 class="h4">Accordo di riservatezza</h3>
-                    <p class="mb-0">Proteggiamo completamente le tue informazioni riservate firmando in primo luogo un Accordo di Riservatezza. Il nostro modello operativo consente di avere un <i>Project Manager</i> che lavora a tempo pieno al tuo progetto.</p>
+                    <h3 class="h4">${this.i18n('home.howWeWork.step01.title')}</h3>
+                    <p class="mb-0">${this.i18n('home.howWeWork.step01.paragraph01')}</p>
                   </div>
                 </div>
               </div>
@@ -208,11 +210,11 @@ module.exports = class {
                     ${await this.image('home/how-it-works/fase-conoscitiva.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.5" data-disable-parallax-down="lg">
-                    <h3 class="h4">Fase conoscitiva</h3>
-                    <p class="mb-0">Ci riuniamo e ascoltiamo le tue esigenze e i tuoi obiettivi per comprendere al meglio il tuo progetto.</p>
+                    <h3 class="h4">${this.i18n('home.howWeWork.step02.title')}</h3>
+                    <p class="mb-0">${this.i18n('home.howWeWork.step02.paragraph01')}</p>
                     <ul>
-                      <li>Descrizione del Progetto - comprensione reciproca dello scopo e degli obiettivi da raggiungere.</li>
-                      <li>Requisiti - ascoltiamo le vostre aspettative lavorando in maniera congiunta, concordando le specifiche finali.</li>
+                      <li>${this.i18n('home.howWeWork.step02.listElement01')}</li>
+                      <li>${this.i18n('home.howWeWork.step02.listElement02')}</li>
                     </ul>
                   </div>
                 </div>
@@ -226,11 +228,11 @@ module.exports = class {
                     ${await this.image('home/how-it-works/fase-ux-ui-design.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.4" data-disable-parallax-down="lg">
-                    <h3 class="h4">Fase UX/UI Design</h3>
-                    <p class="mb-0">La fase conoscitiva e UX/UI design sono strettamente interconnesse tra di loro dove il nostro team di progettazione trasformerà le tue idee in realtà.</p>
+                    <h3 class="h4">${this.i18n('home.howWeWork.step03.title')}</h3>
+                    <p class="mb-0">${this.i18n('home.howWeWork.step03.paragraph01')}</p>
                     <ul>
-                      <li>Design - ti accompagniamo in ogni fase progettuale realizzando bozze, disegni grafici e altri lavori creativi per valorizzare il tuo <i>brand</i>.</li>
-                      <li>Mock-up - è un’anteprima che simula la resa finale del progetto.</li>
+                      <li>${this.i18n('home.howWeWork.step03.listElement01')}</li>
+                      <li>${this.i18n('home.howWeWork.step03.listElement02')}</li>
                     </ul>
                   </div>
                 </div>
@@ -244,22 +246,22 @@ module.exports = class {
                     ${await this.image('home/how-it-works/fase-conclusiva.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.6" data-disable-parallax-down="lg">
-                    <h3 class="h4">Fase conclusiva</h3>
-                    <p class="mb-0">A seguito dell’approvazione del mock-up viene realizzato e completato il tuo progetto.</p>
-                    <p class="mb-0">La consegna sarà effettuata dopo un accurato collaudo e formazione sul suo corretto utilizzo.</p>
+                    <h3 class="h4">${this.i18n('home.howWeWork.step04.title')}</h3>
+                    <p class="mb-0">${this.i18n('home.howWeWork.step04.paragraph01')}</p>
+                    <p class="mb-0">${this.i18n('home.howWeWork.step04.paragraph02')}</p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
           
-          <!-- Case studies -->
+          <!-- Latest Trends -->
           <section class="bg-secondary pt-5">
             <div class="container">
-              <h2 class="h1 text-center text-md-start mb-lg-4">Ultime tendenze tecnologiche</h2>
+              <h2 class="h1 text-center text-md-start mb-lg-4">${this.i18n('home.latestTrends.title')}</h2>
               <div class="row align-items-center pb-5">
                 <div class="col-md-8 col-lg-7 col-xl-6 text-center text-md-start">
-                  <p class="fs-lg text-muted mb-md-0">Portiamo soluzioni semplici ai problemi di ogni azienda attraverso una profonda comprensione del settore e del business.</p>
+                  <p class="fs-lg text-muted mb-md-0">${this.i18n('home.latestTrends.paragraph01')}</p>
                 </div>
               </div>
             </div>
@@ -314,19 +316,19 @@ module.exports = class {
                             <!-- Item -->
                             <div class="swiper-slide" data-swiper-tab="#image-1">
                               ${await this.image('landing/software-company/case-study-logo02.png', 'Logo', 'd-block mb-3', [72], '72w')}
-                              <h3 class="mb-2">Piattaforme Social sempre più vicine alle aziende</h3>
-                              <p class="fs-sm text-muted border-bottom pb-3 mb-3">Gestione Social Media</p>
-                              <p class="pb-2 pb-lg-3 mb-3">Connettiamo la tua comunicazione aziendale sulle piattaforme Social. Aumenta la competitività comunicando su reti: LinkedIn, Instagram, Facebook, TikTok, ecc.</p>
-                              <a href="${this.i18n('pagesUrl.marketingAndCommunication')}" class="btn btn-primary">Marketing e Comunicazione</a>
+                              <h3 class="mb-2">${this.i18n('home.latestTrends.card01.title')}</h3>
+                              <p class="fs-sm text-muted border-bottom pb-3 mb-3">${this.i18n('home.latestTrends.card01.paragraph01')}</p>
+                              <p class="pb-2 pb-lg-3 mb-3">${this.i18n('home.latestTrends.card01.paragraph02')}</p>
+                              <a href="${this.i18n('pagesUrl.marketingAndCommunication')}" class="btn btn-primary">${this.i18n('home.latestTrends.card01.cta')}</a>
                             </div>
     
                             <!-- Item -->
                             <div class="swiper-slide" data-swiper-tab="#image-2">                              
                               ${await this.image('landing/software-company/case-study-logo01.png', 'Logo', 'd-block mb-3', [72], '72w')}
-                              <h3 class="mb-2">L'autenticità dei dati al centro delle decisioni aziendali</h3>
-                              <p class="fs-sm text-muted border-bottom pb-3 mb-3">Gestione integrità e certificazione dei dati aziendali</p>
-                              <p class="pb-2 pb-lg-3 mb-3">Tracciamento della catena di approvvigionamento, monitoraggio e certificazioni d'uso dei beni industriali (es. ore d'uso, allarmi, anomalie) per una maggiore sicurezza e competitività.</p>
-                              <a href="${this.i18n('pagesUrl.informationTechnology')}" class="btn btn-primary">Tecnologie Informatiche</a>
+                              <h3 class="mb-2">${this.i18n('home.latestTrends.card02.title')}</h3>
+                              <p class="fs-sm text-muted border-bottom pb-3 mb-3">${this.i18n('home.latestTrends.card02.paragraph01')}</p>
+                              <p class="pb-2 pb-lg-3 mb-3">${this.i18n('home.latestTrends.card02.paragraph02')}</p>
+                              <a href="${this.i18n('pagesUrl.informationTechnology')}" class="btn btn-primary">${this.i18n('home.latestTrends.card02.cta')}</a>
                             </div>
                           </div>
                         </div>
@@ -345,32 +347,32 @@ module.exports = class {
 
           <!-- Why Us -->
           <section class="container py-5 my-2 my-md-4 my-lg-5">
-            <h2 class="h1 text-center pt-1 pt-xl-2 mb-4">Perché sceglierci?</h2>
-            <p class="fs-lg text-muted text-center pb-4 mb-2 mb-lg-3">Scegli noi perché ti aiuteremo a trovare nuovi clienti e ad aumentare il tuo business.</p>
+            <h2 class="h1 text-center pt-1 pt-xl-2 mb-4">${this.i18n('home.whyChooseUs.title')}</h2>
+            <p class="fs-lg text-muted text-center pb-4 mb-2 mb-lg-3">${this.i18n('home.whyChooseUs.paragraph01')}</p>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-xl-3">
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
                   ${await this.image('home/why-choose-us/icona-01.png', 'Icon', '', [52], '52w')}
                 </div>
-                <h3 class="h5 mb-2 mb-lg-0">Creiamo la tua crescita digitale</h3>
+                <h3 class="h5 mb-2 mb-lg-0">${this.i18n('home.whyChooseUs.element01')}</h3>
               </div>
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
                   ${await this.image('home/why-choose-us/icona-02.png', 'Icon', '', [52], '52w')}
                 </div>
-                <h3 class="h5 mb-2 mb-lg-0">Uniamo marketing e tecnologia</h3>
+                <h3 class="h5 mb-2 mb-lg-0">${this.i18n('home.whyChooseUs.element02')}</h3>
               </div>
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
                   ${await this.image('home/why-choose-us/icona-03.png', 'Icon', '', [52], '52w')}
                 </div>
-                <h3 class="h5 mb-2 mb-lg-0">Sviluppiamo soluzioni multisettoriali</h3>
+                <h3 class="h5 mb-2 mb-lg-0">${this.i18n('home.whyChooseUs.element03')}</h3>
               </div>
               <div class="col text-center">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
                   ${await this.image('home/why-choose-us/icona-04.png', 'Icon', '', [48], '48w')}
                 </div>
-                <h3 class="h5 mb-2 mb-lg-0">Il metodo è al centro del nostro lavoro</h3>
+                <h3 class="h5 mb-2 mb-lg-0">${this.i18n('home.whyChooseUs.element04')}</h3>
               </div>
             </div>
           </section>
@@ -380,9 +382,9 @@ module.exports = class {
         <section class="container py-5 my-2 my-md-4 my-lg-5">
           <div class="row">
             <div class="col-lg-4 text-center text-lg-start pb-3 pb-lg-0 mb-4 mb-lg-0">
-              <h2 class="h1 mb-lg-4">Al vostro fianco in ogni settore</h2>
-              <p class="pb-4 mb-0 mb-lg-3">Affrontiamo insieme ogni problema di business creando e sviluppando soluzioni applicative specifiche. Cerca il tuo settore!</p>
-              <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary shadow-primary btn-lg">Contattaci</a>
+              <h2 class="h1 mb-lg-4">${this.i18n('home.sectors.title')}</h2>
+              <p class="pb-4 mb-0 mb-lg-3">${this.i18n('home.sectors.paragraph01')}</p>
+              <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.sectors.contactUsCTA')}</a>
             </div>
             <div class="col-xl-7 col-lg-8 offset-xl-1">
               <div class="row row-cols-1 row-cols-md-2">
@@ -393,10 +395,10 @@ module.exports = class {
                         ${await this.image('sectors/industrial.png', 'Icon', '', [32], '32w')}
                       </div>
                       <div class="ps-4">
-                        <h3 class="h5 pb-2 mb-1">Industriale</h3>
-                        <p class="pb-2 mb-1">Farmaceutica, Chimica, Alimentare, Energia, Oil & Gas, Navale, Automobilistico, Aerospaziale, ecc.</p>
+                        <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.industrial.title')}</h3>
+                        <p class="pb-2 mb-1">${this.i18n('home.sectors.industrial.paragraph')}</p>
                         <a href="${this.i18n('pagesUrl.sectors.industrialSection')}" class="btn btn-link stretched-link px-0">
-                          Scopri di più
+                          ${this.i18n('home.sectors.discoverMoreCTA')}
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
                       </div>
@@ -408,10 +410,10 @@ module.exports = class {
                         ${await this.image('sectors/connectivity.png', 'Icon', '', [36], '36w')}
                       </div>
                       <div class="ps-4">
-                        <h3 class="h5 pb-2 mb-1">Connettività e cybersecurity</h3>
-                        <p class="pb-2 mb-1">Satelliti, telecomunicazioni, <i>software, server, cloud, cyber security</i>, ecc.</p>
+                        <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.connectivity.title')}</h3>
+                        <p class="pb-2 mb-1">${this.i18n('home.sectors.connectivity.paragraph')}</p>
                         <a href="${this.i18n('pagesUrl.sectors.connectivitySection')}" class="btn btn-link stretched-link px-0">
-                          Scopri di più
+                          ${this.i18n('home.sectors.discoverMoreCTA')}
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
                       </div>
@@ -423,10 +425,10 @@ module.exports = class {
                         ${await this.image('sectors/safety.png', 'Icon', '', [32], '32w')}
                       </div>
                       <div class="ps-4">
-                        <h3 class="h5 pb-2 mb-1">Sicurezza</h3>
-                        <p class="pb-2 mb-1">Siti (industriali, commerciali, condomini, pubblici, militari, ecc), flotte aziendali, trasporti merce, sorveglianza, ecc.</p>
+                        <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.safety.title')}</h3>
+                        <p class="pb-2 mb-1">${this.i18n('home.sectors.safety.paragraph')}</p>
                         <a href="${this.i18n('pagesUrl.sectors.safetySection')}" class="btn btn-link stretched-link px-0">
-                          Scopri di più
+                          ${this.i18n('home.sectors.discoverMoreCTA')}
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
                       </div>
@@ -440,10 +442,10 @@ module.exports = class {
                         ${await this.image('sectors/maintenance.png', 'Icon', '', [32], '32w')}
                       </div>
                       <div class="ps-4">
-                        <h3 class="h5 pb-2 mb-1">Manutenzioni, tracciabilità ed ispezione</h3>
-                        <p class="pb-2 mb-1">Industriale, Infrastrutture (industriali, commerciali, condominiali, municipali, militari), logistica, costruzioni, edilizia, gestione condominiale. Catene di approvvigionamenti alimentari e industriali.</p>
+                        <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.maintenance.title')}</h3>
+                        <p class="pb-2 mb-1">${this.i18n('home.sectors.maintenance.paragraph')}</p>
                         <a href="${this.i18n('pagesUrl.sectors.maintenanceSection')}" class="btn btn-link stretched-link px-0">
-                          Scopri di più
+                          ${this.i18n('home.sectors.discoverMoreCTA')}
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
                       </div>
@@ -455,10 +457,10 @@ module.exports = class {
                         ${await this.image('sectors/insurance.png', 'Icon', '', [32], '32w')}
                       </div>
                       <div class="ps-4">
-                        <h3 class="h5 pb-2 mb-1">Assicurativo e finanziario</h3>
-                        <p class="pb-2 mb-1">Consulenza, proprietà intellettuale, affari legali, sinistri, ecc.</p>
+                        <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.insurance.title')}</h3>
+                        <p class="pb-2 mb-1">${this.i18n('home.sectors.insurance.paragraph')}</p>
                         <a href="${this.i18n('pagesUrl.sectors.insuranceSection')}" class="btn btn-link stretched-link px-0">
-                          Scopri di più
+                          ${this.i18n('home.sectors.discoverMoreCTA')}
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
                       </div>
@@ -470,10 +472,10 @@ module.exports = class {
                         ${await this.image('sectors/luxury.png', 'Icon', '', [32], '32w')}
                       </div>
                       <div class="ps-4">
-                        <h3 class="h5 pb-2 mb-1">Beni di valore</h3>
-                        <p class="pb-2 mb-1">Moda, gioielli, arte, cosmetica, vini pregiati, cura della persona, medicale, ecc.</p>
+                        <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.luxury.title')}</h3>
+                        <p class="pb-2 mb-1">${this.i18n('home.sectors.luxury.paragraph')}</p>
                         <a href="${this.i18n('pagesUrl.sectors.luxurySection')}" class="btn btn-link stretched-link px-0">
-                          Scopri di più
+                          ${this.i18n('home.sectors.discoverMoreCTA')}
                           <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
                         </a>
                       </div>
@@ -485,12 +487,13 @@ module.exports = class {
           </div>
         </section>
 
+        <!-- Pre Footer CTA -->
         <section class="position-relative bg-dark py-5">
         <span class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255, 255, 255, .05)"></span>
         <div class="container position-relative zindex-5 text-center my-xl-3 py-1 py-md-4 py-lg-5">
-          <p class="lead text-light opacity-70 mb-3">Sei pronto per partire?</p>
-          <h2 class="h1 text-light pb-3 pb-lg-0 mb-lg-5">Avvia un progetto con noi!</h2>
-          <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary shadow-primary btn-lg">Contattaci</a>
+          <p class="lead text-light opacity-70 mb-3">${this.i18n('home.preFooterCTA.paragraph01')}</p>
+          <h2 class="h1 text-light pb-3 pb-lg-0 mb-lg-5">${this.i18n('home.preFooterCTA.title')}</h2>
+          <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.preFooterCTA.contactUsCTA')}</a>
         </div>
       </section>
         

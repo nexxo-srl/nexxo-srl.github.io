@@ -1,13 +1,13 @@
 module.exports = {
-    mainMessage: {
+    pageNotFound: {
         'it': 'La pagina che stai cercando non è disponibile.',
         'en': 'The page you\'re looking for is not available.'
     },
-    rightsReserved: {
+    allRightsReserved: {
         'it': 'Tutti i diritti sono riservati.',
         'en': 'All rights reserved.'
     },
-    goToHome: {
+    goToHomeCTA: {
         'it': 'Vai alla home',
         'en': 'Go to Home'
     }

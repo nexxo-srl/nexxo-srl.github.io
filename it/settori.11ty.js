@@ -28,7 +28,7 @@ module.exports = class {
 
 
       <!-- Page title + filters -->
-      <section class="container d-sm-flex align-items-center justify-content-between pb-4 mb-2 mb-lg-3">
+      <!--section class="container d-sm-flex align-items-center justify-content-between pb-4 mb-2 mb-lg-3">
         <h1 class="mb-sm-0 me-sm-3">Settori</h1>
         <select class="form-select" style="width: 240px;">
           <option value="All categories">Categorie</option>
@@ -37,7 +37,7 @@ module.exports = class {
           <option value="Safety & Security">Safety & Security</option>
           <option value="Value Services">Value Services</option>
         </select>
-      </section>
+      </section-->
 
 
       <!-- Portfolio list -->

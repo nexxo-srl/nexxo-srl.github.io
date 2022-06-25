@@ -4,7 +4,7 @@
  * Copyright 2022 Createx Studio
  * Theme styles
 */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 .text-gradient-primary {
   background: linear-gradient(to right, #6366f1, #8B5CF6, #D946EF);
   -webkit-background-clip: text;
@@ -54,7 +54,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 88, 92, 123;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Manrope", sans-serif;
+  --bs-font-sans-serif: "Montserrat", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);

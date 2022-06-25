@@ -102,10 +102,10 @@ module.exports = async function (data) {
                 <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column pb-lg-1 mb-lg-3">
                     <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
-                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.sectionWhoWeAre')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Chi Siamo</a></li>
-                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.sectionWhatWeDo')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Cosa Proponiamo</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Chi Siamo</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.whatWeDoSection')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Cosa Proponiamo</a></li>
                     <li class="nav-item"><a href="${this.i18n('pagesUrl.sectors')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Settori</a></li>
-                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.sectionHowWeWork')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Come Lavoriamo</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Come Lavoriamo</a></li>
                   </ul>
                   <ul class="nav flex-column mb-2 mb-lg-0">
                     <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Informativa Privacy</a></li>
@@ -118,10 +118,10 @@ module.exports = async function (data) {
                 </h6>
                 <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="https://www.linkedin.com/company/nexxo-cross-platform-s-r-l/" target="_blank" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
-                    <li class="nav-item"><a href="https://www.facebook.com/nexxocrossplatform" target="_blank" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
-                    <li class="nav-item"><a href="https://www.instagram.com/nexxocrossplatform/" target="_blank" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
-                    <li class="nav-item"><a href="https://www.tiktok.com/@nexxocrossplatform" class="nav-link d-inline-block px-0 pt-1 pb-2">TikTok</a></li>
+                    <li class="nav-item"><a href="${data.nexxo.linkedin}" target="_blank" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="${data.nexxo.facebook}" target="_blank" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                    <li class="nav-item"><a href="${data.nexxo.instagram}" target="_blank" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                    <li class="nav-item"><a href="${data.nexxo.tiktok}" class="nav-link d-inline-block px-0 pt-1 pb-2">TikTok</a></li>
                   </ul>
                 </div>
               </div>
@@ -134,7 +134,7 @@ module.exports = async function (data) {
           </div>
         </div>
         <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
-          <span class="${textAdditionalClasses} opacity-50">&copy; 2022 Nexxo Cross Platform S.r.l. | P.IVA 03799860121 | Tutti i diritti sono riservati.</span>
+          <span class="${textAdditionalClasses} opacity-50">&copy; 2022 ${data.nexxo.fullName} | P.IVA ${data.nexxo.vatCode} | ${this.i18n('generic.allRightsReserved')}</span>
         </p>
       </div>
     </footer>

@@ -40,16 +40,16 @@ module.exports = class {
 
           <h1 class="visually-hidden">404</h1>
           <h2 class="display-5">Ooops!</h2>
-          <p class="fs-xl pb-3 pb-md-0 mb-md-5">${this.i18n('notFound.mainMessage')}</p>
+          <p class="fs-xl pb-3 pb-md-0 mb-md-5">${this.i18n('generic.pageNotFound')}</p>
           <a href="${this.i18n('pagesUrl.homepage')}" class="btn btn-lg btn-primary shadow-primary w-sm-auto w-100">
             <i class="bx bx-home-alt me-2 ms-n1 lead"></i>
-            ${this.i18n('notFound.goToHome')}            
+            ${this.i18n('generic.goToHomeCTA')}            
           </a>
         </div>
 
         <div class="text-center py-lg-5 py-4 mt-auto">
           <p class="fs-sm pt-3 pt-lg-0 mb-0">
-            <span class="opacity-75">&copy; 2022 ${data.nexxo.fullName} | P.IVA ${data.nexxo.vatCode} | ${this.i18n('notFound.rightsReserved')}</span> 
+            <span class="opacity-75">&copy; 2022 ${data.nexxo.fullName} | P.IVA ${data.nexxo.vatCode} | ${this.i18n('generic.allRightsReserved')}</span> 
           </p>
         </div>  
       </section>

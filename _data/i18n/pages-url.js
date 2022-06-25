@@ -1,14 +1,23 @@
 module.exports = {
     homepage: {
         'it': '/it/',
-        sectionWhoWeAre: {
+        whoWeAreSection: {
             'it': '/it/#chi-siamo'
         },
-        sectionWhatWeDo: {
+        whoWeAreSectionId: {
+            'it': 'chi-siamo'
+        },
+        whatWeDoSection: {
             'it': '/it/#cosa-proponiamo'
         },
-        sectionHowWeWork: {
+        whatWeDoSectionId: {
+            'it': 'cosa-proponiamo'
+        },
+        howWeWorkSection: {
             'it': '/it/#come-lavoriamo'
+        },
+        howWeWorkSectionId: {
+            'it': 'come-lavoriamo'
         }
     },
     marketingAndCommunication: {

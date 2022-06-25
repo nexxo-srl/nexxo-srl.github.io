@@ -26,7 +26,7 @@ module.exports = class {
             <a href="${this.i18n('pagesUrl.homepage')}"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
           </li>
           <li class="breadcrumb-item">
-            <a href="${this.i18n('pagesUrl.homepage.sectionWhatWeDo')}">Cosa proponiamo</a>
+            <a href="${this.i18n('pagesUrl.homepage.whatWeDoSectionId')}">Cosa proponiamo</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">Tecnologie informatiche</li>
         </ol>

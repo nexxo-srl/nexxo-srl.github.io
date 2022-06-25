@@ -16,10 +16,10 @@ module.exports = async function (data) {
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                  <a href="${this.i18n('pagesUrl.homepage.sectionWhoWeAre')}" class="nav-link">Chi siamo</a>
+                  <a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link">Chi siamo</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="${this.i18n('pagesUrl.homepage.sectionWhatWeDo')}" class="nav-link dropdown-toggle">Cosa proponiamo</a>
+                  <a href="${this.i18n('pagesUrl.homepage.whatWeDoSection')}" class="nav-link dropdown-toggle">Cosa proponiamo</a>
                   <div class= "dropdown-menu">
                     <ul class="list-unstyled">
                       <li>
@@ -35,7 +35,7 @@ module.exports = async function (data) {
                   <a href="${this.i18n('pagesUrl.sectors')}" class="nav-link">Settori</a>
                 </li>
                 <li class="nav-item">
-                  <a href="${this.i18n('pagesUrl.homepage.sectionHowWeWork')}" class="nav-link">Come lavoriamo</a>
+                  <a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link">Come lavoriamo</a>
                 </li>
               </ul>
             </div>
