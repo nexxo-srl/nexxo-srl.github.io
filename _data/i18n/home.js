@@ -245,7 +245,7 @@ module.exports = {
             },
             paragraph:{
                 'it': 'Farmaceutica, Chimica, Alimentare, Energia, Oil & Gas, Navale, Automobilistico, Aerospaziale, ecc.',
-                'en': ''
+                'en': 'Pharmaceutical, chemical, food, energy, oil & gas, marine, automotive, aerospace, etc.'
             }
         },
         connectivity: {
@@ -255,7 +255,7 @@ module.exports = {
             },
             paragraph:{
                 'it': 'Satelliti, telecomunicazioni, <i>software, server, cloud, cyber security</i>, ecc.',
-                'en': ''
+                'en': 'Satellites, telecommunications, software, servers, clouds, cybersecurity, etc.'
             }
         },
         safety: {
@@ -265,17 +265,17 @@ module.exports = {
             },
             paragraph:{
                 'it': 'Siti (industriali, commerciali, condomini, pubblici, militari, ecc), flotte aziendali, trasporti merce, sorveglianza, ecc.',
-                'en': ''
+                'en': 'Sites (industrial, commercial, real estates, public, military, etc.), company fleets, goods transport, surveillance, etc.'
             }
         },
         maintenance: {
             title: {
                 'it': 'Manutenzioni, tracciabilità ed ispezione',
-                'en': ''
+                'en': 'Maintenance, traceability and inspection'
             },
             paragraph:{
                 'it': 'Industriale, Infrastrutture (industriali, commerciali, condominiali, municipali, militari), logistica, costruzioni, edilizia, gestione condominiale. Catene di approvvigionamenti alimentari e industriali.',
-                'en': ''
+                'en': 'Industrial, infrastructure (industrial, commercial, real estates, municipal, military), logistics, construction, building, real estate management. Food and industrial supply chains.'
             }
         },
         insurance: {
@@ -285,7 +285,7 @@ module.exports = {
             },
             paragraph:{
                 'it': 'Consulenza, proprietà intellettuale, affari legali, sinistri, ecc.',
-                'en': ''
+                'en': 'Consulting, intellectual property, legal affairs, claims, etc.'
             }
         },
         luxury: {
@@ -295,7 +295,7 @@ module.exports = {
             },
             paragraph:{
                 'it': 'Moda, gioielli, arte, cosmetica, vini pregiati, cura della persona, medicale, ecc.',
-                'en': ''
+                'en': 'Fashion, jewelry, art, cosmetics, fine wines, personal care, medical, etc.'
             }
         },
         discoverMoreCTA: {
