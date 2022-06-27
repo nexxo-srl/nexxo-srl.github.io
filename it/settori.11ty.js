@@ -49,7 +49,7 @@ module.exports = class {
             ${await this.image('portfolio/list/01.jpg', 'Image', 'rounded-3', [600], '600w')}   
           </div>
           <div class="rellax col-md-6" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
-              <h2 class="h3">Industriale</h2>
+              <h2 class="h3">${this.i18n('sectors.item01.title')}</h2>
               <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Manufacturing</p>
               <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
               ${this.i18n('sectors.item01.paragraph')}
@@ -63,14 +63,10 @@ module.exports = class {
             ${await this.image('portfolio/list/02.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}
           </div>
           <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
-              <h2 class="h3">Manutenzione, tracciabilità e ispezione</h2>
+              <h2 class="h3">${this.i18n('sectors.item02.title')}</h2>
               <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Maintenance</p>
               <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
-                  <ul>
-                    <li>Monitoraggio e certificazione di: allarmi, aggiornamenti, condizioni ambientali, tempi di servizio, attività di manutenzione e ispezioni, arresti macchine e sistemi antincendio.</li>
-                    <li>Creazione di report verificabili; digitalizzazione dei processi; miglioramento dell'efficienza e dell'affidabilità.</li>
-                    <li>Tracciamento ed evidenza di tutte le operazioni di carico e scarico, stato merce e ricevimenti. Monitoraggio e prova inalterabile dello stato di avanzamento dei lavori.</li>
-                  </ul>
+                  ${this.i18n('sectors.item02.paragraph')}
               </div>              
           </div>
         </div>
@@ -81,14 +77,10 @@ module.exports = class {
             ${await this.image('portfolio/list/03.jpg', 'Image', 'rounded-3', [600], '600w')}
           </div>
           <div class="rellax col-md-6 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
-              <h2 class="h3">Connettività e cybersecurity</h2>
+              <h2 class="h3">${this.i18n('sectors.item03.title')}</h2>
               <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Safety & Security</p>              
               <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
-                  <ul>
-                    <li>Prova verificabile delle comunicazioni e dello stato di servizio in ogni momento.</li>
-                    <li>Certificazione di immagini satellitari.</li>
-                    <li>Certificazione cloud e server.</li>
-                  </ul>
+                  ${this.i18n('sectors.item03.paragraph')}
               </div>    
           </div>
         </div>
@@ -99,19 +91,10 @@ module.exports = class {
             ${await this.image('portfolio/list/04.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}           
           </div>
           <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
-              <h2 class="h3">Sicurezza</h2>
+              <h2 class="h3">${this.i18n('sectors.item04.title')}</h2>
               <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Safety & Security</p>
               <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
-              <ul>
-                <li>Negli ambienti industriali e infrastrutturali è indispensabile avere visibilità sullo stato di tutti i sistemi di sicurezza, come:
-                    <ul>
-                        <li>prova dell’evento per lo stato del sistema, allarmi ed incidenti;</li>
-                        <li>prova del lavoro per la manutenzione e le ispezioni;</li>
-                        <li>implementazione rapida della blockchain senza la necessità di una piattaforma specifica.</li>
-                    </ul>
-                </li>
-                <li>Tracciabilità dello stato della flotta aziendale in ogni momento, con una cronologia certificata delle attività. Assicurazione della massima qualità e trasparenza nel servizio di trasporto.</li>                
-              </ul>
+              ${this.i18n('sectors.item04.paragraph')}
               </div>
           </div>
         </div>
@@ -122,13 +105,10 @@ module.exports = class {
             ${await this.image('portfolio/list/05.jpg', 'Image', 'rounded-3', [600], '600w')}
         </div>
         <div class="rellax col-md-6 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
-            <h2 class="h3">Assicurativo e finanziario</h2>
+            <h2 class="h3">${this.i18n('sectors.item05.title')}</h2>
             <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Value Services</p>            
             <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
-              <ul>
-                <li>Promozione di nuovi progetti e miglioramento di quelli esistenti aggiungendo strumenti innovativi e di rapida implementazione.</li>
-                <li>Creazione di una cronologia certificata degli eventi soggetti a verifiche. Tracciamento, autenticità ed evidenza delle operazioni che sono soggette ai controlli assicurativi.</li>
-              </ul>
+              ${this.i18n('sectors.item05.paragraph')}
             </div>   
         </div>
       </div>
@@ -139,14 +119,10 @@ module.exports = class {
           ${await this.image('portfolio/list/06.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}
         </div>
         <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
-            <h2 class="h3">Beni di valore</h2>
+            <h2 class="h3">${this.i18n('sectors.item06.title')}</h2>
             <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Value Services</p>
             <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
-              <ul>
-                <li>Tracciabilità delle materie prime e dei prodotti lungo la filiera, proteggendoli dalle contraffazioni.</li>
-                <li>Certificazione di unicità dei singoli capi all'interno di una collezione.</li>
-                <li>Prova di autenticità di un bene prezioso, e relativa verifica di origine, dell’artista e altro. Esso può essere utilizzato come supporto fisico per NFT (Non-Fungible-Token) consentendo il commercio e il trasferimento di proprietà.</li>
-              </ul>
+              ${this.i18n('sectors.item06.paragraph')}
             </div>
         </div>
       </div>
@@ -158,9 +134,9 @@ module.exports = class {
           <div class="row align-items-center">
             <div class="col-xl-4 col-md-5 offset-lg-1">
               <div class="pt-5 pb-3 pb-md-5 px-4 px-lg-0 text-center text-md-start">
-                <p class="lead mb-3">Sei pronto per iniziare?</p>
-                <h2 class="h1 pb-3 pb-sm-4">Porta il tuo <span class="text-primary">Business</span> al livello superiore!</h2>
-                <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary btn-lg">Contattaci</a>
+                <p class="lead mb-3">${this.i18n('sectors.contactCTA.paragraph')}</p>
+                <h2 class="h1 pb-3 pb-sm-4">${this.i18n('sectors.contactCTA.title')}</h2>
+                <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary btn-lg">${this.i18n('sectors.contactCTA.buttonCTA')}</a>
               </div>
             </div>
             <div class="col-lg-6 col-md-7 offset-xl-1">
