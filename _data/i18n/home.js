@@ -9,239 +9,239 @@ module.exports = {
     },
     slideDescription01: {
         'it': 'Qualunque siano le tue esigenze, qualunque sia il tuo business, qualunque siano i tuoi obiettivi; intraprendi con noi il tuo percorso di trasformazione digitale.',
-        'en': ''
+        'en': 'Whatever your needs, your business and your goals are; embark on your digital transformation path with us.'
     },
     slideTitle02: {
         'it': 'Il binomio perfetto tra Marketing e Tecnologia',
-        'en': ''
+        'en': 'The perfect integration of Marketing and Technology'
     },
     slideDescription02: {
         'it': 'Uniamo servizi di comunicazione digitale, Internet-of-Things (IoT) & Blockchain per un\'esperienza più completa ed innovativa che mai!',
-        'en': ''
+        'en': 'We combine digital communication, Internet-of-Things (IoT) & Blockchain services for a more complete and innovative experience than ever!'
     },
     slideTitle03: {
         'it': 'Al vostro fianco in ogni settore',
-        'en': ''
+        'en': 'By your side in every sector'
     },
     slideDescription03: {
         'it': 'Affrontiamo insieme ogni problema di business creando e sviluppando soluzioni applicative specifiche. Condividi con noi il tuo caso d’uso!',
-        'en': ''
+        'en': 'We tackle every business problem together by creating and developing specific application solutions. Share your use case with us!'
     },
     slideDiscoverSectorsCTA: {
         'it': 'Scopri i settori',
-        'en': ''
+        'en': 'Find out sectors'
     },
     whoWeAre: {
         title: {
             'it': 'Chi siamo',
-            'en': ''
+            'en': 'Who we are'
         },
         paragraph01: {
-            'it': 'Siamo un\' <strong>agenzia digitale start-up</strong> che aiuta a sviluppare le attività commerciali dei nostri clienti.',
-            'en': ''
+            'it': 'Siamo un\'<strong>agenzia digitale start-up</strong> che aiuta a sviluppare le attività commerciali dei nostri clienti.',
+            'en': 'We are a <strong>start-up digital agency</strong> that helps develop our clients\'business.'
         },
         paragraph02: {
             'it': 'Ci proponiamo come <strong>partner tecnologico</strong> alle aziende che hanno bisogno di sviluppare la propria competitività attraverso la <strong>trasformazione digitale</strong>.',
-            'en': ''
+            'en': 'We propose ourselves as a <strong>technological partner</strong> to companies that need to develop their competitiveness through <strong>digital transformation</strong>.'
         },
         paragraph03: {
             'it': 'Lavoriamo in un ambiente giovanile dove si respira aria di creatività, energia e passione.',
-            'en': ''
+            'en': 'We work in a youthful environment where there is an air of creativity, energy and passion.'
         },
         paragraph04: {
             'it': 'La nostra combo è quando un cliente ed un’azienda lavorano come un’unica entità nel raggiungimento degli stessi obiettivi.',
-            'en': ''
+            'en': 'Our combo is when a customer and a company work as a single entity in achieving the same goals.'
         }
     },
     whatWeDo: {
         title: {
             'it': 'Cosa proponiamo',
-            'en': ''
+            'en': 'What we propose'
         },
         paragraph01: {
             'it': 'Accompagniamo i nostri clienti verso la trasformazione e il rinnovamento strategico del proprio business, al fine di sfruttare al meglio le potenzialità offerte dalla transizione digitale verso l’Industria 4.0.',
-            'en': ''
+            'en': 'We accompany our customers towards the transformation and strategic renewal of their business, in order to make the most of the potential offered by the digital transition to Industry 4.0.'
         },
         marketing: {
             title: {
                 'it': 'Marketing e Comunicazione',
-                'en': ''
+                'en': 'Marketing and Communication'
             },
             paragraph01: {
                 'it': 'Assistiamo le aziende nella progettazione, elaborazione o revisione del modello di business, integrando le opportune strategie, i processi di marketing e la comunicazione aziendale.',
-                'en': ''
+                'en': 'We assist companies in the design, development or revision of the business model, integrating the appropriate strategies, marketing processes and corporate communication.'
             }
         },
         technology: {
             title: {
                 'it': 'Tecnologie Informatiche',
-                'en': ''
+                'en': 'Information Technology'
             },
             paragraph01: {
                 'it': 'Supportiamo le aziende che necessitano dell’autenticità e l’integrità dei dati fornendo servizi e soluzioni informatiche che si basano sulle tecnologie:',
-                'en': ''
+                'en': 'We support companies that need authenticity and data integrity by providing IT services and solutions based on technologies such as Internet-of-Things (IoT) and Blockchain.'
             },
             paragraph02: {
                 'it': 'Internet-of-Things (IoT) e Blockchain.',
-                'en': ''
+                'en': 'Internet-of-Things (IoT) and Blockchain.'
             }
         }
     },
     howWeWork: {
         title: {
             'it': 'Come lavoriamo',
-            'en': ''
+            'en': 'How we work'
         },
         step01: {
             title: {
                 'it': 'Accordo di riservatezza',
-                'en': ''
+                'en': 'Non-Disclosure Agreement (NDA)'
             },
             paragraph01: {
                 'it': 'Proteggiamo completamente le tue informazioni riservate firmando in primo luogo un Accordo di Riservatezza. Il nostro modello operativo consente di avere un <i>Project Manager</i> che lavora a tempo pieno al tuo progetto.',
-                'en': ''
+                'en': 'We fully protect your confidential information by first signing a Confidentiality Agreement. Our operating model allows you to have a <i>Project Manager</i> who works full time on your project.'
             }
         },
         step02: {
             title: {
                 'it': 'Fase conoscitiva',
-                'en': ''
+                'en': 'Discovery'
             },
             paragraph01: {
                 'it': 'Ci riuniamo e ascoltiamo le tue esigenze e i tuoi obiettivi per comprendere al meglio il tuo progetto.',
-                'en': ''
+                'en': 'We come together and listen to your needs and goals to better understand your project.'
             },
             listElement01: {
                 'it': 'Descrizione del Progetto - comprensione reciproca dello scopo e degli obiettivi da raggiungere.',
-                'en': ''
+                'en': 'Project description - mutual understanding of the purpose and objectives to be achieved.'
             },
             listElement02: {
                 'it': 'Requisiti - ascoltiamo le vostre aspettative lavorando in maniera congiunta, concordando le specifiche finali.',
-                'en': ''
+                'en': 'Requirements - we listen to your expectations by working together, agreeing on the final specifications.'
             }
         },
         step03: {
             title: {
                 'it': 'Fase UX/UI Design',
-                'en': ''
+                'en': 'UX / UI Design'
             },
             paragraph01: {
                 'it': 'La fase conoscitiva e UX/UI design sono strettamente interconnesse tra di loro dove il nostro team di progettazione trasformerà le tue idee in realtà.',
-                'en': ''
+                'en': 'Discovery and UX / UI design are closely interconnected with each other where our design team will transform your ideas into reality.'
             },
             listElement01: {
                 'it': 'Design - ti accompagniamo in ogni fase progettuale realizzando bozze, disegni grafici e altri lavori creativi per valorizzare il tuo <i>brand</i>.',
-                'en': ''
+                'en': 'Design - we accompany you in every design phase by creating drafts, graphic designs and other creative works to enhance your brand.'
             },
             listElement02: {
                 'it': 'Mock-up - è un’anteprima che simula la resa finale del progetto.',
-                'en': ''
+                'en': 'Mock-up - - is a preview that simulates the final result of the project.'
             }
         },
         step04: {
             title: {
                 'it': 'Fase conclusiva',
-                'en': ''
+                'en': 'Delivery'
             },
             paragraph01: {
                 'it': 'A seguito dell’approvazione del mock-up viene realizzato e completato il tuo progetto.',
-                'en': ''
+                'en': 'Following approval of the mock-up, your project is created and completed.'
             },
             paragraph02: {
                 'it': 'La consegna sarà effettuata dopo un accurato collaudo e formazione sul suo corretto utilizzo.',
-                'en': ''
+                'en': 'Delivery will be made after careful testing and training on its correct use.'
             }
         },
     },
     latestTrends: {
         title: {
             'it': 'Ultime tendenze tecnologiche',
-            'en': ''
+            'en': 'Latest technology trends'
         },
         paragraph01: {
             'it': 'Portiamo soluzioni semplici ai problemi di ogni azienda attraverso una profonda comprensione del settore e del business.',
-            'en': ''
+            'en': 'We bring simple solutions to every company\'s problems through a deep understanding of the industry and business.'
         },
         card01: {
             title: {
                 'it': 'Piattaforme Social sempre più vicine alle aziende',
-                'en': ''
+                'en': 'Social platforms ever closer to companies'
             },
             paragraph01: {
                 'it': 'Gestione Social Media',
-                'en': ''
+                'en': 'Social Media Management'
             },
             paragraph02: {
                 'it': 'Connettiamo la tua comunicazione aziendale sulle piattaforme Social. Aumenta la competitività comunicando su reti: LinkedIn, Instagram, Facebook, TikTok, ecc.',
-                'en': ''
+                'en': 'We connect your corporate communication on social platforms. Increase competitiveness by communicating on networks such as LinkedIn, Instagram, Facebook, TikTok, etc.'
             },
             cta: {
                 'it': 'Marketing e Comunicazione',
-                'en': ''
+                'en': 'Marketing and Communication'
             }
         },
         card02: {
             title: {
                 'it': 'L\'autenticità dei dati al centro delle decisioni aziendali',
-                'en': ''
+                'en': 'The authenticity of the data at the center of business decisions'
             },
             paragraph01: {
                 'it': 'Gestione integrità e certificazione dei dati aziendali',
-                'en': ''
+                'en': 'Integrity management and certification of company data'
             },
             paragraph02: {
                 'it': 'Tracciamento della catena di approvvigionamento, monitoraggio e certificazioni d\'uso dei beni industriali (es. ore d\'uso, allarmi, anomalie) per una maggiore sicurezza e competitività.',
-                'en': ''
+                'en': 'Tracking the supply chain, monitoring and certification of use of industrial goods (eg. Hours of use, alarms, anomalies) for greater safety and competitiveness.'
             },
             cta: {
                 'it': 'Tecnologie Informatiche',
-                'en': ''
+                'en': 'Information technology'
             }
         }
     },
     whyChooseUs: {
         title: {
             'it': 'Perché sceglierci?',
-            'en': ''
+            'en': 'Why choose us?'
         },
         paragraph01:{
             'it': 'Scegli noi perché ti aiuteremo a trovare nuovi clienti e ad aumentare il tuo business.',
-            'en': ''
+            'en': 'Choose us because we will help you find new customers and increase your business.'
         },
         element01:{
             'it': 'Creiamo la tua crescita digitale',
-            'en': ''
+            'en': 'We help your digital growth'
         },
         element02:{
             'it': 'Uniamo marketing e tecnologia',
-            'en': ''
+            'en': 'We integrate marketing and technology'
         },
         element03:{
             'it': 'Sviluppiamo soluzioni multisettoriali',
-            'en': ''
+            'en': 'We develop multi-sector solutions'
         },
         element04:{
             'it': 'Il metodo è al centro del nostro lavoro',
-            'en': ''
+            'en': 'The method is at the heart of our work'
         }
     },
     sectors: {
         title:{
             'it': 'Al vostro fianco in ogni settore',
-            'en': ''
+            'en': 'By your side in every sector'
         },
         paragraph01: {
             'it': 'Affrontiamo insieme ogni problema di business creando e sviluppando soluzioni applicative specifiche. Cerca il tuo settore!',
-            'en': ''
+            'en': 'We tackle every business problem together by creating and developing specific application solutions. Share your use case with us!'
         },
         contactUsCTA: {
             'it': 'Contattaci',
-            'en': ''
+            'en': 'Contact us'
         },
         industrial: {
             title: {
                 'it': 'Industriale',
-                'en': ''
+                'en': 'Industrial'
             },
             paragraph:{
                 'it': 'Farmaceutica, Chimica, Alimentare, Energia, Oil & Gas, Navale, Automobilistico, Aerospaziale, ecc.',
@@ -251,7 +251,7 @@ module.exports = {
         connectivity: {
             title: {
                 'it': 'Connettività e cybersecurity',
-                'en': ''
+                'en': 'Connectivity and cybersecurity'
             },
             paragraph:{
                 'it': 'Satelliti, telecomunicazioni, <i>software, server, cloud, cyber security</i>, ecc.',
@@ -261,7 +261,7 @@ module.exports = {
         safety: {
             title: {
                 'it': 'Sicurezza',
-                'en': ''
+                'en': 'Safety'
             },
             paragraph:{
                 'it': 'Siti (industriali, commerciali, condomini, pubblici, militari, ecc), flotte aziendali, trasporti merce, sorveglianza, ecc.',
@@ -281,7 +281,7 @@ module.exports = {
         insurance: {
             title: {
                 'it': 'Assicurativo e finanziario',
-                'en': ''
+                'en': 'Insurance and financial'
             },
             paragraph:{
                 'it': 'Consulenza, proprietà intellettuale, affari legali, sinistri, ecc.',
@@ -291,7 +291,7 @@ module.exports = {
         luxury: {
             title: {
                 'it': 'Beni di valore',
-                'en': ''
+                'en': 'Luxury goods'
             },
             paragraph:{
                 'it': 'Moda, gioielli, arte, cosmetica, vini pregiati, cura della persona, medicale, ecc.',
@@ -300,21 +300,21 @@ module.exports = {
         },
         discoverMoreCTA: {
             'it': 'Scopri di più',
-            'en': ''
+            'en': 'Learn more'
         }
     },
     preFooterCTA:{
         paragraph01:{
             'it': 'Sei pronto per partire?',
-            'en': ''
+            'en': 'Ready to get started?'
         },
         title:{
             'it': 'Avvia un progetto con noi!',
-            'en': ''
+            'en': 'Start a project with us!'
         },
         contactUsCTA:{
             'it': 'Contattaci',
-            'en': ''
+            'en': 'Contact us'
         }
     }
 }
