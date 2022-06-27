@@ -26,14 +26,14 @@ module.exports = class {
         <nav class="pt-4 mt-lg-3" aria-label="breadcrumb">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item">
-            <a href="${this.i18n('pagesUrl.homepage')}"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+            <a href="${this.i18n('pagesUrl.homepage')}"><i class="bx bx-home-alt fs-lg me-1"></i>${this.i18n('pagesUrl.homepage.linkName')}</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Contattaci</li>
+            <li class="breadcrumb-item active" aria-current="page">${this.i18n('pagesUrl.contactUs.linkName')}</li>
           </ol>
         </nav>
 
         <!-- Page title -->
-        <h1 class="pt-4 mt-lg-3 pb-3 pb-lg-4">Contattaci</h1>
+        <h1 class="pt-4 mt-lg-3 pb-3 pb-lg-4">${this.i18n('contactUs.title')}</h1>
 
         <div class="row pb-5 mb-md-2 mb-lg-4 mb-xl-5">
 
@@ -43,10 +43,10 @@ module.exports = class {
               <div class="card-body d-flex align-items-start">
                 <i class="bx bx-envelope fs-3 bg-secondary text-primary d-inline-block rounded-circle p-3"></i>
                 <div class="ps-4">
-                  <h3 class="h4 pb-1 mb-2">Scrivici</h3>
-                  <p class="pb-1 mb-2">Non esitare a contattarci, ti risponderemo in tempi brevi</p>
+                  <h3 class="h4 pb-1 mb-2">${this.i18n('contactUs.emailCard.title')}</h3>
+                  <p class="pb-1 mb-2">${this.i18n('contactUs.emailCard.paragraph01')}</p>
                   <a href="mailto:info@nexxoxp.com" class="btn btn-link stretched-link fs-base px-0">
-                    Lascia un messaggio
+                    ${this.i18n('contactUs.emailCard.messageCTA')}
                     <i class="bx bx-right-arrow-alt fs-4 ms-1"></i>
                   </a>
                 </div>
@@ -56,10 +56,10 @@ module.exports = class {
               <div class="card-body d-flex align-items-start">
                 <i class="bx bx-phone-call fs-3 bg-secondary text-primary d-inline-block rounded-circle p-3"></i>
                 <div class="ps-4">
-                  <h3 class="h4 pb-1 mb-2">Chiamaci</h3>
-                  <p class="pb-1 mb-2">Per un immediato confronto siamo disponibili negli orari:</p>
-                  <p class="pb-1 mb-2">Lun - Ven 9:00 - 18:00</p>
-                  <a href="tel:+3903321580443" class="btn btn-link stretched-link fs-base px-0">(+39) 0332 158 0443</a>
+                  <h3 class="h4 pb-1 mb-2">${this.i18n('contactUs.phoneCard.title')}</h3>
+                  <p class="pb-1 mb-2">${this.i18n('contactUs.phoneCard.paragraph01')}</p>
+                  <p class="pb-1 mb-2">${this.i18n('contactUs.phoneCard.paragraph02')}</p>
+                  <a href="tel:${data.nexxo.contacts.unformattedPhone}" class="btn btn-link stretched-link fs-base px-0">${data.nexxo.contacts.phone}</a>
                 </div>
               </div>
             </div>
@@ -67,8 +67,8 @@ module.exports = class {
               <div class="card-body d-flex align-items-start">
                 <i class="bx bx-map fs-3 bg-secondary text-primary d-inline-block rounded-circle p-3"></i>
                 <div class="ps-4">
-                  <h3 class="h4 pb-1 mb-2">Dove trovarci</h3>
-                  <p class="pb-1 mb-2">Via E. Cairoli 5, 21100 Varese (VA) - ITALY</p>                  
+                  <h3 class="h4 pb-1 mb-2">${this.i18n('contactUs.locationCard.title')}</h3>
+                  <p class="pb-1 mb-2">${data.nexxo.contacts.address}</p>                  
                 </div>
               </div>
             </div>
@@ -87,33 +87,33 @@ module.exports = class {
           <form id="contact-form" class="needs-validation row justify-content-center py-lg-3 py-xl-4" novalidate method="POST" action="${contactFormUrl}">
             <input type="hidden" name="subject" value="Nexxoxp.com - Richiesta info contattaci"/>
             <div class="col-xl-8 col-lg-9 col-md-10 col-sm-11">
-              <h2 class="h1 pb-lg-1 mb-4">Lasciaci un messaggio</h2>
-              <p class="fs-lg text-muted pb-lg-1 mb-4">Hai un progetto in mente? Contattaci oppure compila il form qui sotto.</p>
+              <h2 class="h1 pb-lg-1 mb-4">${this.i18n('contactUs.contactForm.title')}</h2>
+              <p class="fs-lg text-muted pb-lg-1 mb-4">${this.i18n('contactUs.contactForm.subtitle')}</p>
               <div class="row">
                 <div class="col-sm-6 mb-4">
-                  <label for="name" class="form-label fs-base">Nome completo</label>
+                  <label for="name" class="form-label fs-base">${this.i18n('contactUs.contactForm.fullNameField.label')}</label>
                   <input type="text" name="name" id="name" class="form-control form-control-lg" required>
-                  <div class="invalid-feedback">Per favore inserisci il tuo nome!</div>
+                  <div class="invalid-feedback">${this.i18n('contactUs.contactForm.fullNameField.errorMessage')}</div>
                 </div>
                 <div class="col-sm-6 mb-4">
-                  <label for="email" class="form-label fs-base">Indirizzo email</label>
+                  <label for="email" class="form-label fs-base">${this.i18n('contactUs.contactForm.emailField.label')}</label>
                   <input type="email" name="email" id="email" class="form-control form-control-lg" required>
-                  <div class="invalid-feedback">Per favore inserisci un indirizzo email valido!</div>
+                  <div class="invalid-feedback">${this.i18n('contactUs.contactForm.emailField.errorMessage')}</div>
                 </div>
                 <div class="col-12 mb-4">
-                  <label for="message" class="form-label fs-base">Messaggio</label>
+                  <label for="message" class="form-label fs-base">${this.i18n('contactUs.contactForm.messageField.label')}</label>
                   <textarea id="message" name="message" class="form-control form-control-lg" rows="4" required></textarea>
-                  <div class="invalid-feedback">Per favore inserisci il tuo messaggio!</div>
+                  <div class="invalid-feedback">${this.i18n('contactUs.contactForm.messageField.errorMessage')}</div>
                 </div>
               </div>
               <button type="submit" class="btn btn-primary shadow-primary btn-lg">
                 <span class="spinner-border spinner-border-sm" style="display: none;" role="status" aria-hidden="true"></span>
-                <span>Invia messaggio</span>
+                <span>${this.i18n('contactUs.contactForm.buttonCTA')}</span>
               </button>              
             </div>
           </form>
           <div id="contact-form-done" class="col-lg-6 col-md-7 offset-xl-1" style="display: none;">
-              <h4 class="text-center">Grazie per averci contattato! Un membro del nostro team si metterà in contatto con te il prima possibile.</h4>
+              <h4 class="text-center">${this.i18n('contactUs.contactForm.thankYouMessage')}</h4>
           </div>
           <script src="https://www.google.com/recaptcha/api.js?render=${recaptchaClientKey}"></script>
             <script>
@@ -149,7 +149,7 @@ module.exports = class {
                         formData.set('recaptcha', token)
                         const fail = () => {
                             unlockForm()
-                            alert('L\\'invio della email è fallito')
+                            alert(${this.i18n('contactUs.contactForm.errorPopup.failedEmailSending')})
                         }
                         const success = () => {
                             form.reset()

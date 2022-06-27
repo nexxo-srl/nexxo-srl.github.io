@@ -3,6 +3,7 @@ module.exports = {
   contacts: {
     info: 'info@nexxoxp.com',
     phone: '(+39) 0332 158 0443',
+    unformattedPhone: '+3903321580443',
     address: 'Via Ernesto Cairoli 5, 21100 Varese - Italia'
   },
   fullName: 'Nexxo Cross Platform S.r.l.',
