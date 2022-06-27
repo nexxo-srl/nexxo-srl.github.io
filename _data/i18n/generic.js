@@ -22,6 +22,7 @@ module.exports = {
         contactsSection: {
             title: {
                 'it': 'Contattaci',
+                'en': 'Contact Us'
             }
         },
         linkAccordion: {
