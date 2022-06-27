@@ -20,9 +20,9 @@ module.exports = class {
       <nav class="container py-4 my-lg-3" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item">
-            <a href="${this.i18n('pagesUrl.homepage')}"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+            <a href="${this.i18n('pagesUrl.homepage')}"><i class="bx bx-home-alt fs-lg me-1"></i>${this.i18n('pagesUrl.homepage.linkName')}</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Settori</li>
+          <li class="breadcrumb-item active" aria-current="page">${this.i18n('pagesUrl.sectors.linkName')}</li>
         </ol>
       </nav>
 
@@ -43,7 +43,7 @@ module.exports = class {
       <!-- Portfolio list -->
       <section class="container pb-2 pb-lg-3">
 
-        <!-- Item -->
+        <!-- Item 01 -->
         <div id="${this.i18n('pagesUrl.sectors.industrialSectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
             ${await this.image('portfolio/list/01.jpg', 'Image', 'rounded-3', [600], '600w')}   
@@ -52,25 +52,12 @@ module.exports = class {
               <h2 class="h3">Industriale</h2>
               <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Manufacturing</p>
               <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
-              <ul>
-                <li>Creazione di report in tempo reale direttamente dagli impianti e dalle macchine, certificando i tempi di attività, fermi macchina, allarmi, anomalie, temperature, ecc.</li>
-                <li>Certificazione:
-                    <ul>
-                        <li>della catena del freddo che garantisce trasparenza e affidabilità;</li>
-                        <li>di garanzia e qualità del prodotto, sia dei principi attivi che del prodotto finale e del suo confezionamento;</li>
-                        <li>dei processi di raffinazione e trasformazione del petrolio;</li>
-                        <li>del consumo di energia.</li>
-                    </ul>
-                </li>
-                <li>Miglioramento della sicurezza e facilità nella gestione dei mercati locali di scambio energetico.</li>
-                <li>Automatizzazione e riduzione dei costi dei certificati di origine energetici.</li>
-                <li>Tracciabilità della produzione e distribuzione di idrogeno e biogas.</li>
-              </ul>
+              ${this.i18n('sectors.item01.paragraph')}
               </div>         
           </div>
         </div>
 
-        <!-- Item -->
+        <!-- Item 02 -->
         <div id="${this.i18n('pagesUrl.sectors.maintenanceSectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
             ${await this.image('portfolio/list/02.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}
@@ -88,7 +75,7 @@ module.exports = class {
           </div>
         </div>
 
-        <!-- Item -->
+        <!-- Item 03 -->
         <div id="${this.i18n('pagesUrl.sectors.connectivitySectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
             ${await this.image('portfolio/list/03.jpg', 'Image', 'rounded-3', [600], '600w')}
@@ -106,7 +93,7 @@ module.exports = class {
           </div>
         </div>
 
-        <!-- Item -->
+        <!-- Item 04 -->
         <div id="${this.i18n('pagesUrl.sectors.safetySectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
             ${await this.image('portfolio/list/04.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}           
@@ -129,7 +116,7 @@ module.exports = class {
           </div>
         </div>
 
-      <!-- Item -->
+      <!-- Item 05 -->
       <div id="${this.i18n('pagesUrl.sectors.insuranceSectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
         <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
             ${await this.image('portfolio/list/05.jpg', 'Image', 'rounded-3', [600], '600w')}
@@ -146,7 +133,7 @@ module.exports = class {
         </div>
       </div>
 
-      <!-- Item -->
+      <!-- Item 06 -->
       <div id="${this.i18n('pagesUrl.sectors.luxurySectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
         <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
           ${await this.image('portfolio/list/06.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}

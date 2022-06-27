@@ -11,27 +11,27 @@ module.exports = async function (data) {
         <div class="row pb-5">
           <div class="col-lg-4 col-md-6">
             <div class="navbar-brand ${titleAdditionalClasses} p-0 me-0 mb-3 mb-lg-4">
-              Nexxo Cross Platform S.r.l.
+              ${data.nexxo.fullName}
             </div>
-            <p class="fs-sm ${textAdditionalClasses} opacity-70 pb-lg-3 mb-4">Siamo un'agenza digitale Start-Up che aiuta a sviuluppare le attività commerciali dei propri clienti. Ci proponiamo come partner tecnologico principale alle aziende industriali che hanno bisogno di sviluppare la propria competitività attraverso la trasfromazione digitale.</p>
-            <p class="fs-sm ${textAdditionalClasses} opacity-70">Via E. Cairoli 5, 21100 Varese (VA) - ITALY<br/>(VAT Code) P.IVA 03799860121</p>
+            <p class="fs-sm ${textAdditionalClasses} opacity-70 pb-lg-3 mb-4">${this.i18n('generic.footer.summaryParagraph')}</p>
+            <p class="fs-sm ${textAdditionalClasses} opacity-70">${data.nexxo.contacts.address}<br/>(VAT Code) P.IVA ${data.nexxo.vatCode}</p>
             <form id="contact-form" class="needs-validation" novalidate   method="POST" action="${contactFormUrl}">
               <input type="hidden" name="subject" value="Nexxoxp.com - Iscrizione da footer"/>
               <input type="hidden" name="name" value="Utente anonimo"/>
               <input type="hidden" name="message" value="Richiedo di essere aggiornato"/>
-              <label for="subscr-email" class="form-label">Iscriviti per ricevere ulteriori informazioni</label>
+              <label for="subscr-email" class="form-label">${this.i18n('generic.footer.subscribeForm.title')}</label>
               <div class="input-group">
                 <input type="email" name="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Email" required>
                 <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
-                <div class="invalid-tooltip position-absolute top-100 start-0">Inserisci una email valida!</div>
+                <div class="invalid-tooltip position-absolute top-100 start-0">${this.i18n('generic.footer.subscribeForm.validationWrongEmail')}</div>
                 <button type="submit" class="btn btn-primary">
                     <span class="spinner-border spinner-border-sm" style="display: none;" role="status" aria-hidden="true"></span>
-                    <span>Iscriviti</span>
+                    <span>${this.i18n('generic.footer.subscribeForm.cta')}</span>
               </button>
               </div>
             </form>
             <div id="contact-form-done" class="col-lg-6 col-md-7 offset-xl-1" style="display: none;">
-              <p class="fs-sm ${textAdditionalClasses}">Grazie per averci contattato! Un membro del nostro team si metterà in contatto con te il prima possibile.</p>
+              <p class="fs-sm ${textAdditionalClasses}">${this.i18n('generic.footer.subscribeForm.thankYouMessage')}</p>
             </div>
             <script src="https://www.google.com/recaptcha/api.js?render=${recaptchaClientKey}"></script>
             <script>
@@ -97,24 +97,24 @@ module.exports = async function (data) {
             <div id="footer-links" class="row">
               <div class="col-lg-4">
                 <h6 class="mb-2">
-                  <a href="#useful-links" class="d-block ${titleAdditionalClasses} dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Link utili</a>
+                  <a href="#useful-links" class="d-block ${titleAdditionalClasses} dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">${this.i18n('generic.footer.linkAccordion.title')}</a>
                 </h6>
                 <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column pb-lg-1 mb-lg-3">
-                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
-                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Chi Siamo</a></li>
-                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.whatWeDoSection')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Cosa Proponiamo</a></li>
-                    <li class="nav-item"><a href="${this.i18n('pagesUrl.sectors')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Settori</a></li>
-                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link d-inline-block px-0 pt-1 pb-2">Come Lavoriamo</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage')}" class="nav-link d-inline-block px-0 pt-1 pb-2">${this.i18n('pagesUrl.homepage.linkName')}</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link d-inline-block px-0 pt-1 pb-2">${this.i18n('pagesUrl.homepage.whoWeAreSection.linkName')}</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.whatWeDoSection')}" class="nav-link d-inline-block px-0 pt-1 pb-2">${this.i18n('pagesUrl.homepage.whatWeDoSection.linkName')}</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.sectors')}" class="nav-link d-inline-block px-0 pt-1 pb-2">${this.i18n('pagesUrl.sectors.linkName')}</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link d-inline-block px-0 pt-1 pb-2">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a></li>
                   </ul>
                   <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Informativa Privacy</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">${this.i18n('generic.footer.privacyPolicy')}</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-xl-4 col-lg-3">
                 <h6 class="mb-2">
-                  <a href="#social-links" class="d-block ${titleAdditionalClasses} dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Social</a>
+                  <a href="#social-links" class="d-block ${titleAdditionalClasses} dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">${this.i18n('generic.footer.socialAccordion.title')}</a>
                 </h6>
                 <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column mb-2 mb-lg-0">
@@ -126,9 +126,9 @@ module.exports = async function (data) {
                 </div>
               </div>
               <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
-                <h6 class="mb-2">Contattaci</h6>
-                <a href="mailto:email@example.com" class="fw-medium">info@nexxoxp.com</a>
-                <p class="fs-sm ${textAdditionalClasses} opacity-70">Tel: +39 0332 158 0443</p>
+                <h6 class="mb-2">${this.i18n('generic.footer.contactsSection.title')}</h6>
+                <a href="mailto:email@example.com" class="fw-medium">${data.nexxo.contacts.info}</a>
+                <p class="fs-sm ${textAdditionalClasses} opacity-70">Tel: ${data.nexxo.contacts.phone}</p>
               </div>
             </div>
           </div>

@@ -9,33 +9,33 @@ module.exports = async function (data) {
           </a>
           <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">
-              <h5 class="offcanvas-title">Menu</h5>
+              <h5 class="offcanvas-title">${this.i18n('generic.header.menu.title')}</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                  <a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link">Chi siamo</a>
+                  <a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link">${this.i18n('pagesUrl.homepage.whoWeAreSection.linkName')}</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="${this.i18n('pagesUrl.homepage.whatWeDoSection')}" class="nav-link dropdown-toggle">Cosa proponiamo</a>
+                  <a href="${this.i18n('pagesUrl.homepage.whatWeDoSection')}" class="nav-link dropdown-toggle">${this.i18n('pagesUrl.homepage.whatWeDoSection.linkName')}</a>
                   <div class= "dropdown-menu">
                     <ul class="list-unstyled">
                       <li>
-                        <a href="${this.i18n('pagesUrl.marketingAndCommunication')}" class="dropdown-item">Marketing e Comunicazione</a>                  
+                        <a href="${this.i18n('pagesUrl.marketingAndCommunication')}" class="dropdown-item">${this.i18n('pagesUrl.marketingAndCommunication.linkName')}</a>                  
                       </li>
                       <li>
-                      <a href="${this.i18n('pagesUrl.informationTechnology')}" class="dropdown-item">Tecnologie Informatiche</a>                  
+                      <a href="${this.i18n('pagesUrl.informationTechnology')}" class="dropdown-item">${this.i18n('pagesUrl.informationTechnology.linkName')}</a>                  
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a href="${this.i18n('pagesUrl.sectors')}" class="nav-link">Settori</a>
+                  <a href="${this.i18n('pagesUrl.sectors')}" class="nav-link">${this.i18n('pagesUrl.sectors.linkName')}</a>
                 </li>
                 <li class="nav-item">
-                  <a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link">Come lavoriamo</a>
+                  <a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a>
                 </li>
               </ul>
             </div>
@@ -52,7 +52,7 @@ module.exports = async function (data) {
           </button>
           <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
             <i class="bx bx-phone fs-5 lh-1 me-1"></i>
-            &nbsp;Contattaci
+            &nbsp;${this.i18n('pagesUrl.contactUs.linkName')}
           </a>
         </div>
       </header>

@@ -1,20 +1,32 @@
 module.exports = {
     homepage: {
         'it': '/it/',
+        linkName: {
+            'it': 'Home',
+        },
         whoWeAreSection: {
-            'it': '/it/#chi-siamo'
+            'it': '/it/#chi-siamo',
+            linkName: {
+                'it': 'Chi Siamo',
+            }
         },
         whoWeAreSectionId: {
-            'it': 'chi-siamo'
+            'it': 'chi-siamo',
         },
         whatWeDoSection: {
-            'it': '/it/#cosa-proponiamo'
+            'it': '/it/#cosa-proponiamo',
+            linkName: {
+                'it': 'Cosa Facciamo',
+            }
         },
         whatWeDoSectionId: {
             'it': 'cosa-proponiamo'
         },
         howWeWorkSection: {
-            'it': '/it/#come-lavoriamo'
+            'it': '/it/#come-lavoriamo',
+            linkName: {
+                'it': 'Come Lavoriamo',
+            }
         },
         howWeWorkSectionId: {
             'it': 'come-lavoriamo'
@@ -22,52 +34,64 @@ module.exports = {
     },
     marketingAndCommunication: {
         'it': '/it/marketing-e-comunicazione',
-        'en': '/en/marketing-and-communication'
+        'en': '/en/marketing-and-communication',
+        linkName: {
+            'it': 'Marketing e Comunicazione',
+        },
     },
     contactUs: {
         'it': '/it/contattaci',
-        'en': '/en/contact-us'
+        'en': '/en/contact-us',
+        linkName: {
+            'it': 'Contattaci',
+        },
     },
     informationTechnology: {
         'it': '/it/tecnologie-informatiche',
-        'en': '/en/information-technology'
+        'en': '/en/information-technology',
+        linkName: {
+            'it': 'Tecnologie Informatiche',
+        },
     },
     sectors: {
         'it': '/it/settori',
-        industrialSection:{
+        linkName: {
+            'it': 'Settori',
+        },
+        industrialSection: {
             'it': '/it/settori#industriale'
         },
-        industrialSectionId:{
+        industrialSectionId: {
             'it': 'industriale'
         },
-        maintenanceSection:{
+        maintenanceSection: {
             'it': '/it/settori#manutenzione'
         },
-        maintenanceSectionId:{
+        maintenanceSectionId: {
             'it': 'manutenzione'
         },
-        connectivitySection:{
+        connectivitySection: {
             'it': '/it/settori#connettivita'
         },
-        connectivitySectionId:{
+        connectivitySectionId: {
             'it': 'connettivita'
         },
-        safetySection:{
+        safetySection: {
             'it': '/it/settori#sicurezza'
         },
-        safetySectionId:{
+        safetySectionId: {
             'it': 'sicurezza'
         },
-        insuranceSection:{
+        insuranceSection: {
             'it': '/it/settori#assicurativo-e-finanziario'
         },
-        insuranceSectionId:{
+        insuranceSectionId: {
             'it': 'assicurativo-e-finanziario'
         },
-        luxurySection:{
+        luxurySection: {
             'it': '/it/settori#beni-di-valore'
         },
-        luxurySectionId:{
+        luxurySectionId: {
             'it': 'beni-di-valore'
         }
     }
