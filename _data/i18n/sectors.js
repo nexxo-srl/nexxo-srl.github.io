@@ -1,10 +1,10 @@
 module.exports = {
-    item01:{
-        title:{
+    item01: {
+        title: {
             'it': 'Industriale',
             'en': 'Industrial'
         },
-        paragraph:{
+        paragraph: {
             'it': '<ul>' +
                 '<li>Creazione di report in tempo reale direttamente dagli impianti e dalle macchine, certificando i tempi di attività, fermi macchina, allarmi, anomalie, temperature, ecc.</li>' +
                 '<li>Certificazione:' +
@@ -19,7 +19,8 @@ module.exports = {
                 '<li>Automatizzazione e riduzione dei costi dei certificati di origine energetici.</li>' +
                 '<li>Tracciabilità della produzione e distribuzione di idrogeno e biogas.</li>' +
                 '</ul>',
-            'en': '<li>Real-time report creation directly from plants and machines, certifying uptime, machine downtime, alarms, anomalies, temperatures, etc.</li>' +
+            'en': '<ul>' +
+                '<li>Real-time report creation directly from plants and machines, certifying uptime, machine downtime, alarms, anomalies, temperatures, etc.</li>' +
                 '<li>Certification::' +
                 '<ul>' +
                 '<li>of the cold chain which guarantees transparency and reliability;</li>' +
@@ -34,32 +35,32 @@ module.exports = {
                 '</ul>'
         }
     },
-    item02:{
-        title:{
+    item02: {
+        title: {
             'it': 'Manutenzione, tracciabilità e ispezione',
             'en': 'Maintenance, traceability and inspection'
         },
-        paragraph:{
+        paragraph: {
             'it': '<ul>' +
                 '<li>Monitoraggio e certificazione di: allarmi, aggiornamenti, condizioni ambientali, tempi di servizio, attività di manutenzione e ispezioni, arresti macchine e sistemi antincendio.</li>' +
                 '<li>Creazione di report verificabili; digitalizzazione dei processi; miglioramento dell\'efficienza e dell\'affidabilità.</li>' +
                 '<li>Tracciamento ed evidenza di tutte le operazioni di carico e scarico, stato merce e ricevimenti. Monitoraggio e prova inalterabile dello stato di avanzamento dei lavori.</li>' +
-                '<li>Monitoraggio e prova inalterabile dello stato di avanzamento dei lavori.</li>'
+                '<li>Monitoraggio e prova inalterabile dello stato di avanzamento dei lavori.</li>' +
                 '</ul>',
             'en': '<ul>' +
                 '<li>Monitoring and certification of: alarms, updates, environmental conditions, service times, maintenance and inspection activities, machine shutdowns and fire protection systems.</li>' +
                 '<li>Creation of verifiable reports; process digitization; improvement of efficiency and reliability.</li>' +
                 '<li>Tracking and evidence of all loading and unloading operations, goods status and receptions.</li>' +
-                '<li>Monitoring and unalterable proof of the progress of the work.</li>'
+                '<li>Monitoring and unalterable proof of the progress of the work.</li>' +
                 '</ul>'
         }
     },
-    item03:{
-        title:{
+    item03: {
+        title: {
             'it': 'Connettività e cybersecurity',
             'en': 'Connectivity and cybersecurity'
         },
-        paragraph:{
+        paragraph: {
             'it': '<ul>' +
                 '<li>Prova verificabile delle comunicazioni e dello stato di servizio in ogni momento.</li>' +
                 '<li>Certificazione di immagini satellitari.</li>' +
@@ -72,12 +73,12 @@ module.exports = {
                 '</ul>'
         }
     },
-    item04:{
-        title:{
+    item04: {
+        title: {
             'it': 'Sicurezza',
             'en': 'Safety'
         },
-        paragraph:{
+        paragraph: {
             'it': '<ul>' +
                 '<li>Negli ambienti industriali e infrastrutturali è indispensabile avere visibilità sullo stato di tutti i sistemi di sicurezza, come:\n<ul>' +
                 '<li>prova dell’evento per lo stato del sistema, allarmi ed incidenti;</li>' +
@@ -91,19 +92,17 @@ module.exports = {
                 '<li>In industrial and infrastructural environments it is essential to have visibility on the status of all security systems, such as:</li>' +
                 '<li>evidence of the event for the status of the system, alarms and accidents;</li>' +
                 '<li>proof of work for maintenance and inspections;</li>' +
-                '<li>rapid implementation of the blockchain without the need for a specific platform.</li>'
-                '</ul>' +
-                '</li>' +
+                '<li>rapid implementation of the blockchain without the need for a specific platform.</li>' +
                 '<li>Traceability of the status of the company fleet at any time, with a certified history of activities. Maximum quality assurance and transparency in the transport service.</li>' +
                 '</ul>'
         }
     },
-    item05:{
-        title:{
+    item05: {
+        title: {
             'it': 'Assicurativo e finanziario',
             'en': 'Insurance and financial'
         },
-        paragraph:{
+        paragraph: {
             'it': '<ul>' +
                 '<li>Promozione di nuovi progetti e miglioramento di quelli esistenti aggiungendo strumenti innovativi e di rapida implementazione.</li>' +
                 '<li>Creazione di una cronologia certificata degli eventi soggetti a verifiche. Tracciamento, autenticità ed evidenza delle operazioni che sono soggette ai controlli assicurativi.</li>' +
@@ -114,12 +113,12 @@ module.exports = {
                 '</ul>'
         }
     },
-    item06:{
-        title:{
+    item06: {
+        title: {
             'it': 'Beni di valore',
             'en': 'Luxury goods'
         },
-        paragraph:{
+        paragraph: {
             'it': '<ul>' +
                 '<li>Tracciabilità delle materie prime e dei prodotti lungo la filiera, proteggendoli dalle contraffazioni.</li>' +
                 '<li>Certificazione di unicità dei singoli capi all\'interno di una collezione.</li>' +
