@@ -8,29 +8,29 @@ module.exports = {
             'it': '/it/#chi-siamo',
             linkName: {
                 'it': 'Chi Siamo',
+            },
+            id: {
+                'it': 'chi-siamo',
             }
-        },
-        whoWeAreSectionId: {
-            'it': 'chi-siamo',
         },
         whatWeDoSection: {
             'it': '/it/#cosa-proponiamo',
             linkName: {
                 'it': 'Cosa Facciamo',
+            },
+            id: {
+                'it': 'cosa-proponiamo'
             }
-        },
-        whatWeDoSectionId: {
-            'it': 'cosa-proponiamo'
         },
         howWeWorkSection: {
             'it': '/it/#come-lavoriamo',
             linkName: {
                 'it': 'Come Lavoriamo',
+            },
+            id: {
+                'it': 'come-lavoriamo'
             }
         },
-        howWeWorkSectionId: {
-            'it': 'come-lavoriamo'
-        }
     },
     marketingAndCommunication: {
         'it': '/it/marketing-e-comunicazione',

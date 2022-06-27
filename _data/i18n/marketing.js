@@ -4,7 +4,7 @@ module.exports = {
         'en': ''
     },
     subtitle: {
-        'it': 'Cosa proponiamoCosa proponiamo',
+        'it': 'Cosa proponiamo',
         'en': ''
     },
     description: {
