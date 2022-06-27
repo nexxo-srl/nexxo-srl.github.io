@@ -176,8 +176,8 @@ module.exports = {
                 'en': 'We connect your corporate communication on social platforms. Increase competitiveness by communicating on networks such as LinkedIn, Instagram, Facebook, TikTok, etc.'
             },
             cta: {
-                'it': 'Marketing e Comunicazione',
-                'en': 'Marketing and Communication'
+                'it': 'Scopri di più',
+                'en': 'Discover more'
             }
         },
         card02: {
@@ -194,8 +194,8 @@ module.exports = {
                 'en': 'Tracking the supply chain, monitoring and certification of use of industrial goods (eg. Hours of use, alarms, anomalies) for greater safety and competitiveness.'
             },
             cta: {
-                'it': 'Tecnologie Informatiche',
-                'en': 'Information technology'
+                'it': 'Scopri di più',
+                'en': 'Discover more'
             }
         }
     },
