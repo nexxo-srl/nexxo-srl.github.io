@@ -1,6 +1,6 @@
 module.exports = {
     title: {
-        'it': 'Tecnologie informatiche',
+        'it': 'Tecnologie Informatiche',
         'en': 'Information Technology'
     },
     subtitle: {

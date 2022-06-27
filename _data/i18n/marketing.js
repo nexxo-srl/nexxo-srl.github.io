@@ -1,6 +1,6 @@
 module.exports = {
     title: {
-        'it': 'Marketing e comunicazione',
+        'it': 'Marketing e Comunicazione',
         'en': 'Marketing and Communication'
     },
     subtitle: {

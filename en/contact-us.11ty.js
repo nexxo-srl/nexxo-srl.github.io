@@ -1,20 +1,21 @@
-const sectorsPageContent = require("../_includes/components/pages/sectors");
+const contactUsPageContent = require('../_includes/components/pages/contactUs')
+
 module.exports = class {
     data() {
         return {
             layout: 'layout.11ty.js',
-            pageTitle: 'Settori',
+            pageTitle: 'Contact Us',
             author: 'Nexxo Cross Platform S.r.l.',
             pageDescription: 'Forniamo servizi di certificazione dei dati basati su tecnologia IoT e Blockchain che rendono le prestazioni misurabili e praticabili come modello di business.',
             eleventyNavigation: {
-                key: 'settori',
-                title: 'Settori',
+                key: 'contact-us',
+                title: 'Contact Us',
             },
             isWhiteFooter: true
         }
     }
 
     async render(data) {
-        return `${await sectorsPageContent.call(this, data)}`
+        return `${await contactUsPageContent.call(this, data)}`
     }
 }

@@ -1,50 +1,50 @@
 module.exports = {
     title: {
         'it': 'Contattaci',
-        'en': ''
+        'en': 'Contact Us'
     },
-    emailCard:{
-        title:{
+    emailCard: {
+        title: {
             'it': 'Scrivici',
-            'en': ''
+            'en': 'Email Us'
         },
         paragraph01: {
             'it': 'Non esitare a contattarci, ti risponderemo in tempi brevi',
-            'en': ''
+            'en': 'Please feel free to drop us a line. We will respond as soon as possible'
         },
         messageCTA: {
             'it': 'Lascia un messaggio',
-            'en': ''
+            'en': 'Leave a message'
         }
     },
-    phoneCard:{
-        title:{
+    phoneCard: {
+        title: {
             'it': 'Chiamaci',
-            'en': ''
+            'en': 'Call any time'
         },
         paragraph01: {
             'it': 'Per un immediato confronto siamo disponibili negli orari:',
-            'en': ''
+            'en': 'If you need assistance feel free to call us.'
         },
         paragraph02: {
             'it': 'Lun - Ven 9:00 - 18:00',
-            'en': ''
+            'en': 'Working hours: Mon - Fri 9.00 am - 6.00 pm'
         }
     },
-    locationCard:{
-        title:{
+    locationCard: {
+        title: {
             'it': 'Dove trovarci',
-            'en': ''
+            'en': 'Visit us'
         }
     },
     contactForm: {
         title: {
             'it': 'Lasciaci un messaggio',
-            'en': ''
+            'en': 'Leave us a message'
         },
         subtitle: {
             'it': 'Hai un progetto in mente? Contattaci oppure compila il form qui sotto.',
-            'en': ''
+            'en': 'Have a project in mind? To request a quote contact us directly or fill out the form and let us know how we can help.'
         },
         fullNameField: {
             label: {

@@ -67,7 +67,7 @@ module.exports = async function (data) {
                         formData.set('recaptcha', token)
                         const fail = () => {
                             unlockForm()
-                            alert('L\\'invio della email è fallito')
+                            alert(\`${this.i18n('generic.footer.subscribeForm.errorPopup.failedEmailSending')}\`)
                         }
                         const success = () => {
                             form.reset()

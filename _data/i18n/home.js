@@ -1,7 +1,7 @@
 module.exports = {
     slideCTA: {
         'it': 'Cosa proponiamo',
-        'en': ''
+        'en': 'What we propose'
     },
     slideTitle01: {
         'it': 'Noi, l\'agenzia digitale per il tuo business',
@@ -135,7 +135,7 @@ module.exports = {
             },
             listElement02: {
                 'it': 'Mock-up - è un’anteprima che simula la resa finale del progetto.',
-                'en': 'Mock-up - - is a preview that simulates the final result of the project.'
+                'en': 'Mock-up - is a preview that simulates the final result of the project.'
             }
         },
         step04: {

@@ -15,6 +15,7 @@ module.exports = {
         menu:{
             title:{
                 'it': 'Menu',
+                'en': 'Menu',
             }
         }
     },
@@ -60,6 +61,12 @@ module.exports = {
             thankYouMessage: {
                 'it': 'Grazie per averci contattato! Un membro del nostro team si metterà in contatto con te il prima possibile.',
                 'en': 'Thank you for contacting us! A member from our team will be reaching out to you soon.'
+            },
+            errorPopup: {
+                failedEmailSending: {
+                    'it': 'L\'invio dell\'email è fallito!',
+                    'en': 'There was an error submitting the request.'
+                }
             }
         }
     }

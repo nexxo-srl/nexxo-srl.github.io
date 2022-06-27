@@ -11,6 +11,11 @@ module.exports = async function(data) {
     const facebookVerification = ''
     const tagManagerId = ''
 
+    const [headerContent, footerContent] = await Promise.all([
+        (async () => data.hideHeader ? '' : await header.call(this, data))(),
+        (async () => data.hideFooter ? '' : await footer.call(this, data))(),
+    ])
+
     return `<!doctype html>
         <html lang="${data.locale}" dir="${data.dir}">
             <head>
@@ -175,9 +180,9 @@ module.exports = async function(data) {
                   </div>
                 </div>
 
-                ${data.hideHeader ? '' : await header.call(this, data)}
+                ${headerContent}
                 ${data.content}
-                ${data.hideFooter ? '' : await footer.call(this, data)}
+                ${footerContent}
                 
             </body>
 

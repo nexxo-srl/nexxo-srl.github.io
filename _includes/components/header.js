@@ -1,6 +1,6 @@
 module.exports = async function (data) {
     return `
-<!-- Navbar -->
+      <!-- Navbar -->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
       <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
         <div class="container px-3">
@@ -42,6 +42,17 @@ module.exports = async function (data) {
             <div class="offcanvas-footer border-top">     
             </div>
           </div>
+          <div class="nav-item dropdown">
+              <a href="" class="nav-link dropdown-toggle">${this.i18n('pagesUrl.languageSwitch.label')}</a>
+              <div class= "dropdown-menu">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="${this.i18n('pagesUrl.languageSwitch.otherLanguageUrl')}" class="dropdown-item">${this.i18n('pagesUrl.languageSwitch.otherLanguageLabel')}</a>                  
+                  </li>
+                </ul>
+              </div>
+          </div>
+          
           <!--div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
             <input type="checkbox" class="form-check-input" id="theme-mode">
             <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
