@@ -42,7 +42,11 @@ module.exports = async function (data) {
                 
               </ul>
             </div>
-            <div class="offcanvas-footer border-top">     
+            <div class="offcanvas-footer border-top">
+                <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-Fprimary w-100">
+                    <i class="bx bx-phone fs-5 lh-1 me-1"></i>
+                    &nbsp;${this.i18n('pagesUrl.contactUs.linkName')}
+                </a>     
             </div>
           </div>
           

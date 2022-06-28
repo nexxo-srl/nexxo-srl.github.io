@@ -8,7 +8,7 @@ module.exports = {
         'en': 'What we offer'
     },
     description: {
-        'it': 'Ti supportiamo per semplificare la tua operatività attraverso un\'assistenza puntuale ed un supporto professionale in tutte le fase del tuo progetto, offrendoti servizi di comunicazione aziendale e marketing strategico su misura.',
+        'it': 'Ti supportiamo per semplificare la tua operatività attraverso un\'assistenza puntuale ed un supporto professionale in tutte le fasi del tuo progetto, offrendoti servizi di comunicazione aziendale e marketing strategico su misura.',
         'en': 'We support you to simplify your operations through timely assistance and professional advisory in all phases of your project, offering you customized corporate communication and strategic marketing services.'
     },
     slider: {
@@ -17,7 +17,7 @@ module.exports = {
             'en': 'Our services'
         },
         description: {
-            'it': 'Forniamo servizi e consulenza in marketing e comunicazione aziendale attraverso un portafoglio di soluzioni integrate, accompagnando le aziende durante tutto il processo di ridefinizione e sviluppo del business aziendale.',
+            'it': 'Forniamo servizi e consulenza in marketing e comunicazione aziendale attraverso un portafoglio di soluzioni integrate, accompagnando le aziende durante tutto il processo di ridefinizione e sviluppo del business.',
             'en': 'We provide services and advisory in marketing and corporate communication through a portfolio of integrated solutions, accompanying companies throughout the process of redefining and developing the business models.'
         },
         item01: {
@@ -101,7 +101,7 @@ module.exports = {
         fullNameField: {
             label: {
                 'it': 'Nome e Cognome',
-                'en': 'First Name and Last Name'
+                'en': 'Full Name'
             },
             errorMessage: {
                 'it': 'Inserisci il tuo Nome e Cognome!',

@@ -49,7 +49,7 @@ module.exports = {
         fullNameField: {
             label: {
                 'it': 'Nome e Cognome',
-                'en': 'First Name and Last Name'
+                'en': 'Full Name'
             },
             errorMessage: {
                 'it': 'Inserisci il tuo Nome e Cognome!',

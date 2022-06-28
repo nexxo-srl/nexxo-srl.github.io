@@ -127,7 +127,7 @@ module.exports = async function (data) {
               </div>
               <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
                 <h6 class="mb-2">${this.i18n('generic.footer.contactsSection.title')}</h6>
-                <a href="mailto:email@example.com" class="fw-medium">${data.nexxo.contacts.info}</a>
+                <a href="mailto:${data.nexxo.contacts.info}" class="fw-medium">${data.nexxo.contacts.info}</a>
                 <p class="fs-sm ${textAdditionalClasses} opacity-70">Tel: ${data.nexxo.contacts.phone}</p>
               </div>
             </div>

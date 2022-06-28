@@ -32,7 +32,7 @@ module.exports = {
             bulletPoints: {
                 item01: {
                     'it': '“Notarizzare” significa registrare digitalmente un qualsiasi documento in un registro distribuito (Blockchain) creando un file unico ed immutabile nel tempo.',
-                    'en': '-Digitally registering any document in a distributed ledger (Blockchain), creating a single file unchangeable over time.'
+                    'en': 'Digitally registering any document in a distributed ledger (Blockchain), creating a single file unchangeable over time.'
                 },
                 item02: {
                     'it': 'Certificazione autenticità dei dati mediante firma digitale.',
@@ -64,7 +64,7 @@ module.exports = {
                 },
                 item03: {
                     'it': 'Creazione di report in tempo reale direttamente dagli impianti e dalle macchine, certificando i tempi di attività, fermi macchina, allarmi, anomalie, temperature, ecc.',
-                    'en': '-Real-time report creation directly from plants and machines, certifying uptime, machine downtime, alarms, anomalies, temperatures, etc.'
+                    'en': 'Real-time report creation directly from plants and machines, certifying uptime, machine downtime, alarms, anomalies, temperatures, etc.'
                 }
             }
         },
@@ -80,7 +80,7 @@ module.exports = {
                 },
                 item02: {
                     'it': 'Sviluppo e configurazione acquisizione dati basto sul sistema Trusted IoT.',
-                    'en': '-Development and configuration of data acquisition based on the Trusted IoT system.'
+                    'en': 'Development and configuration of data acquisition based on the Trusted IoT system.'
                 },
                 item03: {
                     'it': 'Realizzazione piattaforme web-app per certificazione dati in Blockchain.',
@@ -105,7 +105,7 @@ module.exports = {
         fullNameField: {
             label: {
                 'it': 'Nome e Cognome',
-                'en': 'First Name and Last Name'
+                'en': 'Full Name'
             },
             errorMessage: {
                 'it': 'Inserisci il tuo Nome e Cognome!',

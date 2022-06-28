@@ -83,7 +83,7 @@ module.exports = {
             },
             paragraph02: {
                 'it': 'Internet-of-Things (IoT) e Blockchain.',
-                'en': 'Internet-of-Things (IoT) and Blockchain.'
+                'en': ''
             }
         }
     },
@@ -177,7 +177,7 @@ module.exports = {
             },
             cta: {
                 'it': 'Scopri di più',
-                'en': 'Discover more'
+                'en': 'Learn more'
             }
         },
         card02: {
@@ -195,7 +195,7 @@ module.exports = {
             },
             cta: {
                 'it': 'Scopri di più',
-                'en': 'Discover more'
+                'en': 'Learn more'
             }
         }
     },

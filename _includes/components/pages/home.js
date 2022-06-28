@@ -140,7 +140,7 @@ module.exports = async function(data)
                   <a href="${this.i18n('pagesUrl.marketingAndCommunication')}" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                     <div class="card-body pt-3">
                       <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                        ${await this.image('services/icons/cms.svg', 'Icon', 'd-block m-1', [40], '40w')}
+                        ${await this.image('services/icons/cms.svg', 'Icon', 'd-block m-1', [160, 120, 80, 40], '40w')}
                       </div>
                       <h2 class="h4 d-inline-flex align-items-center">
                         ${this.i18n('home.whatWeDo.marketing.title')}
@@ -156,7 +156,7 @@ module.exports = async function(data)
                   <a href="${this.i18n('pagesUrl.informationTechnology')}" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                     <div class="card-body pt-3">
                       <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                        ${await this.image('services/icons/rocket.svg', 'Icon', 'd-block m-1', [40], '40w')}                      
+                        ${await this.image('services/icons/rocket.svg', 'Icon', 'd-block m-1', [160, 120, 80, 40], '40w')}                      
                       </div>
                       <h2 class="h4 d-inline-flex align-items-center">
                         ${this.i18n('home.whatWeDo.technology.title')}
@@ -183,7 +183,7 @@ module.exports = async function(data)
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.3" data-disable-parallax-down="lg">
-                    ${await this.image('home/how-it-works/accordo-di-riservatezza.png', 'Accordo di riservatezza', 'd-dark-mode-none', [306], '306w')}
+                    ${await this.image('home/how-it-works/accordo-di-riservatezza.png', 'Accordo di riservatezza', 'd-dark-mode-none', [918, 612, 306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.4" data-disable-parallax-down="lg">
                     <h3 class="h4">${this.i18n('home.howWeWork.step01.title')}</h3>
@@ -197,7 +197,7 @@ module.exports = async function(data)
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="lg">
-                    ${await this.image('home/how-it-works/fase-conoscitiva.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
+                    ${await this.image('home/how-it-works/fase-conoscitiva.png', 'Illustration', 'd-dark-mode-none', [918, 612, 306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.5" data-disable-parallax-down="lg">
                     <h3 class="h4">${this.i18n('home.howWeWork.step02.title')}</h3>
@@ -215,7 +215,7 @@ module.exports = async function(data)
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.3" data-disable-parallax-down="lg">
-                    ${await this.image('home/how-it-works/fase-ux-ui-design.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
+                    ${await this.image('home/how-it-works/fase-ux-ui-design.png', 'Illustration', 'd-dark-mode-none', [918, 612, 306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.4" data-disable-parallax-down="lg">
                     <h3 class="h4">${this.i18n('home.howWeWork.step03.title')}</h3>
@@ -233,7 +233,7 @@ module.exports = async function(data)
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="lg">
-                    ${await this.image('home/how-it-works/fase-conclusiva.png', 'Illustration', 'd-dark-mode-none', [306], '306w')}
+                    ${await this.image('home/how-it-works/fase-conclusiva.png', 'Illustration', 'd-dark-mode-none', [918, 612, 306], '306w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.6" data-disable-parallax-down="lg">
                     <h3 class="h4">${this.i18n('home.howWeWork.step04.title')}</h3>
