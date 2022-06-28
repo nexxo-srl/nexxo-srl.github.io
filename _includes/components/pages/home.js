@@ -1,7 +1,6 @@
 module.exports = async function(data)
 {
-    return `<main class="page-wrapper">
-          
+    return `
           <!-- Hero slider + BG parallax -->
           <section class="jarallax dark-mode bg-dark py-xxl-5" data-jarallax data-speed="0.4">
             <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-translucent"></span>
@@ -45,7 +44,7 @@ module.exports = async function(data)
                             <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">${this.i18n('home.slideDescription01')}</p>
                           </div>
                           <div class="scale-up delay-1">
-                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.slideCTA')}</a>
+                            <a href="#${this.i18n('pagesUrl.homepage.whatWeDoSection.id')}" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.slideCTA')}</a>
                           </div>
 
                         </div>
@@ -57,7 +56,7 @@ module.exports = async function(data)
                             <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">${this.i18n('home.slideDescription02')}</p>
                           </div>
                           <div class="scale-up delay-1">
-                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.slideCTA')}</a>
+                            <a href="#${this.i18n('pagesUrl.homepage.whatWeDoSection.id')}" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.slideCTA')}</a>
                           </div>
                         </div>
 
@@ -68,7 +67,7 @@ module.exports = async function(data)
                             <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">${this.i18n('home.slideDescription03')}</p>
                           </div>
                           <div class="scale-up delay-1">
-                            <a href="#cosa-proponiamo" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.slideCTA')}</a>
+                            <a href="#${this.i18n('pagesUrl.homepage.whatWeDoSection.id')}" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.slideCTA')}</a>
                           </div>
                         </div>
                       </div>
@@ -482,7 +481,5 @@ module.exports = async function(data)
           <h2 class="h1 text-light pb-3 pb-lg-0 mb-lg-5">${this.i18n('home.preFooterCTA.title')}</h2>
           <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary shadow-primary btn-lg">${this.i18n('home.preFooterCTA.contactUsCTA')}</a>
         </div>
-      </section>
-        
-    </main>`
+      </section>`
 }

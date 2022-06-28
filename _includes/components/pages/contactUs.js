@@ -3,8 +3,7 @@ module.exports = async function(data)
     const recaptchaClientKey = '6Ldlg5kgAAAAACt717ealB2V2KO-T6XuuTwzfOTB'
     const contactFormUrl = 'https://us-central1-nexxoxp-website.cloudfunctions.net/contactUs'
 
-    return `<main class="page-wrapper">
-
+    return `
       <!-- Page content -->
       <section class="container">
 
@@ -161,6 +160,5 @@ module.exports = async function(data)
                 })
             </script>
         </div>
-      </section>
-    </main>`
+      </section>`
 }

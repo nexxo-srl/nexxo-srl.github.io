@@ -16,8 +16,7 @@ module.exports = class {
     }
 
     render(data) {
-        return `<main class="page-wrapper">
-
+        return `
       <!-- BG  -->
       <div class="d-dark-mode-none position-absolute top-0 start-0 w-100 h-100 bg-repeat-0 bg-position-center bg-size-cover" style="background-image: url(/assets/img/404/bg.jpg);"></div>
       
@@ -52,7 +51,6 @@ module.exports = class {
             <span class="opacity-75">&copy; 2022 ${data.nexxo.fullName} | P.IVA ${data.nexxo.vatCode} | ${this.i18n('generic.allRightsReserved')}</span> 
           </p>
         </div>  
-      </section>
-    </main>`
+      </section>`
     }
 }

@@ -6,7 +6,7 @@ const lazyCssLink = (href, media) => {
     <noscript><link rel="stylesheet" type="text/css" media="${media}" href="${href}"></noscript>`
 }
 
-module.exports = async function(data) {
+module.exports = async function (data) {
     const canonical = `${data.nexxo.domain}${data.page.url}`
     const facebookVerification = ''
     const tagManagerId = ''
@@ -16,7 +16,8 @@ module.exports = async function(data) {
         (async () => data.hideFooter ? '' : await footer.call(this, data))(),
     ])
 
-    return `<!doctype html>
+    return `
+        <!doctype html>
         <html lang="${data.locale}" dir="${data.dir}">
             <head>
                 <meta charset="utf-8">
@@ -28,7 +29,7 @@ module.exports = async function(data) {
                 
                 <!-- Viewport -->
                 <meta name="viewport" content="width=device-width, initial-scale=1">
-                ${data.additionalMeta ? data.additionalMeta : '' }
+                ${data.additionalMeta ? data.additionalMeta : ''}
 
                 <!-- Favicon and Touch Icons -->
                 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -41,12 +42,17 @@ module.exports = async function(data) {
                 <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
                 <meta name="theme-color" content="#ffffff">
                          
-                <!-- Vendor Styles -->
-                <link rel="stylesheet" media="screen" href="/assets/vendor/boxicons/css/boxicons.min.css"/>
-                <link rel="stylesheet" media="screen" href="/assets/vendor/swiper/swiper-bundle.min.css"/>
-
-                <!-- Main Theme Styles + Bootstrap -->
-                <link rel="stylesheet" media="screen" href="/assets/css/theme.min.css">
+                <!-- Vendor Styles -->      
+                ${lazyCssLink('/assets/vendor/boxicons/css/boxicons.min.css', 'screen')}
+                ${lazyCssLink('/assets/vendor/swiper/swiper-bundle.min.css', 'screen')}
+                ${lazyCssLink('/assets/vendor/animate/animate.min.css', 'screen')}
+                ${lazyCssLink('/assets/vendor/aos/aos.css', 'screen')}
+                ${lazyCssLink('/assets/vendor/font-awesome/css/all.min.css', 'screen')}
+                ${lazyCssLink('/assets/vendor/glightbox/css/glightbox.css', 'screen')}
+                ${lazyCssLink('/assets/vendor/themify-icons/css/themify-icons.css', 'screen')}
+              
+                <!-- Main Theme Styles + Bootstrap -->               
+                ${lazyCssLink('/assets/css/theme.min.css', 'all')}
                 
                 <!-- Page loading styles -->
                 <style>
@@ -126,26 +132,6 @@ module.exports = async function(data) {
                     }
                   }
                 </style>
-    
-                <!-- Plugins CSS -->
-                ${lazyCssLink('/assets/vendor/font-awesome/css/all.min.css', 'screen')}
-                ${lazyCssLink('/assets/vendor/themify-icons/css/themify-icons.css', 'screen')}
-                ${lazyCssLink('/assets/vendor/animate/animate.min.css', 'screen')}
-                ${lazyCssLink('/assets/vendor/glightbox/css/glightbox.css', 'screen')}
-                ${lazyCssLink('/assets/vendor/aos/aos.css', 'screen')}
-                
-                <!-- Theme CSS -->
-                ${lazyCssLink('/assets/css/theme.css', 'all')}
-                
-                <!-- Bootstrap JS -->
-                <script defer src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-               
-                <!-- Vendor Scripts -->
-                <script defer src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-                <script defer src="/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.js"></script>
-                <script defer src="/assets/vendor/jarallax/dist/jarallax.min.js"></script>
-                <script defer src="/assets/vendor/parallax-js/dist/parallax.min.js"></script>
-                <script defer src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
                 <!-- Theme mode -->
                 <script>
@@ -170,8 +156,9 @@ module.exports = async function(data) {
                     };
                   })();
                 </script>
-
             </head>
+            
+            <!-- Body -->
             <body>
                 <!-- Page loading spinner -->
                 <div class="page-loading active">
@@ -180,20 +167,27 @@ module.exports = async function(data) {
                   </div>
                 </div>
 
-                ${headerContent}
-                ${data.content}
+                <main class="page-wrapper">
+                    ${headerContent}
+                    ${data.content}
+                </main>                
                 ${footerContent}
                 
-            </body>
+                <!-- Back to top button -->
+                <a href="#top" class="btn-scroll-top" data-scroll>
+                  <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+                  <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+                </a>
 
-            <!-- Back to top button -->
-            <a href="#top" class="btn-scroll-top" data-scroll>
-              <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
-              <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
-            </a>
-
-          <!-- Main Theme Script -->
-          <script defer src="/assets/js/theme.min.js"></script>
-
+                <!-- Vendor Scripts -->
+                <script defer src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script defer src="/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.js"></script>
+                <script defer src="/assets/vendor/jarallax/dist/jarallax.min.js"></script>
+                <script defer src="/assets/vendor/parallax-js/dist/parallax.min.js"></script>
+                <script defer src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    
+                <!-- Main Theme Script -->
+                <script defer src="/assets/js/theme.min.js"></script>
+            </body>          
         </html>`
 }

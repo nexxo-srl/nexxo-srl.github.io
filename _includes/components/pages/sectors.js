@@ -1,7 +1,6 @@
 module.exports = async function(data)
 {
-    return `<main class="page-wrapper">
-
+    return `
       <!-- Breadcrumb -->
       <nav class="container py-4 my-lg-3" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
@@ -133,6 +132,5 @@ module.exports = async function(data)
             </div>
           </div>
         </div>
-      </section>
-    </main>`
+      </section>`
 }

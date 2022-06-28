@@ -16,6 +16,6 @@ module.exports = class {
     }
 
     async render(data) {
-        return `<main class="page-wrapper"></main>`
+        return ``
     }
 }
