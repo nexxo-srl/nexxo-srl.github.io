@@ -26,6 +26,7 @@ module.exports = (eleventyConfig) => {
         .addPassthroughCopy({'node_modules/ityped/dist': 'assets/vendor/ityped'})
         .addPassthroughCopy({'node_modules/jarallax/dist': 'assets/vendor/jarallax/dist'})
         .addPassthroughCopy({'node_modules/parallax-js/dist': 'assets/vendor/parallax-js/dist'})
+        .addPassthroughCopy({'node_modules/rellax/rellax.min.js': 'assets/vendor/rellax/dist/rellax.min.js'})
         .addPassthroughCopy({'node_modules/smooth-scroll/dist': 'assets/vendor/smooth-scroll/dist'})
         .addPassthroughCopy({'node_modules/swiper': 'assets/vendor/swiper'})
 

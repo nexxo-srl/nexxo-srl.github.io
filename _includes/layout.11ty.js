@@ -184,6 +184,7 @@ module.exports = async function (data) {
                 <script defer src="/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.js"></script>
                 <script defer src="/assets/vendor/jarallax/dist/jarallax.min.js"></script>
                 <script defer src="/assets/vendor/parallax-js/dist/parallax.min.js"></script>
+                <script defer src="/assets/vendor/rellax/dist/rellax.min.js"></script>
                 <script defer src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
     
                 <!-- Main Theme Script -->

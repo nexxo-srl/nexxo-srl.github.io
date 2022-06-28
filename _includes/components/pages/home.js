@@ -1,3 +1,5 @@
+const paddedAnchor = require('./utils/paddedAnchor')
+
 module.exports = async function(data)
 {
     return `
@@ -121,7 +123,8 @@ module.exports = async function(data)
           </section>
 
           <!-- What We Do Section -->
-          <section id="${this.i18n('pagesUrl.homepage.whatWeDoSection.id')}" class="bg-secondary pb-md-2 pb-lg-5">
+          <section class="bg-secondary pb-md-2 pb-lg-5">
+            ${paddedAnchor(this.i18n('pagesUrl.homepage.whatWeDoSection.id'))}
             <div class="d-none d-lg-block"></div>
             <div class="container pb-4 pt-5">
               <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4"><a>${this.i18n('home.whatWeDo.title')}</a></h2>
@@ -170,7 +173,8 @@ module.exports = async function(data)
 
 
           <!-- How We Work -->
-          <section id="${this.i18n('pagesUrl.homepage.howWeWorkSection.id')}" class="container py-5 my-2 my-md-4 my-lg-5">
+          <section class="container py-5 my-2 my-md-4 my-lg-5">
+            ${paddedAnchor(this.i18n('pagesUrl.homepage.howWeWorkSection.id'))}
             <h2 class="h1 pb-3 pb-md-0 mb-md-5"><a>${this.i18n('home.howWeWork.title')}</a></h2>
             <div class="steps">
               <div class="step pt-0 pt-md-3 pb-5">

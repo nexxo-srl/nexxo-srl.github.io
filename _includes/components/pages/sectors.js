@@ -1,3 +1,5 @@
+const paddedAnchor = require('./utils/paddedAnchor')
+
 module.exports = async function(data)
 {
     return `
@@ -11,102 +13,94 @@ module.exports = async function(data)
         </ol>
       </nav>
 
-
-      <!-- Page title + filters -->
-      <!--section class="container d-sm-flex align-items-center justify-content-between pb-4 mb-2 mb-lg-3">
-        <h1 class="mb-sm-0 me-sm-3">Settori</h1>
-        <select class="form-select" style="width: 240px;">
-          <option value="All categories">Categorie</option>
-          <option value="Manufacturing">Manufacturing</option>
-          <option value="Maintenance">Maintenance</option>
-          <option value="Safety & Security">Safety & Security</option>
-          <option value="Value Services">Value Services</option>
-        </select>
-      </section-->
-
-
       <!-- Portfolio list -->
       <section class="container pb-2 pb-lg-3">
 
         <!-- Item 01 -->
-        <div id="${this.i18n('pagesUrl.sectors.industrialSectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
+        ${paddedAnchor(this.i18n('pagesUrl.sectors.industrialSectionId'))}
+        <div class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
             ${await this.image('portfolio/list/industrial.jpg', 'Image', 'rounded-3', [600], '600w')}   
           </div>
           <div class="rellax col-md-6" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
               <h2 class="h3">${this.i18n('sectors.item01.title')}</h2>
               <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Manufacturing</p>
-              <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
+              <div class="d-lg-block pb-3 mb-2 mb-md-3">              
               ${this.i18n('sectors.item01.paragraph')}
               </div>         
           </div>
         </div>
 
         <!-- Item 02 -->
-        <div id="${this.i18n('pagesUrl.sectors.maintenanceSectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
+        ${paddedAnchor(this.i18n('pagesUrl.sectors.maintenanceSectionId'))}
+        <div class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
             ${await this.image('portfolio/list/02.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}
           </div>
           <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
               <h2 class="h3">${this.i18n('sectors.item02.title')}</h2>
               <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Maintenance</p>
-              <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
+              <div class="d-lg-block pb-3 mb-2 mb-md-3">              
                   ${this.i18n('sectors.item02.paragraph')}
               </div>              
           </div>
         </div>
 
         <!-- Item 03 -->
-        <div id="${this.i18n('pagesUrl.sectors.connectivitySectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
+        ${paddedAnchor(this.i18n('pagesUrl.sectors.connectivitySectionId'))}
+        <div class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
             ${await this.image('portfolio/list/03.jpg', 'Image', 'rounded-3', [600], '600w')}
           </div>
           <div class="rellax col-md-6 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
               <h2 class="h3">${this.i18n('sectors.item03.title')}</h2>
               <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Safety & Security</p>              
-              <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
+              <div class="d-lg-block pb-3 mb-2 mb-md-3">              
                   ${this.i18n('sectors.item03.paragraph')}
               </div>    
           </div>
         </div>
 
         <!-- Item 04 -->
-        <div id="${this.i18n('pagesUrl.sectors.safetySectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
+        ${paddedAnchor(this.i18n('pagesUrl.sectors.safetySectionId'))}
+        <div class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
             ${await this.image('portfolio/list/04.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}           
           </div>
           <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
               <h2 class="h3">${this.i18n('sectors.item04.title')}</h2>
               <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Safety & Security</p>
-              <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
+              <div class="d-lg-block pb-3 mb-2 mb-md-3">              
               ${this.i18n('sectors.item04.paragraph')}
               </div>
           </div>
         </div>
 
       <!-- Item 05 -->
-      <div id="${this.i18n('pagesUrl.sectors.insuranceSectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
+      ${paddedAnchor(this.i18n('pagesUrl.sectors.insuranceSectionId'))}
+      <div class="row pb-5 mb-md-4 mb-lg-5">
         <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
             ${await this.image('portfolio/list/05.jpg', 'Image', 'rounded-3', [600], '600w')}
         </div>
         <div class="rellax col-md-6 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
             <h2 class="h3">${this.i18n('sectors.item05.title')}</h2>
             <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Value Services</p>            
-            <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
+            <div class="d-lg-block pb-3 mb-2 mb-md-3">              
               ${this.i18n('sectors.item05.paragraph')}
             </div>   
         </div>
       </div>
 
       <!-- Item 06 -->
-      <div id="${this.i18n('pagesUrl.sectors.luxurySectionId')}" class="row pb-5 mb-md-4 mb-lg-5">
+      ${paddedAnchor(this.i18n('pagesUrl.sectors.luxurySectionId'))}
+      <div class="row pb-5 mb-md-4 mb-lg-5">
         <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
           ${await this.image('portfolio/list/06.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}
         </div>
         <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
             <h2 class="h3">${this.i18n('sectors.item06.title')}</h2>
             <p class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Value Services</p>
-            <div class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">              
+            <div class="d-lg-block pb-3 mb-2 mb-md-3">              
               ${this.i18n('sectors.item06.paragraph')}
             </div>
         </div>
