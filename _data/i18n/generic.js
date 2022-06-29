@@ -14,7 +14,7 @@ module.exports = {
     header:{
         menu:{
             title:{
-                'it': 'Menu',
+                'it': 'Menù',
                 'en': 'Menu',
             }
         }

@@ -1,5 +1,5 @@
 module.exports = {
-  domain: 'https://www.nexxoxp.com/',
+  domain: 'https://nexxoxp.com/',
   contacts: {
     info: 'info@nexxoxp.com',
     phone: '(+39) 0332 158 0443',

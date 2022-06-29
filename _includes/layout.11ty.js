@@ -7,7 +7,13 @@ const lazyCssLink = (href, media) => {
 }
 
 module.exports = async function (data) {
-    const canonical = `${data.nexxo.domain}${data.page.url}`
+    const canonical = `${data.nexxo.domain}${data.canonicalPageRelativeUrl}`
+
+    const ogImageUrl = `${data.nexxo.domain}${data.ogImageRelativeUrl}`
+    const ogImageMetaTag = data.ogImageRelativeUrl
+        ? `<meta name="og:image" content="${ogImageUrl}">`
+        : ''
+
     const facebookVerification = ''
     const tagManagerId = ''
 
@@ -21,11 +27,15 @@ module.exports = async function (data) {
         <html lang="${data.locale}" dir="${data.dir}">
             <head>
                 <meta charset="utf-8">
-                <title>${data.pageTitle}</title>
+                <title>Nexxo Cross Platform | ${data.pageTitle}</title>
+                <link rel="canonical" href="${canonical}" />                
                 
                 <!-- SEO Meta Tags -->
                 <meta name="description" content="${data.pageDescription}">
                 <meta name="author" content="${data.author}">
+                <meta name="og:title" content="${data.pageTitle}">
+                <meta name="og:description" content="${data.pageDescription}">
+                ${ogImageMetaTag}
                 
                 <!-- Viewport -->
                 <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -10,7 +10,9 @@ module.exports = class {
                 key: 'settori',
                 title: 'Settori',
             },
-            isWhiteFooter: true
+            isWhiteFooter: true,
+            canonicalPageRelativeUrl: 'it/settori/',
+            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg'
         }
     }
 

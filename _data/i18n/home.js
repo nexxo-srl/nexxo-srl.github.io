@@ -204,29 +204,29 @@ module.exports = {
             'it': 'Perché sceglierci?',
             'en': 'Why choose us?'
         },
-        paragraph01:{
+        paragraph01: {
             'it': 'Scegli noi perché ti aiuteremo a trovare nuovi clienti e ad aumentare il tuo business.',
             'en': 'Choose us because we will help you find new customers and increase your business.'
         },
-        element01:{
+        element01: {
             'it': 'Creiamo la tua crescita digitale',
             'en': 'We help your digital growth'
         },
-        element02:{
+        element02: {
             'it': 'Uniamo marketing e tecnologia',
             'en': 'We integrate marketing and technology'
         },
-        element03:{
+        element03: {
             'it': 'Sviluppiamo soluzioni multisettoriali',
             'en': 'We develop multi-sector solutions'
         },
-        element04:{
+        element04: {
             'it': 'Il metodo è al centro del nostro lavoro',
             'en': 'The method is at the heart of our work'
         }
     },
     sectors: {
-        title:{
+        title: {
             'it': 'Al vostro fianco in ogni settore',
             'en': 'By your side in every sector'
         },
@@ -243,7 +243,7 @@ module.exports = {
                 'it': 'Industriale',
                 'en': 'Industrial'
             },
-            paragraph:{
+            paragraph: {
                 'it': 'Farmaceutica, Chimica, Alimentare, Energia, Oil & Gas, Navale, Automobilistico, Aerospaziale, ecc.',
                 'en': 'Pharmaceutical, chemical, food, energy, oil & gas, marine, automotive, aerospace, etc.'
             }
@@ -253,7 +253,7 @@ module.exports = {
                 'it': 'Connettività e cybersecurity',
                 'en': 'Connectivity and cybersecurity'
             },
-            paragraph:{
+            paragraph: {
                 'it': 'Satelliti, telecomunicazioni, <i>software, server, cloud, cyber security</i>, ecc.',
                 'en': 'Satellites, telecommunications, software, servers, clouds, cybersecurity, etc.'
             }
@@ -263,7 +263,7 @@ module.exports = {
                 'it': 'Sicurezza',
                 'en': 'Safety'
             },
-            paragraph:{
+            paragraph: {
                 'it': 'Siti (industriali, commerciali, condomini, pubblici, militari, ecc), flotte aziendali, trasporti merce, sorveglianza, ecc.',
                 'en': 'Sites (industrial, commercial, real estates, public, military, etc.), company fleets, goods transport, surveillance, etc.'
             }
@@ -273,7 +273,7 @@ module.exports = {
                 'it': 'Manutenzioni, tracciabilità ed ispezione',
                 'en': 'Maintenance, traceability and inspection'
             },
-            paragraph:{
+            paragraph: {
                 'it': 'Industriale, Infrastrutture (industriali, commerciali, condominiali, municipali, militari), logistica, costruzioni, edilizia, gestione condominiale. Catene di approvvigionamenti alimentari e industriali.',
                 'en': 'Industrial, infrastructure (industrial, commercial, real estates, municipal, military), logistics, construction, building, real estate management. Food and industrial supply chains.'
             }
@@ -283,7 +283,7 @@ module.exports = {
                 'it': 'Assicurativo e finanziario',
                 'en': 'Insurance and financial'
             },
-            paragraph:{
+            paragraph: {
                 'it': 'Consulenza, proprietà intellettuale, affari legali, sinistri, ecc.',
                 'en': 'Consulting, intellectual property, legal affairs, claims, etc.'
             }
@@ -293,7 +293,7 @@ module.exports = {
                 'it': 'Beni di valore',
                 'en': 'Luxury goods'
             },
-            paragraph:{
+            paragraph: {
                 'it': 'Moda, gioielli, arte, cosmetica, vini pregiati, cura della persona, medicale, ecc.',
                 'en': 'Fashion, jewelry, art, cosmetics, fine wines, personal care, medical, etc.'
             }
@@ -303,16 +303,16 @@ module.exports = {
             'en': 'Learn more'
         }
     },
-    preFooterCTA:{
-        paragraph01:{
+    preFooterCTA: {
+        paragraph01: {
             'it': 'Sei pronto per partire?',
             'en': 'Ready to get started?'
         },
-        title:{
+        title: {
             'it': 'Avvia un progetto con noi!',
             'en': 'Start a project with us!'
         },
-        contactUsCTA:{
+        contactUsCTA: {
             'it': 'Contattaci',
             'en': 'Contact us'
         }

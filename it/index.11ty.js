@@ -4,13 +4,15 @@ module.exports = class {
     data() {
         return {
             layout: 'layout.11ty.js',
-            pageTitle: 'Nexxo Cross Platform | Digital Agency',
             author: 'Nexxo Cross Platform S.r.l.',
+            pageTitle: 'Digital Agency',
             pageDescription: 'Forniamo servizi di certificazione dei dati basati su tecnologia IoT e Blockchain che rendono le prestazioni misurabili e praticabili come modello di business.',
             eleventyNavigation: {
                 key: 'home',
                 title: 'Home',
             },
+            canonicalPageRelativeUrl: 'it/',
+            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg'
         }
     }
 

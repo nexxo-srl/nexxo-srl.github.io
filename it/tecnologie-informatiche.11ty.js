@@ -10,7 +10,9 @@ module.exports = class {
                 key: 'tecnologie-informatiche',
                 title: 'Tecnologie Informatiche',
             },
-            isWhiteFooter: true
+            isWhiteFooter: true,
+            canonicalPageRelativeUrl: 'it/tecnologie-informatiche/',
+            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg'
         }
     }
 

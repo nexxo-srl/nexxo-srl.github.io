@@ -11,7 +11,9 @@ module.exports = class {
                 key: 'contattaci',
                 title: 'Contattaci',
             },
-            isWhiteFooter: true
+            isWhiteFooter: true,
+            canonicalPageRelativeUrl: 'it/contattaci/',
+            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg'
         }
     }
 

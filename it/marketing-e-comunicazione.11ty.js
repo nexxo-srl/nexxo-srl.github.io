@@ -11,7 +11,9 @@ module.exports = class {
                 key: 'marketing-e-comunicazione',
                 title: 'Marketing e Comunicazione',
             },
-            isWhiteFooter: true
+            isWhiteFooter: true,
+            canonicalPageRelativeUrl: 'it/marketing-e-comunicazione/',
+            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg'
         }
     }
 
