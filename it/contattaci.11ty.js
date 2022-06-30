@@ -1,4 +1,5 @@
 const contactUsPageContent = require('../_includes/components/pages/contactUs')
+const sitemapAlternates = require("../_includes/sitemap/alternate");
 
 module.exports = class {
     data() {
@@ -13,7 +14,10 @@ module.exports = class {
             },
             isWhiteFooter: true,
             canonicalPageRelativeUrl: 'it/contattaci/',
-            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg'
+            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg',
+            sitemap: {
+                links: sitemapAlternates.contactUs
+            }
         }
     }
 

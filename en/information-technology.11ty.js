@@ -1,4 +1,6 @@
 const technologyPageContent = require("../_includes/components/pages/technology");
+const sitemapAlternates = require("../_includes/sitemap/alternate");
+
 module.exports = class {
     data() {
         return {
@@ -12,7 +14,10 @@ module.exports = class {
             },
             isWhiteFooter: true,
             canonicalPageRelativeUrl: 'it/tecnologie-informatiche/',
-            ogImageRelativeUrl: 'assets/img/services/it/dashboard_TI.png'
+            ogImageRelativeUrl: 'assets/img/services/it/dashboard_TI.png',
+            sitemap: {
+                links: sitemapAlternates.technology
+            }
         }
     }
 

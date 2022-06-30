@@ -1,4 +1,6 @@
 const sectorsPageContent = require("../_includes/components/pages/sectors");
+const sitemapAlternates = require("../_includes/sitemap/alternate");
+
 module.exports = class {
     data() {
         return {
@@ -12,7 +14,10 @@ module.exports = class {
             },
             isWhiteFooter: true,
             canonicalPageRelativeUrl: 'it/settori/',
-            ogImageRelativeUrl: 'assets/img/portfolio/list/03.jpg'
+            ogImageRelativeUrl: 'assets/img/portfolio/list/03.jpg',
+            sitemap: {
+                links: sitemapAlternates.sectors
+            }
         }
     }
 

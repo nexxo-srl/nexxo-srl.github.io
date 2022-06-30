@@ -7,12 +7,6 @@ const lazyCssLink = (href, media) => {
 }
 
 module.exports = async function (data) {
-    const canonical = `${data.nexxo.domain}${data.canonicalPageRelativeUrl}`
-
-    const ogImageUrl = `${data.nexxo.domain}${data.ogImageRelativeUrl}`
-    const ogImageMetaTag = data.ogImageRelativeUrl
-        ? `<meta name="og:image" content="${ogImageUrl}">`
-        : ''
 
     const facebookVerification = ''
     const tagManagerId = 'GTM-WRZ8F8S'
@@ -22,13 +16,31 @@ module.exports = async function (data) {
         (async () => data.hideFooter ? '' : await footer.call(this, data))(),
     ])
 
+    const ogImageUrl = `${data.nexxo.domain}${data.ogImageRelativeUrl}`
+    const ogImageMetaTag = data.ogImageRelativeUrl
+        ? `<meta name="og:image" content="${ogImageUrl}">`
+        : ''
+
+    const canonicalTag = data.canonicalPageRelativeUrl
+        ? `${data.nexxo.domain}${data.canonicalPageRelativeUrl}`
+        : ""
+
+    let alternateLinkTags = ""
+    if (data.sitemap) {
+        data.sitemap.links.forEach(language => {
+            alternateLinkTags += `<link rel="alternate" hreflang="${language.lang}" href="${language.url}" />\n`
+        })
+    }
+
     return `
         <!doctype html>
         <html lang="${data.locale}" dir="${data.dir}">
             <head>
                 <meta charset="utf-8">
                 <title>Nexxo Cross Platform | ${data.pageTitle}</title>
-                <link rel="canonical" href="${canonical}" />                
+                <link rel="canonical" href="${canonicalTag}" />                
+                
+                ${alternateLinkTags}
                 
                 <!-- SEO Meta Tags -->
                 <meta name="description" content="${data.pageDescription}">
@@ -174,6 +186,15 @@ module.exports = async function (data) {
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                 })(window,document,'script','dataLayer','${tagManagerId}');</script>
                 <!-- End Google Tag Manager -->
+                
+                <!-- Iubenda Cookie Solution --> 
+                <script type="text/javascript">
+                    var _iub = _iub || [];
+                    _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"ccpaApplies":true,"consentOnContinuedBrowsing":false,"enableCcpa":true,"floatingPreferencesButtonDisplay":"bottom-left","invalidateConsentWithoutLog":true,"lang":"en-GB","perPurposeConsent":true,"siteId":2718208,"whitelabel":false,"cookiePolicyId":26318026, "banner":{ "acceptButtonCaptionColor":"#FFFFFF","acceptButtonColor":"#6366F1","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","brandBackgroundColor":"#FFFFFF","brandTextColor":"#000000","closeButtonDisplay":false,"customizeButtonCaptionColor":"#4D4D4D","customizeButtonColor":"#DADADA","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"float-top-center","rejectButtonCaptionColor":"#FFFFFF","rejectButtonColor":"#6366F1","rejectButtonDisplay":true,"textColor":"#000000" }};
+                </script>
+                <script type="text/javascript" src="//cdn.iubenda.com/cs/ccpa/stub.js"></script>
+                <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+                <!-- End Iubenda Cookie Solution --> 
             </head>
             
             <!-- Body -->

@@ -1,4 +1,5 @@
 const homePageContent = require('../_includes/components/pages/home')
+const sitemapAlternates = require("../_includes/sitemap/alternate");
 
 module.exports = class {
     data() {
@@ -12,7 +13,10 @@ module.exports = class {
                 title: 'Home',
             },
             canonicalPageRelativeUrl: 'it/',
-            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg'
+            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg',
+            sitemap: {
+                links: sitemapAlternates.home
+            }
         }
     }
 

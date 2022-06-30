@@ -1,4 +1,5 @@
 const marketingPageContent = require("../_includes/components/pages/marketing");
+const sitemapAlternates = require("../_includes/sitemap/alternate");
 
 module.exports = class {
     data() {
@@ -13,7 +14,10 @@ module.exports = class {
             },
             isWhiteFooter: true,
             canonicalPageRelativeUrl: 'it/marketing-e-comunicazione/',
-            ogImageRelativeUrl: 'assets/img/services/marketing/dashboard.png'
+            ogImageRelativeUrl: 'assets/img/services/marketing/dashboard.png',
+            sitemap: {
+                links: sitemapAlternates.marketing
+            }
         }
     }
 
