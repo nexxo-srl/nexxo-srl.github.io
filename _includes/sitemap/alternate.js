@@ -19,12 +19,17 @@ module.exports = {
             {lang: 'it', url: 'https://nexxoxp.com/it/settori/',},
             {lang: 'en', url: 'https://nexxoxp.com/en/sectors/',},
             {lang: 'x-default', url: 'https://nexxoxp.com/it/settori/',},
-        ]
-    ,
+        ],
     contactUs:
         [
             {lang: 'it', url: 'https://nexxoxp.com/it/contattaci/',},
             {lang: 'en', url: 'https://nexxoxp.com/en/contact-us/',},
             {lang: 'x-default', url: 'https://nexxoxp.com/it/contattaci/',},
+        ],
+    privacyPolicy:
+        [
+            {lang: 'it', url: 'https://nexxoxp.com/it/informativa-privacy/',},
+            {lang: 'en', url: 'https://nexxoxp.com/en/privacy-policy/',},
+            {lang: 'x-default', url: 'https://nexxoxp.com/it/informativa-privacy/',},
         ]
 }

@@ -108,7 +108,7 @@ module.exports = async function (data) {
                     <li class="nav-item"><a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link d-inline-block px-0 pt-1 pb-2">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a></li>
                   </ul>
                   <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">${this.i18n('generic.footer.privacyPolicy')}</a></li>
+                    <li class="nav-item"><a href="${this.i18n('pagesUrl.privacyPolicy')}" class="nav-link d-inline-block px-0 pt-1 pb-2">${this.i18n('pagesUrl.privacyPolicy.linkName')}</a></li>
                   </ul>
                 </div>
               </div>

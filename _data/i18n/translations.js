@@ -13,5 +13,5 @@ module.exports= {
     sectors: sectorsTranslations,
     contactUs: contactUsTranslations,
     generic: genericTranslations,
-    pagesUrl: pagesUrl
+    pagesUrl: pagesUrl,
 }

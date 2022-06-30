@@ -136,5 +136,13 @@ module.exports = {
             'it': '/en/',
             'en': '/it/',
         },
-    }
+    },
+    privacyPolicy: {
+        'it': '/it/informativa-privacy',
+        'en': '/en/privacy-policy',
+        linkName: {
+            'it': 'Informativa Privacy',
+            'en': 'Privacy Policy',
+        },
+    },
 }

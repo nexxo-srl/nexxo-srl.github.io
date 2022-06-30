@@ -27,13 +27,13 @@ module.exports = class {
           <!-- Parallax gfx (Light version) -->
           <div class="parallax mx-auto d-dark-mode-none" style="max-width: 574px;">
             <div class="parallax-layer" data-depth="-0.15">
-              <img src="/assets/img/404/layer01.png" alt="Layer">
+              <img src="/assets/img/404/layer01.png" alt="Layer 1">
             </div>
             <div class="parallax-layer" data-depth="0.12">
-              <img src="/assets/img/404/layer02.png" alt="Layer">
+              <img src="/assets/img/404/layer02.png" alt="Layer 2">
             </div>
             <div class="parallax-layer zindex-5" data-depth="-0.12">
-              <img src="/assets/img/404/layer03.png" alt="Layer">
+              <img src="/assets/img/404/layer03.png" alt="Layer 3">
             </div>
           </div>
 
