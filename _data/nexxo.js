@@ -11,6 +11,6 @@ module.exports = {
   facebook: 'https://www.facebook.com/nexxocrossplatform',
   linkedin: 'https://www.linkedin.com/company/nexxo-cross-platform-s-r-l/',
   instagram: 'https://www.instagram.com/nexxocrossplatform/',
-  tiktok: 'https://www.tiktok.com/@nexxocrossplatform',
+  tiktok: 'https://vm.tiktok.com/ZMNhw8kq5/',
   privacy: '',
 }
