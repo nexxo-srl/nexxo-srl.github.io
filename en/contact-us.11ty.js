@@ -6,7 +6,7 @@ module.exports = class {
             layout: 'layout.11ty.js',
             pageTitle: 'Contact Us',
             author: 'Nexxo Cross Platform S.r.l.',
-            pageDescription: 'Forniamo servizi di certificazione dei dati basati su tecnologia IoT e Blockchain che rendono le prestazioni misurabili e praticabili come modello di business.',
+            pageDescription: 'Please feel free to drop us a line. We will respond you as soon as possibile. If you need assistance feel free to call us.',
             eleventyNavigation: {
                 key: 'contact-us',
                 title: 'Contact Us',

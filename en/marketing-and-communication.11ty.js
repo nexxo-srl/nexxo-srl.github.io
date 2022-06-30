@@ -6,14 +6,14 @@ module.exports = class {
             layout: 'layout.11ty.js',
             pageTitle: 'Marketing and Communication',
             author: 'Nexxo Cross Platform S.r.l.',
-            pageDescription: 'Ti supportiamo per semplificare la tua operatività attraverso un\'assistenza puntuale ed un supporto professionale in tutte le fase del tuo progetto, offrendoti servizi di comunicazione aziendale e marketing strategico su misura.',
+            pageDescription: 'We support you to simplify your operations offering you customized corporate communication and strategic marketing services.',
             eleventyNavigation: {
                 key: 'marketing-e-comunicazione',
                 title: 'Marketing e Comunicazione',
             },
             isWhiteFooter: true,
             canonicalPageRelativeUrl: 'it/marketing-e-comunicazione/',
-            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg'
+            ogImageRelativeUrl: 'assets/img/services/marketing/dashboard.png'
         }
     }
 

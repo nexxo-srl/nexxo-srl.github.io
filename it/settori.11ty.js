@@ -5,14 +5,14 @@ module.exports = class {
             layout: 'layout.11ty.js',
             pageTitle: 'Settori',
             author: 'Nexxo Cross Platform S.r.l.',
-            pageDescription: 'Forniamo servizi di certificazione dei dati basati su tecnologia IoT e Blockchain che rendono le prestazioni misurabili e praticabili come modello di business.',
+            pageDescription: 'Industriale, Manutenzione, tracciabilità e ispezione, Connettività e cybersecurity, Sicurezza, Assicurativo e finanziario, Beni di valore.',
             eleventyNavigation: {
                 key: 'settori',
                 title: 'Settori',
             },
             isWhiteFooter: true,
             canonicalPageRelativeUrl: 'it/settori/',
-            ogImageRelativeUrl: 'assets/img/landing/software-company/nexxo-varese-hero.jpg'
+            ogImageRelativeUrl: 'assets/img/portfolio/list/03.jpg'
         }
     }
 
