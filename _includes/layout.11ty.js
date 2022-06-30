@@ -15,7 +15,7 @@ module.exports = async function (data) {
         : ''
 
     const facebookVerification = ''
-    const tagManagerId = ''
+    const tagManagerId = 'GTM-WRZ8F8S'
 
     const [headerContent, footerContent] = await Promise.all([
         (async () => data.hideHeader ? '' : await header.call(this, data))(),
