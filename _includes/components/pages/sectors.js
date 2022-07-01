@@ -20,7 +20,7 @@ module.exports = async function(data)
         ${paddedAnchor(this.i18n('pagesUrl.sectors.industrialSectionId'))}
         <div class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
-            ${await this.image('portfolio/list/industrial.jpg', 'Image', 'rounded-3', [600], '600w')}   
+            ${await this.image('portfolio/list/industrial.jpg', 'Industriale', 'rounded-3', [600], '600w')}   
           </div>
           <div class="rellax col-md-6" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
               <h2 class="h3">${this.i18n('sectors.item01.title')}</h2>
@@ -35,7 +35,7 @@ module.exports = async function(data)
         ${paddedAnchor(this.i18n('pagesUrl.sectors.maintenanceSectionId'))}
         <div class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
-            ${await this.image('portfolio/list/02.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}
+            ${await this.image('portfolio/list/02.jpg', 'Manutenzione, tracciabilità e ispezione', 'rounded-3 float-md-end', [600], '600w')}
           </div>
           <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
               <h2 class="h3">${this.i18n('sectors.item02.title')}</h2>
@@ -50,7 +50,7 @@ module.exports = async function(data)
         ${paddedAnchor(this.i18n('pagesUrl.sectors.connectivitySectionId'))}
         <div class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
-            ${await this.image('portfolio/list/03.jpg', 'Image', 'rounded-3', [600], '600w')}
+            ${await this.image('portfolio/list/03.jpg', 'Connettività e cybersecurity', 'rounded-3', [600], '600w')}
           </div>
           <div class="rellax col-md-6 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
               <h2 class="h3">${this.i18n('sectors.item03.title')}</h2>
@@ -65,7 +65,7 @@ module.exports = async function(data)
         ${paddedAnchor(this.i18n('pagesUrl.sectors.safetySectionId'))}
         <div class="row pb-5 mb-md-4 mb-lg-5">
           <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
-            ${await this.image('portfolio/list/04.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}           
+            ${await this.image('portfolio/list/04.jpg', 'Sicurezza', 'rounded-3 float-md-end', [600], '600w')}           
           </div>
           <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
               <h2 class="h3">${this.i18n('sectors.item04.title')}</h2>
@@ -80,7 +80,7 @@ module.exports = async function(data)
       ${paddedAnchor(this.i18n('pagesUrl.sectors.insuranceSectionId'))}
       <div class="row pb-5 mb-md-4 mb-lg-5">
         <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
-            ${await this.image('portfolio/list/05.jpg', 'Image', 'rounded-3', [600], '600w')}
+            ${await this.image('portfolio/list/05.jpg', 'Assicurativo e finanziario', 'rounded-3', [600], '600w')}
         </div>
         <div class="rellax col-md-6 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
             <h2 class="h3">${this.i18n('sectors.item05.title')}</h2>
@@ -95,7 +95,7 @@ module.exports = async function(data)
       ${paddedAnchor(this.i18n('pagesUrl.sectors.luxurySectionId'))}
       <div class="row pb-5 mb-md-4 mb-lg-5">
         <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
-          ${await this.image('portfolio/list/06.jpg', 'Image', 'rounded-3 float-md-end', [600], '600w')}
+          ${await this.image('portfolio/list/06.jpg', 'Beni di valore', 'rounded-3 float-md-end', [600], '600w')}
         </div>
         <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
             <h2 class="h3">${this.i18n('sectors.item06.title')}</h2>
@@ -121,7 +121,7 @@ module.exports = async function(data)
             <div class="col-lg-6 col-md-7 offset-xl-1">
               <div class="position-relative d-flex flex-column align-items-center justify-content-center h-100">
                 <svg class="d-none d-md-block position-absolute top-50 start-0 translate-middle-y" width="868" height="868" style="min-width: 868px;" viewBox="0 0 868 868" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity="0.15" cx="434" cy="434" r="434" fill="#6366F1"/></svg>
-                ${await this.image('portfolio/cta.png', 'Illustration', 'position-relative zindex-3 mb-2 my-lg-4', [382], '382w')}
+                ${await this.image('portfolio/cta.png', 'Illustrazione vettoriale porta il tuo business al livello superiore', 'position-relative zindex-3 mb-2 my-lg-4', [382], '382w')}
               </div>
             </div>
           </div>
