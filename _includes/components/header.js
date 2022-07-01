@@ -1,4 +1,16 @@
 module.exports = async function (data) {
+
+    const isHomePage = data.eleventyNavigation.key === 'home';
+
+    const whoWeAreSectionLink = isHomePage
+        ? `<a class="nav-link" onclick="collapseMenu('${this.i18n('pagesUrl.homepage.whoWeAreSection')}')">${this.i18n('pagesUrl.homepage.whoWeAreSection.linkName')}</a>`
+        : `<a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link">${this.i18n('pagesUrl.homepage.whoWeAreSection.linkName')}</a>`
+
+    const howWeWorkSectionLink = isHomePage
+        ? `<a class="nav-link" onclick="collapseMenu('${this.i18n('pagesUrl.homepage.howWeWorkSection')}')">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a>`
+        : `<a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a>`
+
+
     return `
       <!-- Navbar -->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
@@ -14,10 +26,18 @@ module.exports = async function (data) {
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">               
+
+                <script>const collapseMenu = function (linkToNavigate){
+                    document.getElementsByClassName('navbar-toggler')[0].click(); 
+                    setTimeout(function() {
+                        window.location = linkToNavigate;
+                    }, 500);                    
+                }
+                </script>
 
                 <li class="nav-item">
-                  <a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link">${this.i18n('pagesUrl.homepage.whoWeAreSection.linkName')}</a>
+                  ${whoWeAreSectionLink}
                 </li>
                 
                 <li class="nav-item dropdown">
@@ -37,7 +57,7 @@ module.exports = async function (data) {
                 </li>
                 
                 <li class="nav-item">
-                  <a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a>
+                  ${howWeWorkSectionLink}
                 </li>
                 
               </ul>
@@ -50,6 +70,7 @@ module.exports = async function (data) {
             </div>
           </div>
           
+          <!-- Language Switch -->
           <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">${this.i18n('pagesUrl.languageSwitch.label')}</a>
                 <ul class="dropdown-menu">
@@ -59,9 +80,12 @@ module.exports = async function (data) {
                 </ul>
           </div>
           
+          <!-- Mobile Menu CTA -->
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
+          <!-- Mobile Menu CTA -->
           <a href="${this.i18n('pagesUrl.contactUs')}" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
             <i class="bx bx-phone fs-5 lh-1 me-1"></i>
             &nbsp;${this.i18n('pagesUrl.contactUs.linkName')}
