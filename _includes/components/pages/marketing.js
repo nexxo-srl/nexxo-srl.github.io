@@ -27,7 +27,7 @@ module.exports = async function(data)
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">${this.i18n('marketing.description')}</p>
           </div>
           <div class="col-md-6 order-md-1">
-            ${await this.image('services/marketing/dashboard.png', 'Image', 'rounded-3')}
+            ${await this.image('services/marketing/dashboard.png', 'Marketing e Comunicazione', 'rounded-3')}
           </div>
         </div>
       </section>
@@ -72,7 +72,7 @@ module.exports = async function(data)
                   <div class="d-table position-relative p-3 mb-3">
                     <span class="position-absolute top-0 start-0 w-100 h-100 bg-secondary rounded-circle"></span>
                     <div class="text-primary position-relative zindex-5">
-                      ${await this.image('services/marketing/marketing.png', 'Icon', '', [40], '40w')}                     
+                      ${await this.image('services/marketing/marketing.png', 'Marketing', '', [40], '40w')}                     
                     </div>
                   </div>
                   <h3 class="h4">${this.i18n('marketing.slider.item01.title')}</h3>
@@ -105,7 +105,7 @@ module.exports = async function(data)
                   <div class="d-table position-relative p-3 mb-3">
                     <span class="position-absolute top-0 start-0 w-100 h-100 bg-secondary rounded-circle"></span>
                     <div class="text-primary position-relative zindex-5">
-                        ${await this.image('services/marketing/creazione-contenuti.png', 'Icon', '', [40], '40w')}                     
+                        ${await this.image('services/marketing/creazione-contenuti.png', 'Creazione di Contenuti', '', [40], '40w')}                     
                     </div>
                   </div>
                   <h3 class="h4">${this.i18n('marketing.slider.item02.title')}</h3>
@@ -138,7 +138,7 @@ module.exports = async function(data)
                   <div class="d-table position-relative p-3 mb-3">
                     <span class="position-absolute top-0 start-0 w-100 h-100 bg-secondary rounded-circle"></span>
                     <div class="text-primary position-relative zindex-5">
-                        ${await this.image('services/marketing/strategico.png', 'Icon', '', [40], '40w')}                                           
+                        ${await this.image('services/marketing/strategico.png', 'Marketing Strategico', '', [40], '40w')}                                           
                     </div>
                   </div>
                   <h3 class="h4">${this.i18n('marketing.slider.item03.title')}</h3>
