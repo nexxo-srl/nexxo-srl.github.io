@@ -35,6 +35,7 @@ module.exports = {
         socialAccordion: {
             title: {
                 'it': 'Social',
+                'en': 'Social'
             }
         },
         privacyPolicy: {

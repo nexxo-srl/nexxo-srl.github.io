@@ -73,7 +73,7 @@ module.exports = async function(data)
                   <div class="d-table position-relative p-3 mb-3">
                     <span class="position-absolute top-0 start-0 w-100 h-100 bg-secondary rounded-circle"></span>
                     <div class="text-primary position-relative zindex-5">
-                      ${await this.image('services/it/notarizzazione.png', 'Icon', '', [40], '40w')}
+                      ${await this.image('services/it/notarizzazione.png', 'Icon', 'servicesIcon', [150, 100, 50], '50w')}
                     </div>
                   </div>
                   <h3 class="h4">${this.i18n('technology.slider.item01.title')}</h3>
@@ -106,7 +106,7 @@ module.exports = async function(data)
                   <div class="d-table position-relative p-3 mb-3">
                     <span class="position-absolute top-0 start-0 w-100 h-100 bg-secondary rounded-circle"></span>
                     <div class="text-primary position-relative zindex-5">
-                      ${await this.image('services/it/gestione-dati.png', 'Icon', '', [40], '40w')}
+                      ${await this.image('services/it/gestione-dati.png', 'Icon', 'servicesIcon', [150, 100, 50], '50w')}
                     </div>
                   </div>
                   <h3 class="h4">${this.i18n('technology.slider.item02.title')}</h3>
@@ -135,7 +135,7 @@ module.exports = async function(data)
                   <div class="d-table position-relative p-3 mb-3">
                     <span class="position-absolute top-0 start-0 w-100 h-100 bg-secondary rounded-circle"></span>
                     <div class="text-primary position-relative zindex-5">
-                      ${await this.image('services/it/4-0.png', 'Icon', '', [40], '40w')}
+                      ${await this.image('services/it/4-0.png', 'Icon', 'servicesIcon', [150, 100, 50], '50w')}
                     </div>
                   </div>
                   <h3 class="h4">${this.i18n('technology.slider.item03.title')}</h3>

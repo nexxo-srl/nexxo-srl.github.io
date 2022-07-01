@@ -76,6 +76,9 @@ module.exports = async function (data) {
                 <!-- Main Theme Styles + Bootstrap -->               
                 ${lazyCssLink('/assets/css/theme.min.css', 'all')}
                 
+                <!-- Additional Theme Styles-->               
+                ${lazyCssLink('/assets/css/additional-styles.css', 'all')}
+                
                 <!-- Page loading styles -->
                 <style>
                   .page-loading {

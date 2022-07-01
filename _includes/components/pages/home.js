@@ -183,7 +183,7 @@ module.exports = async function(data)
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.3" data-disable-parallax-down="lg">
-                    ${await this.image('home/how-it-works/accordo-di-riservatezza.png', 'Accordo di riservatezza', 'd-dark-mode-none', [918, 612, 306], '306w')}
+                    ${await this.image('home/how-it-works/accordo-di-riservatezza.png', 'Accordo di riservatezza', 'd-dark-mode-none howWeWorkImage', [400, 300, 200], '300w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.4" data-disable-parallax-down="lg">
                     <h3 class="h4">${this.i18n('home.howWeWork.step01.title')}</h3>
@@ -197,7 +197,7 @@ module.exports = async function(data)
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="lg">
-                    ${await this.image('home/how-it-works/fase-conoscitiva.png', 'Illustration', 'd-dark-mode-none', [918, 612, 306], '306w')}
+                    ${await this.image('home/how-it-works/fase-conoscitiva.png', 'Illustration', 'd-dark-mode-none howWeWorkImage', [400, 300, 200], '300w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.5" data-disable-parallax-down="lg">
                     <h3 class="h4">${this.i18n('home.howWeWork.step02.title')}</h3>
@@ -215,7 +215,7 @@ module.exports = async function(data)
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.3" data-disable-parallax-down="lg">
-                    ${await this.image('home/how-it-works/fase-ux-ui-design.png', 'Illustration', 'd-dark-mode-none', [918, 612, 306], '306w')}
+                    ${await this.image('home/how-it-works/fase-ux-ui-design.png', 'Illustration', 'd-dark-mode-none howWeWorkImage', [400, 300, 200], '300w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.4" data-disable-parallax-down="lg">
                     <h3 class="h4">${this.i18n('home.howWeWork.step03.title')}</h3>
@@ -233,7 +233,7 @@ module.exports = async function(data)
                 </div>
                 <div class="step-body d-flex align-items-center ps-xl-5">
                   <div class=" d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="lg">
-                    ${await this.image('home/how-it-works/fase-conclusiva.png', 'Illustration', 'd-dark-mode-none', [918, 612, 306], '306w')}
+                    ${await this.image('home/how-it-works/fase-conclusiva.png', 'Illustration', 'd-dark-mode-none howWeWorkImage', [400, 300, 200], '300w')}
                   </div>
                   <div class=" ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.6" data-disable-parallax-down="lg">
                     <h3 class="h4">${this.i18n('home.howWeWork.step04.title')}</h3>
@@ -305,7 +305,7 @@ module.exports = async function(data)
     
                             <!-- Item -->
                             <div class="swiper-slide" data-swiper-tab="#image-1">
-                              ${await this.image('landing/software-company/case-study-logo02.png', 'Logo', 'd-block mb-3', [72], '72w')}
+                              ${await this.image('landing/software-company/case-study-logo02.png', 'Logo', 'swiper-logo d-block mb-3', [144, 72], '72w')}
                               <h3 class="mb-2">${this.i18n('home.latestTrends.card01.title')}</h3>
                               <p class="fs-sm text-muted border-bottom pb-3 mb-3">${this.i18n('home.latestTrends.card01.paragraph01')}</p>
                               <p class="pb-2 pb-lg-3 mb-3">${this.i18n('home.latestTrends.card01.paragraph02')}</p>
@@ -314,7 +314,7 @@ module.exports = async function(data)
     
                             <!-- Item -->
                             <div class="swiper-slide" data-swiper-tab="#image-2">                              
-                              ${await this.image('landing/software-company/case-study-logo01.png', 'Logo', 'd-block mb-3', [72], '72w')}
+                              ${await this.image('landing/software-company/case-study-logo01.png', 'Logo', 'swiper-logo d-block mb-3', [144, 72], '72w')}
                               <h3 class="mb-2">${this.i18n('home.latestTrends.card02.title')}</h3>
                               <p class="fs-sm text-muted border-bottom pb-3 mb-3">${this.i18n('home.latestTrends.card02.paragraph01')}</p>
                               <p class="pb-2 pb-lg-3 mb-3">${this.i18n('home.latestTrends.card02.paragraph02')}</p>
@@ -342,25 +342,25 @@ module.exports = async function(data)
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-xl-3">
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  ${await this.image('home/why-choose-us/icona-01.png', 'Icon', '', [52], '52w')}
+                  ${await this.image('home/why-choose-us/icona-01.png', 'Icon', 'whyUsIcon', [150, 100, 50], '50w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">${this.i18n('home.whyChooseUs.element01')}</h3>
               </div>
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  ${await this.image('home/why-choose-us/icona-02.png', 'Icon', '', [52], '52w')}
+                  ${await this.image('home/why-choose-us/icona-02.png', 'Icon', 'whyUsIcon', [150, 100, 50], '50w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">${this.i18n('home.whyChooseUs.element02')}</h3>
               </div>
               <div class="col text-center border-end">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  ${await this.image('home/why-choose-us/icona-03.png', 'Icon', '', [52], '52w')}
+                  ${await this.image('home/why-choose-us/icona-03.png', 'Icon', 'whyUsIcon', [150, 100, 50], '50w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">${this.i18n('home.whyChooseUs.element03')}</h3>
               </div>
               <div class="col text-center">
                 <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
-                  ${await this.image('home/why-choose-us/icona-04.png', 'Icon', '', [48], '48w')}
+                  ${await this.image('home/why-choose-us/icona-04.png', 'Icon','whyUsIcon', [150, 100, 50], '50w')}
                 </div>
                 <h3 class="h5 mb-2 mb-lg-0">${this.i18n('home.whyChooseUs.element04')}</h3>
               </div>
@@ -382,7 +382,7 @@ module.exports = async function(data)
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('sectors/industrial.png', 'Icon', '', [32], '32w')}
+                        ${await this.image('sectors/industrial.png', 'Icon', 'sectorsIcon', [150, 100, 50], '50w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.industrial.title')}</h3>
@@ -397,7 +397,7 @@ module.exports = async function(data)
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('sectors/connectivity.png', 'Icon', '', [36], '36w')}
+                        ${await this.image('sectors/connectivity.png', 'Icon', 'sectorsIcon', [150, 100, 50], '50w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.connectivity.title')}</h3>
@@ -412,7 +412,7 @@ module.exports = async function(data)
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('sectors/safety.png', 'Icon', '', [32], '32w')}
+                        ${await this.image('sectors/safety.png', 'Icon', 'sectorsIcon', [150, 100, 50], '50w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.safety.title')}</h3>
@@ -429,7 +429,7 @@ module.exports = async function(data)
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('sectors/maintenance.png', 'Icon', '', [32], '32w')}
+                        ${await this.image('sectors/maintenance.png', 'Icon', 'sectorsIcon', [150, 100, 50], '50w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.maintenance.title')}</h3>
@@ -444,7 +444,7 @@ module.exports = async function(data)
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('sectors/insurance.png', 'Icon', '', [32], '32w')}
+                        ${await this.image('sectors/insurance.png', 'Icon', 'sectorsIcon', [150, 100, 50], '50w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.insurance.title')}</h3>
@@ -459,7 +459,7 @@ module.exports = async function(data)
                   <div class="card card-hover bg-secondary border-0 mb-4">
                     <div class="card-body d-flex align-items-start">
                       <div class="flex-shrink-0 bg-light rounded-3 p-3">
-                        ${await this.image('sectors/luxury.png', 'Icon', '', [32], '32w')}
+                        ${await this.image('sectors/luxury.png', 'Icon', 'sectorsIcon', [150, 100, 50], '50w')}
                       </div>
                       <div class="ps-4">
                         <h3 class="h5 pb-2 mb-1">${this.i18n('home.sectors.luxury.title')}</h3>
