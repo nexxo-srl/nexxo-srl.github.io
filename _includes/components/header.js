@@ -2,13 +2,13 @@ module.exports = async function (data) {
 
     const isHomePage = data.eleventyNavigation.key === 'home';
 
-    const whoWeAreSectionLink = isHomePage
-        ? `<a class="nav-link" onclick="collapseMenu('${this.i18n('pagesUrl.homepage.whoWeAreSection')}')">${this.i18n('pagesUrl.homepage.whoWeAreSection.linkName')}</a>`
-        : `<a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link">${this.i18n('pagesUrl.homepage.whoWeAreSection.linkName')}</a>`
+    const whoWeAreSectionResponsiveLink = isHomePage
+        ? `<a class="nav-link drawer-item" onclick="collapseMenu('${this.i18n('pagesUrl.homepage.whoWeAreSection')}')">${this.i18n('pagesUrl.homepage.whoWeAreSection.linkName')}</a>`
+        : `<a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link drawer-item">${this.i18n('pagesUrl.homepage.whoWeAreSection.linkName')}</a>`
 
-    const howWeWorkSectionLink = isHomePage
-        ? `<a class="nav-link" onclick="collapseMenu('${this.i18n('pagesUrl.homepage.howWeWorkSection')}')">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a>`
-        : `<a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a>`
+    const howWeWorkSectionResponsiveLink = isHomePage
+        ? `<a class="nav-link drawer-item" onclick="collapseMenu('${this.i18n('pagesUrl.homepage.howWeWorkSection')}')">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a>`
+        : `<a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link drawer-item">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a>`
 
 
     return `
@@ -37,7 +37,8 @@ module.exports = async function (data) {
                 </script>
 
                 <li class="nav-item">
-                  ${whoWeAreSectionLink}
+                  ${whoWeAreSectionResponsiveLink}
+                  <a href="${this.i18n('pagesUrl.homepage.whoWeAreSection')}" class="nav-link header-item">${this.i18n('pagesUrl.homepage.whoWeAreSection.linkName')}</a>
                 </li>
                 
                 <li class="nav-item dropdown">
@@ -57,7 +58,8 @@ module.exports = async function (data) {
                 </li>
                 
                 <li class="nav-item">
-                  ${howWeWorkSectionLink}
+                  ${howWeWorkSectionResponsiveLink}
+                  <a href="${this.i18n('pagesUrl.homepage.howWeWorkSection')}" class="nav-link header-item">${this.i18n('pagesUrl.homepage.howWeWorkSection.linkName')}</a>
                 </li>
                 
               </ul>

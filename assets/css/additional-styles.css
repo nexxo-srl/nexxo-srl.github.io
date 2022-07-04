@@ -17,3 +17,24 @@
 .servicesIcon {
     width: 2.5rem;
 }
+
+@media (min-width: 992px) {
+    .drawer-item {
+        display: none;
+    }
+
+    .header-item {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .drawer-item {
+        display: block;
+    }
+
+    .header-item {
+        display: none;
+    }
+}
+
