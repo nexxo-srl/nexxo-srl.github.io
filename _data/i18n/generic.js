@@ -43,7 +43,7 @@ module.exports = {
             'en': 'Privacy Policy'
         },
         summaryParagraph: {
-            'it': 'Siamo un\'agenza digitale Start-Up che aiuta a sviuluppare le attività commerciali dei propri clienti. Ci proponiamo come partner tecnologico principale alle aziende industriali che hanno bisogno di sviluppare la propria competitività attraverso la trasfromazione digitale.',
+            'it': 'Siamo un\'agenzia digitale Start-Up che aiuta a sviuluppare le attività commerciali dei propri clienti. Ci proponiamo come partner tecnologico principale alle aziende industriali che hanno bisogno di sviluppare la propria competitività attraverso la trasfromazione digitale.',
             'en': 'We are a start-up digital agency that helps develop our clients\'business. We propose ourselves as a technological partner to companies that need to develop their competitiveness through digital transformation.'
         },
         subscribeForm: {
