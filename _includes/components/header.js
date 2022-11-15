@@ -50,6 +50,9 @@ module.exports = async function (data) {
                       <li>
                         <a href="${this.i18n('pagesUrl.informationTechnology')}" class="dropdown-item">${this.i18n('pagesUrl.informationTechnology.linkName')}</a>                  
                       </li>
+                      <li>
+                        <a href="${this.i18n('pagesUrl.advisory')}" class="dropdown-item">${this.i18n('pagesUrl.advisory.linkName')}</a>                  
+                      </li>
                     </ul>
                 </li>
                 

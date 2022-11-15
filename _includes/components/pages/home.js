@@ -135,7 +135,7 @@ module.exports = async function(data)
               </div>
               <div class="row row-cols-1 row-cols-md-2">
 
-                <!-- Item -->
+                <!-- Marketing -->
                 <div class="col py-4 my-2 my-sm-3">
                   <a href="${this.i18n('pagesUrl.marketingAndCommunication')}" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                     <div class="card-body pt-3">
@@ -151,7 +151,7 @@ module.exports = async function(data)
                   </a>
                 </div>
 
-                <!-- Item -->
+                <!-- IT -->
                 <div class="col py-4 my-2 my-sm-3">
                   <a href="${this.i18n('pagesUrl.informationTechnology')}" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                     <div class="card-body pt-3">
@@ -167,6 +167,23 @@ module.exports = async function(data)
                     </div>
                   </a>
                 </div>
+                
+                <!-- Advisory -->
+                <div class="col py-4 my-2 my-sm-3">
+                  <a href="${this.i18n('pagesUrl.advisory')}" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                    <div class="card-body pt-3">
+                      <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-4">
+                        ${await this.image('services/icons/finance.svg', 'Icona finanza', 'd-block m-1', [160, 120, 80, 40], '40w')}                      
+                      </div>
+                      <h2 class="h4 d-inline-flex align-items-center">
+                        ${this.i18n('home.whatWeDo.advisory.title')}
+                        <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                      </h2>
+                      <p class="fs-sm text-body mb-0">${this.i18n('home.whatWeDo.advisory.paragraph')}</p>
+                    </div>
+                  </a>
+                </div>
+                
               </div>
             </div>
           </section>

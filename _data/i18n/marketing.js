@@ -85,6 +85,10 @@ module.exports = {
                 item03: {
                     'it': 'Strategic selling (strategia dei canali e del processo di vendita)',
                     'en': 'Strategic selling (channel strategy and sales process)'
+                },
+                item04: {
+                    'it': 'Brand Ambassador Program',
+                    'en': 'Brand Ambassador Program'
                 }
             }
         }

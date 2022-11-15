@@ -85,6 +85,16 @@ module.exports = {
                 'it': 'Internet-of-Things (IoT) e Blockchain.',
                 'en': ''
             }
+        },
+        advisory: {
+            title: {
+                'it': 'Nexxo Advisory Partner S.r.l',
+                'en': 'Nexxo Advisory Partner S.r.l'
+            },
+            paragraph: {
+                'it': 'E’ una boutique consulenziale indipendente al servizio delle aziende che hanno bisogno di un’assistenza specializzata nell’ambito della compravendita aziende, finanza, analisi prestazionali, attività strategiche e operative.',
+                'en': 'Is an independent consulting boutique serving companies that need specialized assistance in: M&A Advisory, Corporate Finance, Corporate Advisory and Management Services.'
+            }
         }
     },
     howWeWork: {

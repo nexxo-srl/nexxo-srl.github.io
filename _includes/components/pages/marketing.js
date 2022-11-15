@@ -155,6 +155,10 @@ module.exports = async function(data)
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
                       ${this.i18n('marketing.slider.item03.bulletPoints.item03')}
                     </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
+                      ${this.i18n('marketing.slider.item03.bulletPoints.item04')}
+                    </li>
                   </ul>
                 </div>
               </div>

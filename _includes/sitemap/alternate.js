@@ -14,6 +14,11 @@ module.exports = {
         {lang: 'en', url: 'https://nexxoxp.com/en/information-technology/',},
         {lang: 'x-default', url: 'https://nexxoxp.com/it/tecnologie-informatiche/',},
     ],
+    advisory: [
+        {lang: 'it', url: 'https://nexxoxp.com/it/nexxo-advisory-partner/',},
+        {lang: 'en', url: 'https://nexxoxp.com/en/nexxo-advisory-partner/',},
+        {lang: 'x-default', url: 'https://nexxoxp.com/it/nexxo-advisory-partner/',},
+    ],
     sectors:
         [
             {lang: 'it', url: 'https://nexxoxp.com/it/settori/',},
