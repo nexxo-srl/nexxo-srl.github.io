@@ -88,8 +88,8 @@ module.exports = {
         },
         advisory: {
             title: {
-                'it': 'Nexxo Advisory Partner S.r.l',
-                'en': 'Nexxo Advisory Partner S.r.l'
+                'it': 'Nexxo Advisory Partner',
+                'en': 'Nexxo Advisory Partner'
             },
             paragraph: {
                 'it': 'E’ una boutique consulenziale indipendente al servizio delle aziende che hanno bisogno di un’assistenza specializzata nell’ambito della compravendita aziende, finanza, analisi prestazionali, attività strategiche e operative.',

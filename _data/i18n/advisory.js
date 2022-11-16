@@ -1,15 +1,15 @@
 module.exports = {
     title: {
-        'it': 'Nexxo Advisory Partner S.r.l.',
-        'en': 'Nexxo Advisory Partner S.r.l.'
+        'it': 'Nexxo Advisory Partner',
+        'en': 'Nexxo Advisory Partner'
     },
-    description: {
-        'it': 'NEXXO ADVISORY PARTNER S.R.L. è una boutique consulenziale indipendente al servizio delle aziende che hanno bisogno di un’assistenza specializzata nell’ambito della compravendita aziende, finanza, analisi prestazionali, attività strategiche e operative.\nQuesta realtà fa parte della holding NEXXO CROSS PLATFORM S.R.L. ed ora forma una piattaforma integrata con servizi dedicati alle piccole-medie aziende nonché alle corporate multinazionali.',
-        'en': 'NEXXO ADVISORY PARTNER S.R.L. is an independent consulting boutique serving companies that need specialized assistance in: M&A Advisory, Corporate Finance, Corporate Advisory and Management Services.\nThe company is part of the Holding NEXXO CROSS PLATFORM S.R.L. and it forms an integrated platform with services dedicated to small and medium-sized companies as well as to multinational corporations.'
+    subtitle: {
+        'it': 'Cosa proponiamo',
+        'en': 'What we offer'
     },
     description01: {
-        'it': 'NEXXO ADVISORY PARTNER S.R.L. è una boutique consulenziale indipendente al servizio delle aziende che hanno bisogno di un’assistenza specializzata nell’ambito della compravendita aziende, finanza, analisi prestazionali, attività strategiche e operative.',
-        'en': 'NEXXO ADVISORY PARTNER S.R.L. is an independent consulting boutique serving companies that need specialized assistance in: M&A Advisory, Corporate Finance, Corporate Advisory and Management Services.'
+        'it': 'NEXXO ADVISORY PARTNER è una boutique consulenziale indipendente al servizio delle aziende che hanno bisogno di un’assistenza specializzata nell’ambito della compravendita aziende, finanza, analisi prestazionali, attività strategiche e operative.',
+        'en': 'NEXXO ADVISORY PARTNER is an independent consulting boutique serving companies that need specialized assistance in: M&A Advisory, Corporate Finance, Corporate Advisory and Management Services.'
     },
     description02: {
         'it': 'Questa realtà fa parte della holding NEXXO CROSS PLATFORM S.R.L. ed ora forma una piattaforma integrata con servizi dedicati alle piccole-medie aziende nonché alle corporate multinazionali.',
@@ -38,7 +38,7 @@ module.exports = {
         },
         item03: {
             description:{
-                'it': '<b>Consulenza per attività strategiche aziendali</b>, quali verifica e revisione modello operativo e/o di business, implementazione nuove strategie, riorganizzazione, integrazione nuovi rami d’azienda, ristrutturazione, crisi aziendali, reportistica di business intelligence, consulenza per attività gestionali in azienda e ricerca di business partner.',
+                'it': '<b>Consulenza manageriale</b>, quali verifica e revisione modello operativo e/o di business, implementazione nuove strategie, riorganizzazione, integrazione nuovi rami d’azienda, ristrutturazione, crisi aziendali, reportistica di business intelligence, consulenza per attività gestionali in azienda e ricerca di business partner.',
                 'en': '<b>Corporate Advisory</b> - Consultancy for strategic business activities, such as verification and review of the operating and / or business model, implementation of new strategies, reorganization, integration of new company branches, restructuring, corporate crises, business intelligence reporting, management services and business partner scouting.'
             }
         }

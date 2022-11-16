@@ -1,5 +1,6 @@
+const includeFormScript = require('../formScript')
+
 module.exports = async function (data) {
-    const recaptchaClientKey = '6Ldlg5kgAAAAACt717ealB2V2KO-T6XuuTwzfOTB'
     const contactFormUrl = 'https://us-central1-nexxoxp-website.cloudfunctions.net/contactUs'
 
     return `
@@ -21,6 +22,7 @@ module.exports = async function (data) {
       <section class="container pb-5 mb-md-3 mb-lg-5">
         <div class="row align-items-center">
           <div class="col-xl-5 col-md-6 offset-xl-1 order-md-2 text-center text-md-start mb-3 mb-sm-0">
+            <h2 class="h4 text-primary mb-2">${this.i18n('advisory.subtitle')}</h2>
             <h1 class="mb-4">${this.i18n('advisory.title')}</h1>
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">${this.i18n('advisory.description01')}</p>
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">${this.i18n('advisory.description02')}</p>
@@ -75,7 +77,7 @@ module.exports = async function (data) {
                       ${await this.image('services/advisory/advisory.png', 'M&A Advisory', 'servicesIcon', [150, 100, 50], '50w')}                     
                     </div>
                   </div>
-                  <p class="fs-m d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">${this.i18n('advisory.slider.item01.description')}</p>
+                  <p class="fs-m d-lg-block pb-2 pb-md-4 mb-lg-3">${this.i18n('advisory.slider.item01.description')}</p>
                 </div>
               </div>
             </div>
@@ -90,7 +92,7 @@ module.exports = async function (data) {
                         ${await this.image('services/advisory/corporate-finance.png', 'Corporate Finance', 'servicesIcon', [150, 100, 50], '50w')}                     
                     </div>
                   </div>
-                  <p class="fs-m d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">${this.i18n('advisory.slider.item02.description')}</p>
+                  <p class="fs-m d-lg-block pb-2 pb-md-4 mb-lg-3">${this.i18n('advisory.slider.item02.description')}</p>
                 </div>
               </div>
             </div>
@@ -152,66 +154,9 @@ module.exports = async function (data) {
             <div id="contact-form-done" class="col-lg-6 col-md-7 offset-xl-1" style="display: none;">
               <h4 class="text-center">${this.i18n('advisory.contactForm.thankYouMessage')}</h4>
             </div>
-            <script src="https://www.google.com/recaptcha/api.js?render=${recaptchaClientKey}"></script>
-            <script>
-                const form = document.getElementById('contact-form')
-                const formReplacement = document.getElementById('contact-form-done')
-                const submitButton = form.getElementsByTagName('button')[0]
-                const checkRecaptcha = callback => {
-                    grecaptcha.ready(function() {
-                        grecaptcha.execute('${recaptchaClientKey}', {action: 'submit'})
-                            .then(token => callback(null, token))
-                            .catch(error => callback(error))
-                    })
-                }
-                const lockForm = () => {
-                    submitButton.classList.add('disabled')
-                    submitButton.children[0].style.cssText = ''
-                }
-                const unlockForm = () => {
-                    submitButton.children[0].style.cssText = 'display: none;'
-                    submitButton.classList.remove('disabled')
-                }
-                form.addEventListener('submit', (event) => {
-                    event.preventDefault()
-                    
-                    checkRecaptcha((error, token) => {
-                        if (error) {
-                            console.log(error)
-                            return
-                        }
+            
+            ${includeFormScript(this.i18n, 'contact-form', 'advisoryForm')}
                         
-                        const request = new XMLHttpRequest()
-                        const formData = new FormData(form)
-                        formData.set('recaptcha', token)
-                        const fail = () => {
-                            unlockForm()
-                            alert(\`${this.i18n('advisory.contactForm.errorPopup.failedEmailSending')}\`)
-
-                        }
-                        const success = () => {
-                            form.reset()
-                            unlockForm()
-                            form.style.cssText = 'display: none;'
-                            formReplacement.style.cssText = ''
-                        }
-                    
-                        request.open('POST', form.action, true)
-                        request.onload = function() {
-                            if (this.status >= 200 && this.status < 400) {
-                                success()
-                            } else {
-                                fail()
-                            }
-                        }
-                        request.onerror = function() { fail() }
-                        
-                        lockForm()
-                        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
-                        request.send(new URLSearchParams(formData))
-                    })
-                })
-            </script>
           </div>
 
           <!-- Pattern -->

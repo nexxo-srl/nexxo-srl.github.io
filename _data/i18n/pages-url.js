@@ -55,8 +55,8 @@ module.exports = {
         'it': '/it/nexxo-advisory-partner',
         'en': '/en/nexxo-advisory-partner',
         linkName: {
-            'it': 'Nexxo Advisory Partner S.r.l.',
-            'en': 'Nexxo Advisory Partner S.r.l.',
+            'it': 'Nexxo Advisory Partner',
+            'en': 'Nexxo Advisory Partner',
         },
     },
     contactUs: {

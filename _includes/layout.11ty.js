@@ -7,9 +7,8 @@ const lazyCssLink = (href, media) => {
 }
 
 module.exports = async function (data) {
-
-    const facebookVerification = ''
     const tagManagerId = 'GTM-WRZ8F8S'
+    const recaptchaClientKey = '6Ldlg5kgAAAAACt717ealB2V2KO-T6XuuTwzfOTB'
 
     const [headerContent, footerContent] = await Promise.all([
         (async () => data.hideHeader ? '' : await header.call(this, data))(),
@@ -190,14 +189,35 @@ module.exports = async function (data) {
                 })(window,document,'script','dataLayer','${tagManagerId}');</script>
                 <!-- End Google Tag Manager -->
                 
-                <!-- Iubenda Cookie Solution --> 
+                <!-- START Iubenda Cookie Solution Configuration --> 
                 <script type="text/javascript">
                     var _iub = _iub || [];
-                    _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"ccpaApplies":true,"consentOnContinuedBrowsing":false,"enableCcpa":true,"floatingPreferencesButtonDisplay":"bottom-left","invalidateConsentWithoutLog":true,"lang":"en-GB","perPurposeConsent":true,"siteId":2718208,"whitelabel":false,"cookiePolicyId":26318026, "banner":{ "acceptButtonCaptionColor":"#FFFFFF","acceptButtonColor":"#6366F1","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","brandBackgroundColor":"#FFFFFF","brandTextColor":"#000000","closeButtonDisplay":false,"customizeButtonCaptionColor":"#4D4D4D","customizeButtonColor":"#DADADA","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"float-top-center","rejectButtonCaptionColor":"#FFFFFF","rejectButtonColor":"#6366F1","rejectButtonDisplay":true,"textColor":"#000000" }};
+                    _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"ccpaApplies":true,"consentOnContinuedBrowsing":false,"enableCcpa":true,"invalidateConsentWithoutLog":true,"lang":"en-GB","perPurposeConsent":true,"siteId":2718208,"whitelabel":false,"cookiePolicyId":26318026, "banner":{ "acceptButtonCaptionColor":"#FFFFFF","acceptButtonColor":"#6366F1","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","brandBackgroundColor":"#FFFFFF","brandTextColor":"#000000","closeButtonDisplay":false,"customizeButtonCaptionColor":"#4D4D4D","customizeButtonColor":"#DADADA","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"float-top-center","rejectButtonCaptionColor":"#FFFFFF","rejectButtonColor":"#6366F1","rejectButtonDisplay":true,"textColor":"#000000" }};
                 </script>
                 <script type="text/javascript" src="//cdn.iubenda.com/cs/ccpa/stub.js"></script>
                 <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-                <!-- End Iubenda Cookie Solution --> 
+                <!-- END Iubenda Cookie Solution Configuration -->
+                
+                <!-- START Google Recaptcha Configuration -->
+                <script src="https://www.google.com/recaptcha/api.js?render=${recaptchaClientKey}"></script>
+                <script>
+                    const checkRecaptcha = callback => {
+                        grecaptcha.ready(function() {
+                            grecaptcha.execute('${recaptchaClientKey}', {action: 'submit'})
+                                .then(token => callback(null, token))
+                                .catch(error => callback(error))
+                        })
+                    }
+                    const lockForm = (submitButtonToLock) => {
+                        submitButtonToLock.classList.add('disabled')
+                        submitButtonToLock.children[0].style.cssText = ''
+                    }
+                    const unlockForm = (submitButtonToUnlock) => {
+                        submitButtonToUnlock.children[0].style.cssText = 'display: none;'
+                        submitButtonToUnlock.classList.remove('disabled')
+                    }
+                </script>
+                <!-- END Google Recaptcha Configuration --> 
             </head>
             
             <!-- Body -->

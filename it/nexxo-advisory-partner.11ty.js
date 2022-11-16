@@ -13,6 +13,7 @@ module.exports = class {
                 title: 'Nexxo Advisory Partner',
             },
             isWhiteFooter: true,
+            isNexxoAdvisory: true,
             canonicalPageRelativeUrl: 'it/nexxo-advisory-partner/',
             ogImageRelativeUrl: 'assets/img/services/advisory/advisory-partner.jpeg',
             sitemap: {
