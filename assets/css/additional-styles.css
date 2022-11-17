@@ -18,6 +18,10 @@
     width: 2.5rem;
 }
 
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
 @media (min-width: 992px) {
     .drawer-item {
         display: none;

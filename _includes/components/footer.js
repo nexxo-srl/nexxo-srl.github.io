@@ -17,6 +17,7 @@ module.exports = async function (data) {
             </div>
             <p class="fs-sm ${textAdditionalClasses} opacity-70 pb-lg-3 mb-4">${this.i18n(companyData.summaryParagraphI18nKey)}</p>
             <p class="fs-sm ${textAdditionalClasses} opacity-70">${companyData.contacts.address}<br/>(VAT Code) P.IVA ${companyData.vatCode}</p>
+           
             <form id="footer-form" class="needs-validation" novalidate   method="POST" action="${contactFormUrl}">
               <input type="hidden" name="subject" value="Nexxoxp.com - Iscrizione da footer"/>
               <input type="hidden" name="name" value="Utente anonimo"/>
@@ -31,12 +32,14 @@ module.exports = async function (data) {
                     <span>${this.i18n('generic.footer.subscribeForm.cta')}</span>
               </button>
               </div>
+              <p class="fs-xs pb-2 pb-lg-0 mt-4 mb-0">${this.i18n('generic.recaptchaDisclaimer')}</p>
             </form>
             <div id="footer-form-done" class="col-lg-6 col-md-7 offset-xl-1" style="display: none;">
               <p class="fs-sm ${textAdditionalClasses}">${this.i18n('generic.footer.subscribeForm.thankYouMessage')}</p>
             </div>
             ${includeFormScript(this.i18n, 'footer-form', 'footerForm')}
           </div>
+       
           <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
             <div id="footer-links" class="row">
               <div class="col-lg-4">

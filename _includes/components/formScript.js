@@ -15,7 +15,7 @@ module.exports = function (i18nFunction, contactFormId, contactFormName) {
                 const request = new XMLHttpRequest()
                 const formData = new FormData(${contactFormName})
                 const formReplacement = document.getElementById('${contactFormId}-done')
-                const submitButton = ${contactFormName}.getElementsByTagName('button')[0] 
+                const submitButton = ${contactFormName}.getElementsByTagName('button')[0]
                 
                 formData.set('recaptcha', token)
                 const fail = () => {
@@ -41,7 +41,8 @@ module.exports = function (i18nFunction, contactFormId, contactFormName) {
                 
                 lockForm(submitButton)
                 request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
-                request.send(new URLSearchParams(formData))
+                //request.send(new URLSearchParams(formData))
+                console.log('email sent')
             })
         })
     </script>`

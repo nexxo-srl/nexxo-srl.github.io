@@ -94,7 +94,8 @@ module.exports = async function (data) {
               <button type="submit" class="btn btn-primary shadow-primary btn-lg">
                 <span class="spinner-border spinner-border-sm" style="display: none;" role="status" aria-hidden="true"></span>
                 <span>${this.i18n('contactUs.contactForm.buttonCTA')}</span>
-              </button>              
+              </button>
+              <p class="fs-xs pb-2 pb-lg-0 mt-4 mb-0">${this.i18n('generic.recaptchaDisclaimer')}</p>                      
             </div>
           </form>
           <div id="contact-form-done" class="col-lg-6 col-md-7 offset-xl-1" style="display: none;">

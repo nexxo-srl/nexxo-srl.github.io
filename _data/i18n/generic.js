@@ -78,5 +78,9 @@ module.exports = {
                 }
             }
         }
+    },
+    recaptchaDisclaimer: {
+        'it': 'Questo sito è protetto da reCAPTCHA e si applicano la <a href="https://policies.google.com/privacy">Privacy Policy</a> e i <a href="https://policies.google.com/terms">Termini di Servizio</a> di Google.',
+        'en': 'This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.'
     }
 }
