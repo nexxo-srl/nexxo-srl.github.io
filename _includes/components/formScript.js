@@ -41,8 +41,7 @@ module.exports = function (i18nFunction, contactFormId, contactFormName) {
                 
                 lockForm(submitButton)
                 request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
-                //request.send(new URLSearchParams(formData))
-                console.log('email sent')
+                request.send(new URLSearchParams(formData))                
             })
         })
     </script>`
