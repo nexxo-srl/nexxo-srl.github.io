@@ -52,7 +52,7 @@ module.exports = {
         },
         nexxoAdvisorySummaryParagraph: {
             'it': 'NEXXO ADVISORY PARTNER S.r.l. è una boutique consulenziale indipendente al servizio delle aziende che hanno bisogno di un’assistenza specializzata nell’ambito della compravendita aziende, finanza, analisi prestazionali, attività strategiche e operative.',
-            'en': 'NEXXO ADVISORY PARTNER S.R.L. is an independent consulting boutique serving companies that need specialized assistance in: M&A Advisory, Corporate Finance, Corporate Advisory and Management Services.'
+            'en': 'NEXXO ADVISORY PARTNER S.R.L. is an independent consulting boutique serving companies that need specialized assistance in: M&A Advisory, Corporate Finance and Management Advisory.'
         },
         subscribeForm: {
             title: {
