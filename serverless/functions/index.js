@@ -29,17 +29,17 @@ const corsSettings = {
  After update, to use the values in the simulator go to `functions` folder and run
  firebase functions:config:get > .runtimeconfig.json
  */
-const smtpConfig = functions.config().smtp
+const registerConfig = functions.config().register
 const recaptchaConfig = functions.config().recaptcha
 
-const smtpServerHost = 'smtp.gmail.com'
+const registerHost = 'authsmtp.securemail.pro'
 const transporter = nodemailer.createTransport({
-    host: smtpServerHost,
+    host: registerHost,
     port: 465,
     secure: true,
     auth: {
-        user: smtpConfig.username,
-        pass: smtpConfig.password
+        user: registerConfig.username,
+        pass: registerConfig.password
     }
 })
 
@@ -106,7 +106,7 @@ exports.contactUs = functions.https.onRequest((request, response) => {
                 }
 
                 transporter.sendMail({
-                    from: smtpConfig.username,
+                    from: registerConfig.username,
                     to: nexxoxpInfoEmail,
                     replyTo: sender,
                     subject: subject,
