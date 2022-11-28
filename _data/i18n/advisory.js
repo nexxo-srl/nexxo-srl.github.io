@@ -39,7 +39,7 @@ module.exports = {
         item03: {
             description:{
                 'it': '<b>Consulenza manageriale</b>, quali verifica e revisione modello operativo e/o di business, implementazione nuove strategie, riorganizzazione, integrazione nuovi rami d’azienda, ristrutturazione, crisi aziendali, reportistica di business intelligence, consulenza per attività gestionali in azienda e ricerca di business partner.',
-                'en': '<b>Corporate Advisory</b> - Consultancy for strategic business activities, such as verification and review of the operating and / or business model, implementation of new strategies, reorganization, integration of new company branches, restructuring, corporate crises, business intelligence reporting, management services and business partner scouting.'
+                'en': '<b>Management Advisory</b> - consultancy for strategic business activities, such as verification and review of the operating and / or business model, implementation of new strategies, reorganization, integration of new company branches, restructuring, corporate crises, business intelligence reporting, management services and business partner scouting.'
             }
         }
     },
