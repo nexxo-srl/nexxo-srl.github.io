@@ -4,8 +4,8 @@ module.exports = {
         'en': 'What we propose'
     },
     slideTitle01: {
-        'it': 'Noi, l\'agenzia digitale per il tuo business',
-        'en': 'We are the digital agency for your business'
+        'it': 'Noi, la holding digitale per il tuo business',
+        'en': 'We are the digital holding for your business'
     },
     slideDescription01: {
         'it': 'Qualunque siano le tue esigenze, qualunque sia il tuo business, qualunque siano i tuoi obiettivi; intraprendi con noi il tuo percorso di trasformazione digitale.',
@@ -33,24 +33,24 @@ module.exports = {
     },
     whoWeAre: {
         title: {
-            'it': 'Chi siamo',
-            'en': 'Who we are'
+            'it': 'Il nostro lavoro è radicato nella digitalizzazione.',
+            'en': 'Our work is rooted in digitalization.'
         },
         paragraph01: {
-            'it': 'Siamo un\'<strong>agenzia digitale start-up</strong> che aiuta a sviluppare le attività commerciali dei nostri clienti.',
-            'en': 'We are a <strong>start-up digital agency</strong> that helps develop our clients\'business.'
+            'it': 'Siamo una holding digitale che aiuta a sviluppare il business dei nostri clienti con servizi di consulenza e software.',
+            'en': 'We are a digital holding that helps develop our clients’ business with consulting and software services.'
         },
         paragraph02: {
-            'it': 'Ci proponiamo come <strong>partner tecnologico</strong> alle aziende che hanno bisogno di sviluppare la propria competitività attraverso la <strong>trasformazione digitale</strong>.',
-            'en': 'We propose ourselves as a <strong>technological partner</strong> to companies that need to develop their competitiveness through <strong>digital transformation</strong>.'
+            'it': 'Forniamo soluzioni software e di automazione basate sui dati che trasformano i nostri clienti in industrie intelligenti con un modello di business sempre più performante.',
+            'en': 'We deliver data-driven software and automation solutions that transform our clients in digital smart industries with a more and more performing business model.'
         },
         paragraph03: {
-            'it': 'Lavoriamo in un ambiente giovanile dove si respira aria di creatività, energia e passione.',
-            'en': 'We work in a youthful environment where there is an air of creativity, energy and passion.'
+            'it': 'Crediamo nella conoscenza aziendale basata su dati intelligenti disponibili in tempo reale, abilitati da una massiccia acquisizione di dati, automazione dei processi e implementazione dell\'intelligenza artificiale.',
+            'en': 'We believe in business knowledge based on smart data available in real time enabled by a massive data acquisition, process automation, and artificial intelligence implementation.'
         },
         paragraph04: {
-            'it': 'La nostra combo è quando un cliente ed un’azienda lavorano come un’unica entità nel raggiungimento degli stessi obiettivi.',
-            'en': 'Our combo is when a customer and a company work as a single entity in achieving the same goals.'
+            'it': 'Prestiamo continua attenzione su persone di talento, innovazione, nuove tecnologie dell\'informazione, ricerca e sviluppo.',
+            'en': 'We continuously focus on talented persons, innovation, new information technologies, research and development.'
         }
     },
     whatWeDo: {

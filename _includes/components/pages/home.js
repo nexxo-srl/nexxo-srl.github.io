@@ -108,7 +108,7 @@ module.exports = async function(data)
           <!-- Who We Are Section -->
           <section id="${this.i18n('pagesUrl.homepage.whoWeAreSection.id')}" class="container pt-5 mt-2 mt-md-4 mt-lg-5 pb-md-2 pb-lg-5">            
             
-            <div class="row pt-xl-3">
+            <div class="row align-items-center pt-xl-3">
               <div class="col-md-5 text-center text-md-start pb-5">
                 <h1 class="mb-4"><a>${this.i18n('home.whoWeAre.title')}</a></h1>
                 <p class="fs-lg pb-lg-3 mb-1">${this.i18n('home.whoWeAre.paragraph01')}</p>

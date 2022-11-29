@@ -6,7 +6,7 @@ module.exports = class {
         return {
             layout: 'layout.11ty.js',
             author: 'Nexxo Cross Platform S.r.l.',
-            pageTitle: 'Digital Agency',
+            pageTitle: 'Digital Holding',
             pageDescription: 'Forniamo servizi di certificazione dei dati basati su tecnologia IoT e Blockchain che rendono le prestazioni misurabili e praticabili come modello di business.',
             eleventyNavigation: {
                 key: 'home',

@@ -5,7 +5,7 @@ module.exports = class {
     data() {
         return {
             layout: 'layout.11ty.js',
-            pageTitle: 'Digital Agency',
+            pageTitle: 'Digital Holding',
             author: 'Nexxo Cross Platform S.r.l.',
             pageDescription: 'We combine digital communication, Internet-of-Things (IoT) & Blockchain services for a more complete and innovative experience than ever.',
             eleventyNavigation: {

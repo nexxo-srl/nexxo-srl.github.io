@@ -47,8 +47,8 @@ module.exports = {
             'en': 'Cookie Preferences'
         },
         nexxoSummaryParagraph: {
-            'it': 'Siamo un\'agenzia digitale Start-Up che aiuta a sviluppare le attività commerciali dei propri clienti. Ci proponiamo come partner tecnologico principale alle aziende industriali che hanno bisogno di sviluppare la propria competitività attraverso la trasformazione digitale.',
-            'en': 'We are a start-up digital agency that helps develop our clients\' business. We propose ourselves as a technological partner to companies that need to develop their competitiveness through digital transformation.'
+            'it': 'Siamo una holding digitale Start-Up che aiuta a sviluppare le attività commerciali dei propri clienti. Ci proponiamo come partner tecnologico principale alle aziende industriali che hanno bisogno di sviluppare la propria competitività attraverso la trasformazione digitale.',
+            'en': 'We are a start-up digital holding that helps develop our clients\' business. We propose ourselves as a technological partner to companies that need to develop their competitiveness through digital transformation.'
         },
         nexxoAdvisorySummaryParagraph: {
             'it': 'NEXXO ADVISORY PARTNER S.r.l. è una boutique consulenziale indipendente al servizio delle aziende che hanno bisogno di un’assistenza specializzata nell’ambito della compravendita aziende, finanza, analisi prestazionali, attività strategiche e operative.',
